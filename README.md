@@ -3,6 +3,6 @@ Class Scheduler
 
 Sprint 1:  
 Bitna:  
-Ishaan: 
+Ishaan:  
 Kaeden: User Login  
 Ryan:  
