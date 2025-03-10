@@ -1,7 +1,7 @@
 # CPTS322_CourseProject
 Class Scheduler
 
-Sprint 1:
+Sprint 1:  
 Bitna:  
 Ishaan: 
 Kaeden: User Login  
