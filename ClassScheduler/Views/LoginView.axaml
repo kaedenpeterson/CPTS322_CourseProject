@@ -27,8 +27,13 @@ Date: 3-14-25
             <TextBox Text="{Binding Email}" Watermark="Email"/>
             <TextBox Text="{Binding Password}" Margin="0 10"
                      PasswordChar="*" Watermark="Password" KeyDown="OnKeyDown"/>
-            <Button Command="{Binding LoginCommand}" DockPanel.Dock="Bottom"
-                    Content="Login" Background="Blue"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button Command="{Binding LoginCommand}"
+                        Content="Login" Background="Blue"/>  
+                <TextBlock Text="{Binding ErrorMessage}" 
+                           Foreground="Red" FontSize="15"
+                           Margin="10"/>
+            </StackPanel>
         </StackPanel>
     </DockPanel>
 </Window>

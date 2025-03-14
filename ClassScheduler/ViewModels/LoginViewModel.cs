@@ -34,10 +34,12 @@ public partial class LoginViewModel : ViewModelBase
         if (Email == "student@wsu.edu" && Password == "password")
         {
             Console.WriteLine("Student logged in");
+            ErrorMessage = string.Empty;
         } 
         else if (Email == "admin@wsu.edu" && Password == "password")
         {
             Console.WriteLine("Admin logged in");
+            ErrorMessage = string.Empty;
         }
         else
         {
