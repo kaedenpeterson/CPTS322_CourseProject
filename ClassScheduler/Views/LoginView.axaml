@@ -1,0 +1,34 @@
+<!--
+Description: UI for login page in ClassScheduler
+Author: Kaeden Peterson 11858249
+Date: 3-14-25
+-->
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ClassScheduler.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="700"
+        x:Class="ClassScheduler.Views.LoginView"
+        x:DataType="vm:LoginViewModel"
+        Width="900" Height="700"
+        Title="ClassScheduler">
+    
+    <Design.DataContext>
+        <vm:LoginViewModel/>
+    </Design.DataContext>
+    
+    <DockPanel Margin="10">
+        <TextBlock Text="User Login" DockPanel.Dock="Top" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="25"/>
+        <StackPanel Margin="15">
+            <TextBox Text="{Binding Email}" Watermark="Email"/>
+            <TextBox Text="{Binding Password}" Margin="0 10"
+                     PasswordChar="*" Watermark="Password" KeyDown="OnKeyDown"/>
+            <Button Command="{Binding LoginCommand}" DockPanel.Dock="Bottom"
+                    Content="Login" Background="Blue"/>
+        </StackPanel>
+    </DockPanel>
+</Window>
