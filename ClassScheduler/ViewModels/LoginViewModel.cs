@@ -16,27 +16,41 @@ public partial class LoginViewModel : ViewModelBase
     [ObservableProperty] private string _email = string.Empty;
     [ObservableProperty] private string _password = string.Empty; 
     [ObservableProperty] private string _errorMessage = string.Empty;
+    [ObservableProperty] private string? _selectedRole;
     public ICommand LoginCommand { get; }
     
+    public ICommand SetRoleCommand { get; }
+
+    private void SetRole(string? role)
+    {
+        SelectedRole = role;
+    }
     public LoginViewModel()
     {
         LoginCommand = new RelayCommand(Login);
+        SetRoleCommand = new RelayCommand<string>(SetRole);
     }
     private void Login()
     {
+        if (SelectedRole is null)
+        {
+            ErrorMessage = "Please select a role";
+            return;
+        }
+        
         if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
         {
-            Console.WriteLine("Email or password is empty");
-            ErrorMessage = "Email or password is empty";
+            Console.WriteLine("Empty email or password");
+            ErrorMessage = "Empty email or password";
             return;
         }
 
-        if (Email == "student@wsu.edu" && Password == "password")
+        if (SelectedRole == "Student" && Email == "student@wsu.edu" && Password == "password")
         {
             Console.WriteLine("Student logged in");
             ErrorMessage = string.Empty;
         } 
-        else if (Email == "admin@wsu.edu" && Password == "password")
+        else if (SelectedRole == "Admin" && Email == "admin@wsu.edu" && Password == "password")
         {
             Console.WriteLine("Admin logged in");
             ErrorMessage = string.Empty;
