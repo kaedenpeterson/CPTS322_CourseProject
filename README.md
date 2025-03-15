@@ -4,5 +4,5 @@ SW8_Class Scheduler
 **Sprint 1**  
 Bitna:  
 Ishaan:  
-Kaeden: User Login, finished
+Kaeden: User Login, finished  
 Ryan:  
