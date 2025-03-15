@@ -24,8 +24,14 @@ build_property.EnableCodeStyleSeverity =
 [/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/AdminView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/LoginView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/StudentView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

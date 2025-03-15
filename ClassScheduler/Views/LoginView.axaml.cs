@@ -15,6 +15,13 @@ public partial class LoginView : Window
     public LoginView()
     {
        InitializeComponent();
+       Loaded += (_, _) =>
+       {
+           if (DataContext is LoginViewModel vm)
+           {
+               vm.LoginSuccess += Close;
+           }
+       };
     }
 
     private void OnKeyDown(object? sender, KeyEventArgs e)

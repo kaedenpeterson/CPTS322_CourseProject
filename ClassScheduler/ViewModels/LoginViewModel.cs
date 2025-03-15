@@ -6,6 +6,9 @@ Date: 3-14-25
 
 using System;
 using System.Windows.Input;
+using Avalonia.Controls;
+using ClassScheduler.Data;
+using ClassScheduler.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
@@ -13,14 +16,13 @@ namespace ClassScheduler.ViewModels;
 
 public partial class LoginViewModel : ViewModelBase
 {
+    public event Action? LoginSuccess;
     [ObservableProperty] private string _email = string.Empty;
     [ObservableProperty] private string _password = string.Empty; 
     [ObservableProperty] private string _errorMessage = string.Empty;
     [ObservableProperty] private string? _selectedRole;
     public ICommand LoginCommand { get; }
-    
     public ICommand SetRoleCommand { get; }
-
     private void SetRole(string? role)
     {
         SelectedRole = role;
@@ -40,25 +42,45 @@ public partial class LoginViewModel : ViewModelBase
         
         if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
         {
-            Console.WriteLine("Empty email or password");
             ErrorMessage = "Empty email or password";
             return;
         }
 
-        if (SelectedRole == "Student" && Email == "student@wsu.edu" && Password == "password")
+        if (SystemManager.IsValidCredentials(SelectedRole, Email, Password))
         {
-            Console.WriteLine("Student logged in");
             ErrorMessage = string.Empty;
-        } 
-        else if (SelectedRole == "Admin" && Email == "admin@wsu.edu" && Password == "password")
-        {
-            Console.WriteLine("Admin logged in");
-            ErrorMessage = string.Empty;
+            OpenDashboard();
         }
         else
         {
-            Console.WriteLine("Invalid email or password");
             ErrorMessage = "Invalid email or password";
         }
     }
+
+    private void OpenDashboard()
+    {
+        Window? dashboardWindow = null;
+        switch (SelectedRole)
+        {
+            case "Student":
+                var student = SystemManager.GetStudent(Email);
+                if (student is not null)
+                {
+                    dashboardWindow = new StudentView(student);
+                }
+
+                break;
+            case "Admin":
+                var admin = SystemManager.GetAdmin(Email);
+                if (admin is not null)
+                {
+                    dashboardWindow = new AdminView(admin);
+                }
+                
+                break;
+        }
+        dashboardWindow?.Show();
+        LoginSuccess?.Invoke();
+    }
+
 }

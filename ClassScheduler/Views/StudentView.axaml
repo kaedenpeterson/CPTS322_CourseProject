@@ -1,0 +1,25 @@
+<!--
+Description: UI for student view (logged in) in ClassScheduler
+Author: Kaeden Peterson 11858249
+Date: 3-15-25
+-->
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ClassScheduler.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ClassScheduler.Views.StudentView"
+        x:DataType="vm:StudentViewModel"
+        Background="#3A3A3A"
+        Title="ClassScheduler - Student Dashboard">
+        
+        <Design.DataContext>
+                <vm:StudentViewModel/>
+        </Design.DataContext>
+        
+        <TextBlock Text="Welcome" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        
+</Window>
+        
