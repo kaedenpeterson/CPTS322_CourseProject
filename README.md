@@ -2,7 +2,7 @@
 SW8_Class Scheduler
 
 **Sprint 1**  
-Bitna:  
-Ishaan:  
-Kaeden: User Login, finished  
-Ryan:  
+Bitna White (11812714):  
+Ishaan Joshi (11834312):  
+Kaeden Peterson (11858249): User Login, finished  
+Ryan Hughes (11828460):  
