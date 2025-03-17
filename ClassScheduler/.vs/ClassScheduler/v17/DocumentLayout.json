@@ -1,0 +1,478 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\coursesview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\coursesview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\coursesview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\coursesview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\loginview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\loginview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\adminview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\adminview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\loginview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\loginview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\studentview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\studentview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\studentview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\studentview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\adminview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\adminview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\coursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\coursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewlocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewlocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\data\\systemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:data\\systemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\coursesview.axaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\coursesview.axaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\assets\\avalonia-logo.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:assets\\avalonia-logo.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CoursesView.axaml",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml",
+              "RelativeDocumentMoniker": "Views\\CoursesView.axaml",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml",
+              "RelativeToolTip": "Views\\CoursesView.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-16T22:39:45.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "Views\\MainWindow.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-16T22:18:33.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginView.axaml",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml",
+              "RelativeDocumentMoniker": "Views\\LoginView.axaml",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml",
+              "RelativeToolTip": "Views\\LoginView.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-16T22:09:53.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\StudentView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\StudentView.axaml.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\StudentView.axaml.cs",
+              "RelativeToolTip": "Views\\StudentView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:38:29.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\MainWindow.axaml.cs",
+              "RelativeToolTip": "Views\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:38:03.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CoursesView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\CoursesView.axaml.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml.cs",
+              "RelativeToolTip": "Views\\CoursesView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:37:30.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentView.axaml",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\StudentView.axaml",
+              "RelativeDocumentMoniker": "Views\\StudentView.axaml",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\StudentView.axaml",
+              "RelativeToolTip": "Views\\StudentView.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-16T22:09:48.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\StudentViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\StudentViewModel.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\StudentViewModel.cs",
+              "RelativeToolTip": "ViewModels\\StudentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:11:58.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\LoginView.axaml.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml.cs",
+              "RelativeToolTip": "Views\\LoginView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:38:14.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\AdminView.axaml.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml.cs",
+              "RelativeToolTip": "Views\\AdminView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:38:23.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminView.axaml",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml",
+              "RelativeDocumentMoniker": "Views\\AdminView.axaml",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml",
+              "RelativeToolTip": "Views\\AdminView.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-16T22:09:46.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:11:42.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CoursesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\CoursesViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CoursesViewModel.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\CoursesViewModel.cs",
+              "RelativeToolTip": "ViewModels\\CoursesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:12:31.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ViewLocator.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewLocator.cs",
+              "RelativeDocumentMoniker": "ViewLocator.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewLocator.cs",
+              "RelativeToolTip": "ViewLocator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:43:48.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:43:50.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:12:03.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:11:36.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:11:33.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\AdminViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AdminViewModel.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\AdminViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AdminViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:11:41.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\Admin.cs",
+              "RelativeToolTip": "Models\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:11:38.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SystemManager.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Data\\SystemManager.cs",
+              "RelativeDocumentMoniker": "Data\\SystemManager.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Data\\SystemManager.cs",
+              "RelativeToolTip": "Data\\SystemManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:17:40.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "ViewModels\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:12:18.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\App.axaml",
+              "RelativeDocumentMoniker": "App.axaml",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\App.axaml",
+              "RelativeToolTip": "App.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-16T22:09:32.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "app.manifest",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\app.manifest",
+              "RelativeDocumentMoniker": "app.manifest",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\app.manifest",
+              "RelativeToolTip": "app.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2025-03-16T22:47:01.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CoursesView.axaml",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml",
+              "RelativeDocumentMoniker": "Views\\CoursesView.axaml",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml",
+              "RelativeToolTip": "Views\\CoursesView.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-16T22:37:10.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "avalonia-logo.ico - Icon [16x16, 32 bit, BMP]",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Assets\\avalonia-logo.ico",
+              "RelativeDocumentMoniker": "Assets\\avalonia-logo.ico",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Assets\\avalonia-logo.ico - Icon [16x16, 32 bit, BMP]",
+              "RelativeToolTip": "Assets\\avalonia-logo.ico - Icon [16x16, 32 bit, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2025-03-16T22:22:53.867Z",
+              "EditorCaption": " - Icon [16x16, 32 bit, BMP]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\App.axaml.cs",
+              "RelativeDocumentMoniker": "App.axaml.cs",
+              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\App.axaml.cs",
+              "RelativeToolTip": "App.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T22:09:34.406Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
