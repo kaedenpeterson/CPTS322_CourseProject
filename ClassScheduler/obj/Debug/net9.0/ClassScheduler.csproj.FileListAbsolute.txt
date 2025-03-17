@@ -1,0 +1,8 @@
+/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/obj/Debug/net9.0/ClassScheduler.csproj.AssemblyReference.cache
+/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache
+/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/obj/Debug/net9.0/Avalonia/resources
+/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/obj/Debug/net9.0/ClassScheduler.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/obj/Debug/net9.0/ClassScheduler.AssemblyInfoInputs.cache
+/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/obj/Debug/net9.0/ClassScheduler.AssemblyInfo.cs
+/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/obj/Debug/net9.0/ClassScheduler.csproj.CoreCompileInputs.cache
+/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/obj/Debug/net9.0/ClassScheduler.sourcelink.json
