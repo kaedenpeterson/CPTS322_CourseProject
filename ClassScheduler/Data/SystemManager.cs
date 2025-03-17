@@ -21,7 +21,10 @@ public static class SystemManager
         
         // Dummy student for testing login
         Students.Add(new Student
-            ("test@wsu.edu", "password123", "Student Name", "0", ["CPTS_101"] ));
+            ("test@wsu.edu", "password123", "Student Name", "0", ["CPTS_121"] ));
+
+        Admins.Add(new Admin
+            ("admin@wsu.edu", "password", "Admin Name"));
     }
     
     public static bool IsValidCredentials(string role, string email, string password)
