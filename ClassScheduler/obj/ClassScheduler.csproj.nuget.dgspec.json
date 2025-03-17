@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/ClassScheduler.csproj": {}
+    "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj": {}
   },
   "projects": {
-    "/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/ClassScheduler.csproj": {
+    "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/ClassScheduler.csproj",
+        "projectUniqueName": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
         "projectName": "ClassScheduler",
-        "projectPath": "/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/ClassScheduler.csproj",
-        "packagesPath": "/Users/chowie/.nuget/packages/",
-        "outputPath": "/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/obj/",
+        "projectPath": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
+        "packagesPath": "C:\\Users\\beebe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/chowie/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\beebe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -85,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
