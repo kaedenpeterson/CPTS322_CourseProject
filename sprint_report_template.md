@@ -1,9 +1,9 @@
 # Sprint x Report 
 Video Link: 
 ## What's New (User Facing)
- * Feature 1 or Bug Fix 1
- * Feature 2 or Bug Fix 2
- * Feature n or Bug Fix n
+ * User Login #1
+ * Browse Courses #2
+ * View Course Information #4
 
 ## Work Summary (Developer Facing)
 Provide a one paragraph synposis of what your team accomplished this sprint. Don't repeat the "What's New" list of features. Instead, help the instructor understand how you went about the work described there, any barriers you overcame, and any significant learnings for your team.
@@ -14,9 +14,9 @@ If applicable, explain the work you did not finish in this sprint. For issues/us
 ## Completed Issues/User Stories
 Here are links to the issues that we completed in this sprint:
 
- * URL of issue 1
- * URL of issue 2
- * URL of issue n
+ * [User Login #1](https://github.com/users/kaedenpeterson/projects/1/views/1?pane=issue&itemId=100885672&issue=kaedenpeterson%7CCPTS322_CourseProject%7C1)
+ * [Browse Courses #2](https://github.com/users/kaedenpeterson/projects/1/views/1?pane=issue&itemId=100885712&issue=kaedenpeterson%7CCPTS322_CourseProject%7C2)
+ * [View Course Information #4](https://github.com/users/kaedenpeterson/projects/1/views/1?pane=issue&itemId=100885770&issue=kaedenpeterson%7CCPTS322_CourseProject%7C4)
 
  Desirables (Remove this section when you save the file):
   * Each issue should be assigned to a milestone
