@@ -21,17 +21,17 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/RyanJ/Source/Repos/CPTS322_CourseProject/ClassScheduler/App.axaml]
+[C:/Users/RyanJ/source/repos/CPTS322_CourseProject/ClassScheduler/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/RyanJ/Source/Repos/CPTS322_CourseProject/ClassScheduler/Views/AdminView.axaml]
+[C:/Users/RyanJ/source/repos/CPTS322_CourseProject/ClassScheduler/Views/AdminView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/RyanJ/Source/Repos/CPTS322_CourseProject/ClassScheduler/Views/LoginView.axaml]
+[C:/Users/RyanJ/source/repos/CPTS322_CourseProject/ClassScheduler/Views/LoginView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/RyanJ/Source/Repos/CPTS322_CourseProject/ClassScheduler/Views/MainWindow.axaml]
+[C:/Users/RyanJ/source/repos/CPTS322_CourseProject/ClassScheduler/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/RyanJ/Source/Repos/CPTS322_CourseProject/ClassScheduler/Views/StudentView.axaml]
+[C:/Users/RyanJ/source/repos/CPTS322_CourseProject/ClassScheduler/Views/StudentView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
