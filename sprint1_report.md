@@ -1,5 +1,5 @@
 # Sprint x Report 
-Video Link: 
+Video Link: https://youtu.be/nqtfIjoTdk8
 ## What's New (User Facing)
  * User Login #1
  * Browse Courses #2
