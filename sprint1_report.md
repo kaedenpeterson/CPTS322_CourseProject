@@ -6,7 +6,7 @@ Video Link:
  * View Course Information #4
 
 ## Work Summary (Developer Facing)
-During this sprint, our team completed three key foundational features for our project. We completed the User Login feature, which allows users to access their accounts. The Browse Courses feature was completed, which allows students to view available courses. Lastly, we developed the View Course Information feature, which provides information for courses when selected by the user. For barriers, we think using C# with Avalonia was difficult because not all of us have experience with C# and Avalonia.
+During this sprint, our team completed three key foundational features for our project. We completed the User Login feature, which allows users to access their accounts. The Browse Courses feature was completed, which allows students to view available courses. Lastly, we developed the View Course Information feature, which provides information for courses when selected by the user. We found that using C# with Avalonia was difficult because not all of us have experience with C# and Avalonia.
 
 ## Unfinished Work
 The feature we planned to implement in this sprint but did not finish was the Enroll In Course feature. It will be added to the next sprint.
