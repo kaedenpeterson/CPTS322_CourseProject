@@ -5,7 +5,7 @@ SW8_Class Scheduler
 | Name            | ID       | Task                       | Status      |
 |-----------------|----------|----------------------------|-------------|
 | Bitna White     | 11812714 | Browse Courses #2          | Finished    |
-| Ishaan Joshi    | 11834312 | Enroll In Course           | In Progress |
+| Ishaan Joshi    | 11834312 | Enroll In Course #5        | In Progress |
 | Kaeden Peterson | 11858249 | User Login #1              | Finished    |
 | Ryan Hughes     | 11828460 | View Course Information #4 | Finished    |  
 
