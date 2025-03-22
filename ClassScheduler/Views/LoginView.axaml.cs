@@ -10,18 +10,12 @@ using ClassScheduler.ViewModels;
 
 namespace ClassScheduler.Views;
 
-public partial class LoginView : Window
+public partial class LoginView : UserControl
 {
-    public LoginView()
+    public LoginView(ViewManager navigation)
     {
        InitializeComponent();
-       Loaded += (_, _) =>
-       {
-           if (DataContext is LoginViewModel vm)
-           {
-               vm.LoginSuccess += Close;
-           }
-       };
+       DataContext = new LoginViewModel(navigation);
     }
 
     private void OnKeyDown(object? sender, KeyEventArgs e)

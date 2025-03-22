@@ -4,21 +4,21 @@ Author: Kaeden Peterson 11858249
 Date: 3-15-25
 */
 
-using Avalonia.Interactivity;
 using Avalonia.Controls;
 using ClassScheduler.Models;
 using ClassScheduler.ViewModels;
 
 namespace ClassScheduler.Views;
 
-public partial class StudentView : Window
+public partial class StudentView : UserControl
 {
-    public StudentView(Student student)
+    public StudentView(Student student, ViewManager navigation)
     {
         InitializeComponent();
-        DataContext = new StudentViewModel(student);
+        DataContext = new StudentViewModel(student, navigation);
     }
 
+    /*
     public void ClickHandler(object sender, RoutedEventArgs args)
     {
         instructor.Text = "Instructor: Andy O'Fallon"; //these hard coded strings are just a proof of concept
@@ -27,4 +27,5 @@ public partial class StudentView : Window
         prereqs.Text = "Prerequisites: none";
 
     }
+    */
 }

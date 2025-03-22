@@ -12,9 +12,9 @@ namespace ClassScheduler.Models;
 
 public class Schedule
 {
-    public List<DayOfWeek> Days { get; set; }
-    public TimeSpan Start { get; set; }
-    public TimeSpan End { get; set; }
+    internal List<DayOfWeek> Days { get; set; }
+    internal TimeSpan Start { get; set; }
+    internal TimeSpan End { get; set; }
 
     public Schedule(List<DayOfWeek> days, TimeSpan start, TimeSpan end)
     {
@@ -23,7 +23,7 @@ public class Schedule
         End = end;
     }
 
-    // For printing in this format: Mon/Wed/Fri 9:00 - 10:00
+    // Format: Mon/Wed/Fri 9:00 - 10:00
     public override string ToString()
     {
         return $"{string.Join("/", Days.Select(days => days.ToString()[..3]))} {Start} - {End}";

@@ -10,8 +10,9 @@ namespace ClassScheduler.ViewModels;
 
 public partial class AdminViewModel : ViewModelBase
 {
-    public AdminViewModel(Admin admin)
+    private readonly ViewManager _navigation;
+    public AdminViewModel(Admin admin, ViewManager navigation)
     {
-        
+        _navigation = navigation;
     }
 }

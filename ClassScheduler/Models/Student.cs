@@ -12,9 +12,9 @@ public class Student : User
 {
     public string StudentID { get; set; }
     
-    public List<string> Courses { get; set; }
+    public List<Course> Courses { get; set; }
     
-    public Student(string email, string password, string name, string studentId, List<string> courses) 
+    public Student(string email, string password, string name, string studentId, List<Course> courses) 
         : base(email, password, name)
     {
         StudentID = studentId;

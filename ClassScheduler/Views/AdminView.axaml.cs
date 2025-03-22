@@ -10,11 +10,11 @@ using ClassScheduler.ViewModels;
 
 namespace ClassScheduler.Views;
 
-public partial class AdminView : Window
+public partial class AdminView : UserControl
 {
-    public AdminView(Admin admin)
+    public AdminView(Admin admin, ViewManager navigation)
     {
         InitializeComponent();
-        DataContext = new AdminViewModel(admin);
+        DataContext = new AdminViewModel(admin, navigation);
     }
 }

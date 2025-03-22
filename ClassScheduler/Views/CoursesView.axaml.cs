@@ -9,11 +9,11 @@ using ClassScheduler.ViewModels;
 
 namespace ClassScheduler.Views;
 
-public partial class CoursesView : Window
+public partial class CoursesView : UserControl
 {
-    public CoursesView()
+    public CoursesView(ViewManager navigation)
     {
         InitializeComponent();
-        DataContext = new CoursesViewModel();
+        DataContext = new CoursesViewModel(navigation);
     }
 }

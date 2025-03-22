@@ -4,7 +4,7 @@ Author: Bitna White 11812714
 Date: 3-15-25
 -->
 
-<Window xmlns="https://github.com/avaloniaui"
+<UserControl xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:ClassScheduler.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -13,9 +13,8 @@ Date: 3-15-25
         x:Class="ClassScheduler.Views.CoursesView"
         x:DataType="vm:CoursesViewModel"
         Width="1000" Height="800"
-        Background="#3A3A3A"
-        Title="ClassScheduler - Courses Dashboard">
-
+        Background="#3A3A3A">
+	
 	<Design.DataContext>
 		<vm:CoursesViewModel/>
 	</Design.DataContext>
@@ -23,8 +22,8 @@ Date: 3-15-25
 	<DockPanel Margin="10">
 		<TextBlock Text="Available Courses" DockPanel.Dock="Top" Margin="0 20 0 -5"
                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                   FontFamily="San Francisco" FontSize="25"/>
+                   FontFamily="Arial" FontSize="25"/>
 		<ListBox ItemsSource="{Binding Courses}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="300"/>
 	</DockPanel>
 
-</Window>
+</UserControl>

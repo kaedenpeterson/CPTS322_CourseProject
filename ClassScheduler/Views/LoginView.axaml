@@ -4,7 +4,7 @@ Author: Kaeden Peterson 11858249
 Date: 3-14-25
 -->
 
-<Window xmlns="https://github.com/avaloniaui"
+<UserControl xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:ClassScheduler.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -13,9 +13,7 @@ Date: 3-14-25
         x:Class="ClassScheduler.Views.LoginView"
         x:DataType="vm:LoginViewModel"
         Width="600" Height="400"
-        CanResize="False"
-        Background="#3A3A3A"
-        Title="ClassScheduler">
+        Background="#3A3A3A">
     
     <Design.DataContext>
         <vm:LoginViewModel/>
@@ -25,7 +23,7 @@ Date: 3-14-25
         
         <TextBlock Text="User Login" DockPanel.Dock="Top" Margin="0 20 0 -5"
                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                   FontFamily="San Francisco" FontSize="25"/>
+                   FontFamily="Arial" FontSize="25"/>
         
         <StackPanel Margin="15">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0 5">
@@ -60,4 +58,4 @@ Date: 3-14-25
             </StackPanel>
         </StackPanel>
     </DockPanel>
-</Window>
+</UserControl>

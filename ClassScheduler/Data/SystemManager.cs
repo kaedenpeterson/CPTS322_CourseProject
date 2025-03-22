@@ -11,20 +11,23 @@ namespace ClassScheduler.Data;
 
 public static class SystemManager
 {
-    private static readonly string DatabaseFile = "database.csv";
+    private static readonly string UserDataFile;
+    private static readonly string CourseDataFile;
     private static readonly List<Student> Students = [];
     private static readonly List<Admin> Admins = [];
     
     static SystemManager()
     {
-        LoadData();
+        UserDataFile = "user_data.csv";
+        CourseDataFile = "course_data.csv";
+        PullData();
         
         // Dummy student for testing login
         Students.Add(new Student
-            ("test@wsu.edu", "password123", "Student Name", "0", ["CPTS_121"] ));
+            ("test", "pass", "Student Name", "01", [null!] ));
 
         Admins.Add(new Admin
-            ("admin@wsu.edu", "password", "Admin Name"));
+            ("test", "pass", "Admin Name"));
     }
     
     public static bool IsValidCredentials(string role, string email, string password)
@@ -52,8 +55,14 @@ public static class SystemManager
         return Admins.Find(admin => admin.Email == email);
     }
 
-    // LoadData() will load data from the database .csv file and populate the lists
-    public static void LoadData() 
+    // PullData() will load data from the database .csv files and populate the lists
+    public static void PullData() 
+    {
+        
+    }
+
+    // PushData() will save the current system data to the database .csv files
+    public static void PushData()
     {
         
     }
