@@ -16,12 +16,12 @@ public partial class ConfirmLogoutWindow : Window
         WindowStartupLocation = WindowStartupLocation.CenterOwner;
     }
         
-    private void OnCancelButtonClick(object sender, RoutedEventArgs e)
+    private void OnCancelButtonSelect(object sender, RoutedEventArgs e)
     {
         Close();
     }
 
-    private void OnYesButtonClick(object sender, RoutedEventArgs e)
+    private void OnYesButtonSelect(object sender, RoutedEventArgs e)
     {
         Close();
        _navigation.NavigateTo<LoginView>();

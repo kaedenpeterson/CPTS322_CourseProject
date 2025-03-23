@@ -34,7 +34,7 @@
                                 <MenuItem Header="{Binding FirstName}">
                                         <MenuItem Header="Profile"/>
                                         <MenuItem Header="Settings"/>
-                                        <MenuItem Header="Logout" PointerPressed="OnLogoutClick"/>
+                                        <MenuItem Header="Logout" PointerPressed="OnLogoutSelect"/>
                                 </MenuItem>
                         </Menu>
                         <Menu>

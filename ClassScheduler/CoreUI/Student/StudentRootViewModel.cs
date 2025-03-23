@@ -9,9 +9,8 @@ namespace ClassScheduler.CoreUI.Student;
 
 public partial class StudentRootViewModel : ViewModelBase
 {
-    private readonly INavigationService _navigation;
-    public INavigationService Navigation => _navigation;
-    
+    public INavigationService Navigation { get; }
+
     private readonly Models.Student _student;
     
     [ObservableProperty]
@@ -19,16 +18,16 @@ public partial class StudentRootViewModel : ViewModelBase
     
     public StudentRootViewModel(INavigationService navigation, Models.Student student)
     {
-        _navigation = navigation;
+        Navigation = navigation;
         _student = student;
         
-        _currView = navigation.CurrView;
+        _currView = Navigation.CurrView;
         
-        _navigation.PropertyChanged += (_, args) =>
+        Navigation.PropertyChanged += (_, args) =>
         {
             if (args.PropertyName == nameof(NavigationService.CurrView))
             {
-                CurrView = _navigation.CurrView;
+                CurrView = Navigation.CurrView;
             }
         };
     }
@@ -38,12 +37,12 @@ public partial class StudentRootViewModel : ViewModelBase
     [RelayCommand]
     private void NavigateToHome()
     {
-        _navigation.NavigateTo<StudentView>(_student);
+        Navigation.NavigateTo<StudentView>(_student);
     }
 
     [RelayCommand]
     private void NavigateToCourses()
     {
-        _navigation.NavigateTo<CoursesView>();
+        Navigation.NavigateTo<CoursesView>();
     }
 }

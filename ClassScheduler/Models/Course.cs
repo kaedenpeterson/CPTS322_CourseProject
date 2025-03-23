@@ -5,6 +5,7 @@ Date: 3-17-25
 */
 
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 namespace ClassScheduler.Models;
 
@@ -15,16 +16,19 @@ public class Course
     public string Instructor { get; set; }
     public string Description { get; set; }
     public int Credits { get; set; }
-    public List<string> Prerequisites { get; set; }
-    
+    public string Prerequisites { get; set; }
     public int OpenSeats { get; set; }
     public int MaxSeats { get; set; }
     
     public string Location {get; set;}
+    
+    public bool IsActive { get; set; }
     public Schedule Schedule { get; set; }
+    
 
     public Course(string code, string name, string instructor, string description, 
-        int credits, List<string> prerequisites, int openSeats, int maxSeats, string location, Schedule schedule)
+        int credits, string prerequisites, int openSeats, int maxSeats, string location,
+        bool isActive, Schedule schedule)
     {
         Code = code;
         Name = name;
@@ -35,6 +39,7 @@ public class Course
         OpenSeats = openSeats;
         MaxSeats = maxSeats;
         Location = location;
+        IsActive = isActive;
         Schedule = schedule;
     }
 }

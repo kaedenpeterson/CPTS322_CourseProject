@@ -14,7 +14,7 @@ public partial class StudentRootView : UserControl
         DataContext = new StudentRootViewModel(navigation, student);
     }
     
-    private void OnLogoutClick(object sender, PointerPressedEventArgs e)
+    private void OnLogoutSelect(object sender, PointerPressedEventArgs e)
     {
         if (DataContext is StudentRootViewModel vm)
         {

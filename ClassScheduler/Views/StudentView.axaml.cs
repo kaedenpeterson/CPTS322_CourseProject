@@ -18,15 +18,4 @@ public partial class StudentView : UserControl
         InitializeComponent();
         DataContext = new StudentViewModel(student, navigation);
     }
-
-    /*
-    public void ClickHandler(object sender, RoutedEventArgs args)
-    {
-        instructor.Text = "Instructor: Andy O'Fallon"; //these hard coded strings are just a proof of concept
-        time.Text = "Time: 3 am";                      //perhaps in the future we can have them be variables to the class
-        credits.Text = "Credits: 4";
-        prereqs.Text = "Prerequisites: none";
-
-    }
-    */
 }

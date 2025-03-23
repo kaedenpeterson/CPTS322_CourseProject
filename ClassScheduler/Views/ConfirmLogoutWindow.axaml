@@ -17,11 +17,11 @@
                         Margin="0,0,5,0"
                         HorizontalContentAlignment="Center"
                         HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                        Click="OnCancelButtonClick"/>
+                        Click="OnCancelButtonSelect"/>
                 <Button Content="Yes" Background="Blue" Width="70"
                         HorizontalContentAlignment="Center"
                         HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                        Click="OnYesButtonClick"/>
+                        Click="OnYesButtonSelect"/>
             </StackPanel>
         </Grid>
     </Border>

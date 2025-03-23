@@ -11,7 +11,7 @@ public partial class ResetPasswordWindow : Window
         WindowStartupLocation = WindowStartupLocation.CenterOwner;
     }
         
-    private void OnOkButtonClick(object sender, RoutedEventArgs e)
+    private void OnOkButtonSelect(object sender, RoutedEventArgs e)
     {
         Close();
     }
