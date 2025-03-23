@@ -1,20 +1,25 @@
-﻿namespace ClassScheduler.ViewModels;
+﻿using Avalonia.Controls;
+using ClassScheduler.CoreUI;
+using CommunityToolkit.Mvvm.ComponentModel;
+
+namespace ClassScheduler.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    private ViewManager Navigation { get; }
+    private readonly NavigationService _navigation;
+    
+    [ObservableProperty] private UserControl _mainView;
 
-    public object CurrView => Navigation.CurrView;
-
-    public MainWindowViewModel(ViewManager navigation)
+    public MainWindowViewModel(NavigationService navigation)
     {
-        Navigation = navigation;
-        
-        Navigation.PropertyChanged += (_, args) =>
+        _navigation = navigation;
+        _mainView = _navigation.MainView;
+
+        _navigation.PropertyChanged += (_, args) =>
         {
-            if (args.PropertyName == nameof(Navigation.CurrView))
+            if (args.PropertyName == nameof(NavigationService.MainView))
             {
-                OnPropertyChanged(nameof(CurrView));
+                MainView = _navigation.MainView;
             }
         };
     }

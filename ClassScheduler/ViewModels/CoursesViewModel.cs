@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using ClassScheduler.CoreUI;
 
 namespace ClassScheduler.ViewModels;
 
@@ -6,9 +7,9 @@ public partial class CoursesViewModel : ViewModelBase
 {
     public ObservableCollection<string> Courses { get; }
     
-    private readonly ViewManager _navigation;
+    private readonly NavigationService _navigation;
 
-    public CoursesViewModel(ViewManager navigation)
+    public CoursesViewModel(NavigationService navigation)
     {
         _navigation = navigation;
         Courses = new ObservableCollection<string>

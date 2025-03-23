@@ -12,13 +12,66 @@ Date: 3-14-25
         mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="400"
         x:Class="ClassScheduler.Views.LoginView"
         x:DataType="vm:LoginViewModel"
-        Width="600" Height="400"
         Background="#3A3A3A">
     
     <Design.DataContext>
         <vm:LoginViewModel/>
     </Design.DataContext>
     
+    <DockPanel LastChildFill="True" Margin="10">
+        
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        
+            <TextBlock Text="User Login" DockPanel.Dock="Top" Margin="0 0 0 0"
+                    HorizontalAlignment="Center" FontFamily="Arial" FontSize="30"/>
+        
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0 10">
+                <StackPanel Orientation="Horizontal" Margin="0">
+                    <RadioButton GroupName="UserRole" Command="{Binding SetRoleCommand}" CommandParameter="Student"/>
+                    <TextBlock Text="Student" VerticalAlignment="Center" Margin="0 0 0 0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <RadioButton GroupName="UserRole" Command="{Binding SetRoleCommand}" CommandParameter="Admin"/>
+                    <TextBlock Text="Admin" VerticalAlignment="Center" Margin="0 0 0 0"/>
+                </StackPanel>
+            </StackPanel>
+        
+            <TextBox Text="{Binding Email}" Watermark="Email"
+                    Width="400" Margin="0 -15 0 2.5"
+                    KeyDown="OnKeyDown" HorizontalAlignment="Left"/>
+        
+            <TextBox Text="{Binding Password}" Watermark="Password"
+                    Width="400" Margin="0 5"
+                    KeyDown="OnKeyDown" PasswordChar="*"
+                    HorizontalAlignment="Left"/>
+        
+            <Grid Width="400" Margin="0 7.5 0 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*" />   
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Forgot Password?" TextDecorations="Underline"
+                        FontSize="12" Foreground="DodgerBlue"
+                        HorizontalAlignment="Left"
+                        PointerPressed="OnForgotPasswordClick"
+                        PointerEntered="OnPointerEnter"
+                        PointerExited="OnPointerExit"
+                        Grid.Column="0"/>
+
+                <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" FontSize="15"
+                        HorizontalAlignment="Right" VerticalAlignment="Center"
+                        Grid.Column="1"/>
+            </Grid>
+        
+            <Button Command="{Binding LoginCommand}" Content="Login" Background="Blue"
+                    Width="400" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </StackPanel>
+    </DockPanel>
+    
+    <!-- Below commented code was used for a 600 by 400 window size -->
+    
+    <!--
     <DockPanel Margin="10">
         
         <TextBlock Text="User Login" DockPanel.Dock="Top" Margin="0 20 0 -5"
@@ -48,14 +101,22 @@ Date: 3-14-25
             <TextBox Text="{Binding Password}" Watermark="Password"
                      HorizontalAlignment="Left" Width="550"
                      KeyDown="OnKeyDown" PasswordChar="*" Margin="0 10"/>
+            <TextBlock Text="Forgot Password?"
+                       TextDecorations="Underline"
+                       FontSize="12"
+                       Foreground="DodgerBlue"
+                       PointerPressed="OnForgotPasswordClick"
+                       PointerEntered="OnPointerEnter"
+                       PointerExited="OnPointerExit"/>
             
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                 <Button Command="{Binding LoginCommand}"
-                        Content="Login" Background="Blue"/>  
+                        Content="Login" Background="Blue" Margin="0 12 0 0 "/>  
                 <TextBlock Text="{Binding ErrorMessage}" 
                            Foreground="Red" FontSize="15"
-                           Margin="10"/>
+                           Margin="10 18 0 0"/>
             </StackPanel>
         </StackPanel>
     </DockPanel>
+    -->
 </UserControl>

@@ -15,7 +15,7 @@ public static class SystemManager
     private static readonly string CourseDataFile;
     private static readonly List<Student> Students = [];
     private static readonly List<Admin> Admins = [];
-    
+
     static SystemManager()
     {
         UserDataFile = "user_data.csv";
@@ -24,12 +24,12 @@ public static class SystemManager
         
         // Dummy student for testing login
         Students.Add(new Student
-            ("test", "pass", "Student Name", "01", [null!] ));
-
+            ("test", "pass", "Kaeden Peterson", "01", [null!] ));
+                
         Admins.Add(new Admin
             ("test", "pass", "Admin Name"));
     }
-    
+      
     public static bool IsValidCredentials(string role, string email, string password)
     {
         switch (role)

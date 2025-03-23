@@ -6,13 +6,18 @@ Date: 3-14-25
 
 using Avalonia.Controls;
 using Avalonia.Input;
+using Avalonia.LogicalTree;
+using Avalonia.Media;
+using Avalonia.VisualTree;
+using ClassScheduler.CoreUI;
 using ClassScheduler.ViewModels;
 
 namespace ClassScheduler.Views;
 
 public partial class LoginView : UserControl
 {
-    public LoginView(ViewManager navigation)
+    private readonly NavigationService _navigation;
+    public LoginView(NavigationService navigation)
     {
        InitializeComponent();
        DataContext = new LoginViewModel(navigation);
@@ -23,6 +28,32 @@ public partial class LoginView : UserControl
         if (e.Key == Key.Enter && DataContext is LoginViewModel vm)
         {
             vm.LoginCommand.Execute(null);
+        }
+    }
+    
+    private void OnPointerEnter(object sender, PointerEventArgs e)
+    {
+        if (sender is TextBlock textBlock)
+        {
+            textBlock.Foreground = Brushes.Gray;
+        }
+    }
+
+    private void OnPointerExit(object sender, PointerEventArgs e)
+    {
+        if (sender is TextBlock textBlock)
+        {
+            textBlock.Foreground = Brushes.DodgerBlue;
+        }
+    }
+    
+    private void OnForgotPasswordClick(object sender, PointerPressedEventArgs e)
+    {
+        var resetPasswordWindow = new ResetPasswordWindow();
+        var parentWindow = this.FindAncestorOfType<Window>();
+        if (parentWindow != null)
+        {
+            resetPasswordWindow.ShowDialog(parentWindow); 
         }
     }
 }

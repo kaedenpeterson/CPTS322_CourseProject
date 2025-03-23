@@ -4,6 +4,8 @@ Author: Kaeden Peterson 11858249
 Date: 3-14-25
 */
 
+using ClassScheduler.CoreUI;
+using ClassScheduler.CoreUI.Student;
 using ClassScheduler.Data;
 using ClassScheduler.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -11,7 +13,7 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace ClassScheduler.ViewModels;
 
-public partial class LoginViewModel(ViewManager navigation) : ViewModelBase
+public partial class LoginViewModel(INavigationService navigation) : ViewModelBase
 {
     [ObservableProperty] private string _email = string.Empty;
     [ObservableProperty] private string _password = string.Empty; 
@@ -58,7 +60,9 @@ public partial class LoginViewModel(ViewManager navigation) : ViewModelBase
                 var student = SystemManager.GetStudent(Email);
                 if (student is not null)
                 {
-                    navigation.ChangeView(new StudentView(student, navigation));
+                    // Set both the CurrView and MainView
+                    navigation.NavigateTo<StudentView>(student);
+                    navigation.NavigateTo<StudentRootView>(student);
                 }
 
                 break;
@@ -66,7 +70,8 @@ public partial class LoginViewModel(ViewManager navigation) : ViewModelBase
                 var admin = SystemManager.GetAdmin(Email);
                 if (admin is not null)
                 {
-                    navigation.ChangeView(new AdminView(admin, navigation));
+                    navigation.NavigateTo<AdminView>(admin);
+                    // navigation.NavigateTo<AdminRootView>(admin);
                 }
 
                 break;

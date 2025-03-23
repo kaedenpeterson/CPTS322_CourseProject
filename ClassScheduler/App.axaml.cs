@@ -3,6 +3,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core.Plugins;
 using System.Linq;
 using Avalonia.Markup.Xaml;
+using ClassScheduler.CoreUI;
 using ClassScheduler.ViewModels;
 using ClassScheduler.Views;
 
@@ -22,8 +23,8 @@ public partial class App : Application
             // Avoid duplicate validations from both Avalonia and the CommunityToolkit. 
             // More info: https://docs.avaloniaui.net/docs/guides/development-guides/data-validation#manage-validationplugins
             DisableAvaloniaDataAnnotationValidation();
-        
-            var navigation = new ViewManager();
+            
+            var navigation = new NavigationService();
             
             desktop.MainWindow = new MainWindow
             {

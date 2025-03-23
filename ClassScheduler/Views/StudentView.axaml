@@ -23,10 +23,6 @@ Date: 3-15-25
 		           HorizontalAlignment="Center" VerticalAlignment="Center"
 		           FontFamily="Arial" FontSize="25" Foreground="White"/>
 		
-		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100">
-			<Button Content="Browse Courses" Command="{Binding BrowseCoursesCommand}" Background="Gray" Padding="10"/>
-		</StackPanel>
-		
 		<!--
 		<Grid>
 			<TextBlock Text="Welcome" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10"/>

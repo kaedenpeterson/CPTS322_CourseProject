@@ -5,6 +5,7 @@ Date: 3-15-25
 */
 
 using Avalonia.Controls;
+using ClassScheduler.CoreUI;
 using ClassScheduler.Models;
 using ClassScheduler.ViewModels;
 
@@ -12,7 +13,7 @@ namespace ClassScheduler.Views;
 
 public partial class StudentView : UserControl
 {
-    public StudentView(Student student, ViewManager navigation)
+    public StudentView(Student student, NavigationService navigation)
     {
         InitializeComponent();
         DataContext = new StudentViewModel(student, navigation);

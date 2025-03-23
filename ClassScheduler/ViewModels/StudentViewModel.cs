@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 using ClassScheduler.Models;
 using CommunityToolkit.Mvvm.Input;
 using System.Windows.Input;
+using ClassScheduler.CoreUI;
 using ClassScheduler.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 
@@ -18,23 +19,13 @@ public partial class StudentViewModel : ViewModelBase
     [ObservableProperty] private Student _student;
     [ObservableProperty] private ObservableCollection<Course> _courses;
     
-    private readonly ViewManager _navigation;
-    
-    public StudentViewModel(Student student, ViewManager navigation)
+    private readonly NavigationService _navigation;
+
+    public StudentViewModel(Student student, NavigationService navigation)
     {
         Student = student;
         Courses = new ObservableCollection<Course>(student.Courses);
-        
-        _navigation = navigation;
-        
-    }
-    
-    [RelayCommand]
-    private void BrowseCourses()
-    {
-        // ViewManager.ChangeView(new CoursesView { DataContext = new CoursesViewModel(ViewManager) });
-    }
 
-    // public ICommand CourseCommand { get; }
-    
+        _navigation = navigation;
+    }
 }
