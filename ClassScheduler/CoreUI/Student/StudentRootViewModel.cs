@@ -10,6 +10,8 @@ namespace ClassScheduler.CoreUI.Student;
 public partial class StudentRootViewModel : ViewModelBase
 {
     private readonly INavigationService _navigation;
+    public INavigationService Navigation => _navigation;
+    
     private readonly Models.Student _student;
     
     [ObservableProperty]
@@ -37,12 +39,6 @@ public partial class StudentRootViewModel : ViewModelBase
     private void NavigateToHome()
     {
         _navigation.NavigateTo<StudentView>(_student);
-    }
-
-    [RelayCommand]
-    private void NavigateToLogin()
-    {
-        _navigation.NavigateTo<LoginView>();
     }
 
     [RelayCommand]

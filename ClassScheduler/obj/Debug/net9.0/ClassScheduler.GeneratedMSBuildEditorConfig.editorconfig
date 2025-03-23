@@ -30,6 +30,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/AdminView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/ConfirmLogoutWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/CoursesView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

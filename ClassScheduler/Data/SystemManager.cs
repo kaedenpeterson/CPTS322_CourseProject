@@ -27,7 +27,7 @@ public static class SystemManager
             ("test", "pass", "Kaeden Peterson", "01", [null!] ));
                 
         Admins.Add(new Admin
-            ("test", "pass", "Admin Name"));
+            ("test", "pass", "Kaeden Peterson"));
     }
       
     public static bool IsValidCredentials(string role, string email, string password)
