@@ -1,23 +1,27 @@
-# Sprint 1 Cleanup
+# CPTS322_CourseProject
+SW8_Class Scheduler
 
-## Overview
-The navigation system implemented in the sprint 1 cleanup is designed to manage view transitions and dynamically update the active view (CurrView) based on user interaction with the menu bar. The system is built around the INavigationService interface, which allows for switching between different views, such as AdminView and CoursesView. The MainView acts as a container for these dynamic views, maintaining a reference to the current active view. When a menu item is selected, the CurrView property of the NavigationService is updated, which triggers the view change. This update is reflected in the user interface through data binding. For instance, when an admin selects a menu option, the system updates CurrView to display the corresponding view, such as the courses page. The AdminRootViewModel monitors changes to the CurrView property and switches the displayed content based on these changes.
+Backlog
 
-## New directory
-**CoreUI:** Holds core UI components such as navigation, root views, and overall structure of switching between views.
+**Sprint 1**  
+| Name            | ID       | Task                       | Status      |
+|-----------------|----------|----------------------------|-------------|
+| Bitna White     | 11812714 | Browse Courses #2          | Finished    |
+| Ishaan Joshi    | 11834312 | Enroll In Course #5        | To Do       |
+| Kaeden Peterson | 11858249 | User Login #1              | Finished    |
+| Ryan Hughes     | 11828460 | View Course Information #4 | Finished    |  
 
-## New components
-**Course:** Represents a course in the system. Stores course details.  
+Kanban board midway through sprint:
+![Screenshot 2025-03-16 at 2 57 07 PM](https://github.com/user-attachments/assets/953b905a-7dd7-447f-bd2e-1319a03457ed)
+Kanban board at end of sprint:
+![Screenshot 2025-03-17 at 8 50 15 PM](https://github.com/user-attachments/assets/47c85dfa-da12-41d6-9baa-933d6309500c)
 
-**Schedule:** Represents the schedule of a course (days of week, class time, start/end date). Includes formatted representations of the schedule for display purposes.  
+<br>
 
-**AdminRootView:** ViewModel for the admin root view, responsible for handling navigation through a menu bar. Also displays the sub view (CurrView) as a ContentControl.  
-
-**StudentRootView:** ViewModel for the student root view, responsible for handling navigation through a menu bar. Also displays the sub view (CurrView) as a ContentControl.  
-
-**PopupWindow:** Defines a template that is used for creating popup windows.  
-
-
-
-
-
+**Sprint 2**
+| Name            | ID       | Task                       | Status      |
+|-----------------|----------|----------------------------|-------------|
+| Bitna White     | 11812714 |                            |             |
+| Ishaan Joshi    | 11834312 |                            |             |
+| Kaeden Peterson | 11858249 |                            |             |
+| Ryan Hughes     | 11828460 |                            |             |
