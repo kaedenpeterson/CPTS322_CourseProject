@@ -4,60 +4,71 @@ Author: Kaeden Peterson 11858249
 Date: 3-14-25
 -->
 
-<Window xmlns="https://github.com/avaloniaui"
+<UserControl xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:ClassScheduler.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="using:ClassScheduler.ViewModels"
         mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="400"
         x:Class="ClassScheduler.Views.LoginView"
         x:DataType="vm:LoginViewModel"
-        Width="600" Height="400"
-        CanResize="False"
-        Background="#3A3A3A"
-        Title="ClassScheduler">
+        Background="#3A3A3A">
     
     <Design.DataContext>
         <vm:LoginViewModel/>
     </Design.DataContext>
     
-    <DockPanel Margin="10">
+    <DockPanel LastChildFill="True" Margin="10">
         
-        <TextBlock Text="User Login" DockPanel.Dock="Top" Margin="0 20 0 -5"
-                   HorizontalAlignment="Center" VerticalAlignment="Center"
-                   FontFamily="San Francisco" FontSize="25"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
         
-        <StackPanel Margin="15">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0 5">
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                    <RadioButton GroupName="UserRole" 
-                                 Command="{Binding SetRoleCommand}"
+            <TextBlock Text="User Login" DockPanel.Dock="Top" Margin="0 0 0 0"
+                    HorizontalAlignment="Center" FontFamily="Arial" FontSize="30"/>
+        
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0 10 0 13">
+                <StackPanel Orientation="Horizontal" Margin="0">
+                    <RadioButton GroupName="UserRole" Command="{Binding SetRoleCommand}" 
                                  CommandParameter="Student"/>
-                    <TextBlock Text="Student" VerticalAlignment="Center"/>
+                    <TextBlock Text="Student" VerticalAlignment="Center" Margin="0 0 5 0"/>
                 </StackPanel>
-                
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="15 0 0 0">
-                    <RadioButton GroupName="UserRole"
-                                 Command="{Binding SetRoleCommand}"
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <RadioButton GroupName="UserRole" Command="{Binding SetRoleCommand}"
                                  CommandParameter="Admin"/>
-                    <TextBlock Text="Admin" VerticalAlignment="Center"/>
+                    <TextBlock Text="Admin" VerticalAlignment="Center" Margin="0 0 0 0"/>
                 </StackPanel>
             </StackPanel>
-            
-            <TextBox Text="{Binding Email}" Watermark="Email" 
-                     HorizontalAlignment="Left" Width="550"
-                     KeyDown="OnKeyDown"/>
+        
+            <TextBox Text="{Binding Email}" Watermark="Email"
+                    Width="400" Margin="0 -15 0 2.5"
+                    KeyDown="OnKeyDown" HorizontalAlignment="Left"/>
+        
             <TextBox Text="{Binding Password}" Watermark="Password"
-                     HorizontalAlignment="Left" Width="550"
-                     KeyDown="OnKeyDown" PasswordChar="*" Margin="0 10"/>
-            
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                <Button Command="{Binding LoginCommand}"
-                        Content="Login" Background="Blue"/>  
-                <TextBlock Text="{Binding ErrorMessage}" 
-                           Foreground="Red" FontSize="15"
-                           Margin="10"/>
-            </StackPanel>
+                    Width="400" Margin="0 5"
+                    KeyDown="OnKeyDown" PasswordChar="•"
+                    HorizontalAlignment="Left"/>
+        
+            <Grid Width="400" Margin="0 7.5 0 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*" />   
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Forgot Password?" TextDecorations="Underline"
+                        FontSize="12" Foreground="DodgerBlue"
+                        HorizontalAlignment="Left" Cursor="Hand"
+                        PointerPressed="OnForgotPasswordSelect"
+                        PointerEntered="OnPointerEnter"
+                        PointerExited="OnPointerExit"
+                        Grid.Column="0"/>
+
+                <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" FontSize="15"
+                        HorizontalAlignment="Right" VerticalAlignment="Center"
+                        Grid.Column="1"/>
+            </Grid>
+        
+            <Button Command="{Binding LoginCommand}" Content="Login" Background="Blue"
+                    Width="400" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         </StackPanel>
     </DockPanel>
-</Window>
+    
+</UserControl>

@@ -1,0 +1,55 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:ClassScheduler.CoreUI.Admin"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ClassScheduler.CoreUI.Admin.AdminRootView"
+             x:DataType="vm:AdminRootViewModel"
+             Background="#3A3A3A">
+             
+        <Design.DataContext>
+                <vm:AdminRootViewModel/>
+        </Design.DataContext>
+            
+        <DockPanel>
+                <StackPanel DockPanel.Dock="Top" Background="Black" Orientation="Horizontal"
+                            Height="40">
+                        <Button Background="Transparent" 
+                                Height="40">
+                        <Image Source="/Assets/back_arrow.png" Width="16" Height="40"/>
+                        </Button>
+                        <Button Background="Transparent" 
+                                Height="40">
+                                <Image Source="/Assets/front_arrow.png" Width="16" Height="40"/>
+                        </Button>
+
+                        <Button Background="Transparent"
+                                Command="{Binding NavigateToHomeCommand}"
+                                Height="40">
+                                <Image Source="/Assets/home.png" Width="20" Height="40"/> 
+                        </Button> 
+                        
+                        <Menu Height="40">
+                                <MenuItem Header="{Binding FirstName}" FontSize="16">
+                                        <MenuItem Header="Profile"/>
+                                        <MenuItem Header="Settings"/>
+                                        <MenuItem Header="Logout" PointerPressed="OnLogoutSelect"/>
+                                </MenuItem>
+                        </Menu>
+                         
+                        <Menu Height="40">
+                                <MenuItem Header="Manage" FontSize="16">
+                                        <MenuItem Header="View Courses" 
+                                                  Command="{Binding NavigateToCoursesCommand}"/>
+                                        <MenuItem Header="Edit Course"/>
+                                        <MenuItem Header="Remove Course"/>
+                                        <MenuItem Header="Add Course"/>
+                                </MenuItem>
+                        </Menu>
+                </StackPanel>
+                
+                <ContentControl Content="{Binding CurrView}" DockPanel.Dock="Bottom"
+                                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </DockPanel>
+</UserControl>

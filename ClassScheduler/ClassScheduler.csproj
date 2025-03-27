@@ -24,4 +24,14 @@
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CoreUI\Student\StudentRootView.axaml.cs">
+      <DependentUpon>RootView.axaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CoreUI\PopupWindow.axaml.cs">
+      <DependentUpon>PopupWindow.axaml.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

@@ -4,7 +4,7 @@ Author: Kaeden Peterson 11858249
 Date: 3-15-25
 -->
 
-<Window xmlns="https://github.com/avaloniaui"
+<UserControl xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:ClassScheduler.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -12,13 +12,34 @@ Date: 3-15-25
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ClassScheduler.Views.AdminView"
         x:DataType="vm:AdminViewModel"
-        Background="#3A3A3A"
-        Title="ClassScheduler - Admin Dashboard">
-        
+        Background="#3A3A3A">
+    
     <Design.DataContext>
         <vm:AdminViewModel/>
     </Design.DataContext>
         
-    <TextBlock Text="Welcome" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" /> 
+        </Grid.RowDefinitions>
         
-</Window>
+        <TextBlock Grid.Row="0"
+                   Text="Admin Dashboard"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   FontFamily="Arial"
+                   FontSize="30"
+                   Foreground="White"
+                   Margin="0 20 0 10"/>
+        
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      Margin="10">
+            
+        </ScrollViewer>
+    </Grid>
+        
+</UserControl>

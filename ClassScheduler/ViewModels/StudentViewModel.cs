@@ -1,32 +1,26 @@
-/*
-Description: ViewModel for the student view (logged in) in ClassScheduler.
-Author: Kaeden Peterson 11858249 && Bitna White 11812714
-Date: 3-15-25
-*/
-
+using System.Collections.ObjectModel;
 using ClassScheduler.Models;
-using ClassScheduler.Views;
+using ClassScheduler.CoreUI;
 using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using System.Windows.Input;
 
 namespace ClassScheduler.ViewModels;
 
+/// <summary>
+/// ViewModel for the student homepage. Shown as a sub view (CurrView) in the window.
+/// </summary>
 public partial class StudentViewModel : ViewModelBase
 {
-    private Student _student;
+    [ObservableProperty] private Student _student;
+    [ObservableProperty] private ObservableCollection<Course> _courses;
+    
+    private readonly INavigationService _navigation;
 
-    public StudentViewModel(Student student)
+    public StudentViewModel(INavigationService navigation, Student student)
     {
-        _student = student;
-        CourseCommand = new RelayCommand(ClickViewCourse);
-    }
+        Student = student;
+        Courses = new ObservableCollection<Course>(student.Courses);
 
-    public ICommand CourseCommand { get; }
-
-    private void ClickViewCourse()
-    {
-        var coursesView = new CoursesView();
-        coursesView.Show();
+        _navigation = navigation;
+        
     }
 }

@@ -4,9 +4,9 @@ Author: Kaeden Peterson 11858249
 Date: 3-14-25
 */
 
-using System;
-using System.Windows.Input;
-using Avalonia.Controls;
+using ClassScheduler.CoreUI;
+using ClassScheduler.CoreUI.Admin;
+using ClassScheduler.CoreUI.Student;
 using ClassScheduler.Data;
 using ClassScheduler.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -14,24 +14,23 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace ClassScheduler.ViewModels;
 
-public partial class LoginViewModel : ViewModelBase
+/// <summary>
+/// ViewModel for the login page. Provides logic for user login.
+/// </summary>
+public partial class LoginViewModel(INavigationService navigation) : ViewModelBase
 {
-    public event Action? LoginSuccess;
     [ObservableProperty] private string _email = string.Empty;
     [ObservableProperty] private string _password = string.Empty; 
     [ObservableProperty] private string _errorMessage = string.Empty;
     [ObservableProperty] private string? _selectedRole;
-    public ICommand LoginCommand { get; }
-    public ICommand SetRoleCommand { get; }
+
+    [RelayCommand]
     private void SetRole(string? role)
     {
         SelectedRole = role;
     }
-    public LoginViewModel()
-    {
-        LoginCommand = new RelayCommand(Login);
-        SetRoleCommand = new RelayCommand<string>(SetRole);
-    }
+    
+    [RelayCommand]
     private void Login()
     {
         if (SelectedRole is null)
@@ -51,36 +50,24 @@ public partial class LoginViewModel : ViewModelBase
             ErrorMessage = string.Empty;
             OpenDashboard();
         }
-        else
-        {
-            ErrorMessage = "Invalid email or password";
-        }
+        else ErrorMessage = "Invalid email or password";
     }
 
     private void OpenDashboard()
     {
-        Window? dashboardWindow = null;
         switch (SelectedRole)
         {
             case "Student":
                 var student = SystemManager.GetStudent(Email);
-                if (student is not null)
-                {
-                    dashboardWindow = new StudentView(student);
-                }
-
+                if (student is not null) navigation.SwitchTo<StudentRootView>(student);
+                
                 break;
             case "Admin":
                 var admin = SystemManager.GetAdmin(Email);
-                if (admin is not null)
-                {
-                    dashboardWindow = new AdminView(admin);
-                }
+                if (admin is not null) navigation.SwitchTo<AdminRootView>(admin);
                 
                 break;
         }
-        dashboardWindow?.Show();
-        LoginSuccess?.Invoke();
     }
 
 }
