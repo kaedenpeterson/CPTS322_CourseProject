@@ -13,9 +13,9 @@ namespace ClassScheduler.Views;
 
 public partial class StudentView : UserControl
 {
-    public StudentView(Student student, NavigationService navigation)
+    public StudentView(INavigationService navigation, Student student)
     {
         InitializeComponent();
-        DataContext = new StudentViewModel(student, navigation);
+        DataContext = new StudentViewModel(navigation, student);
     }
 }

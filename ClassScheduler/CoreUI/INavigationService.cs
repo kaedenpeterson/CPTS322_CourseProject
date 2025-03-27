@@ -13,5 +13,5 @@ public interface INavigationService
     UserControl MainView { get; }
     UserControl CurrView { get; }
     event PropertyChangedEventHandler PropertyChanged;
-    void NavigateTo<T>(object? parameter = null) where T : UserControl;
+    void SwitchTo<T>(object? parameter = null) where T : UserControl;
 }

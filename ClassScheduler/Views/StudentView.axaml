@@ -18,57 +18,80 @@ Date: 3-15-25
 		<vm:StudentViewModel/>
 	</Design.DataContext>
 
-	<DockPanel Margin="10">
-		<TextBlock Text="Student Dashboard" DockPanel.Dock="Top" Margin="0 10 0 -15"
-		           HorizontalAlignment="Center" VerticalAlignment="Top"
-		           FontFamily="Arial" FontSize="30" Foreground="White"/>
-		
-        <ScrollViewer VerticalScrollBarVisibility="Auto" Height="550">
-        <ItemsControl ItemsSource="{Binding Courses}">
-            <ItemsControl.ItemTemplate>
-            <DataTemplate>
-                <Expander HorizontalAlignment="Stretch" Margin="20 0 20 7.5">
-                    <Expander.Header>
-                        <StackPanel Orientation="Horizontal" Spacing="10">
-                            <TextBlock Text="{Binding Code}" FontSize="16" FontWeight="Bold" Foreground="DodgerBlue"/>
-                            <TextBlock Text=" | " Foreground="Gray"/>
-                            <TextBlock Text="{Binding Location}" FontSize="16" Foreground="White"/>
-                            <TextBlock Text=" | " Foreground="Gray"/>
-                            <TextBlock Text="{Binding Schedule}" FontSize="16" Foreground="White"/>
-                        </StackPanel>
-                    </Expander.Header>
-                
-                    <StackPanel Margin="10">
-                        <TextBlock Text="{Binding Name}" FontSize="16" FontWeight="Bold" Foreground="DodgerBlue"/>
-                        <TextBlock Text="{Binding Description}" FontSize="14" Foreground="White" TextWrapping="Wrap" Margin="0,5"/>
-                        
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Instructor: " Foreground="DodgerBlue"/>
-                            <TextBlock Text="{Binding Instructor}" FontSize="14" Foreground="White"/>
-                        </StackPanel>
-                        
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Meeting dates: " Foreground="DodgerBlue"/>
-                            <TextBlock Text="{Binding Schedule.FormattedStartDate}"/>
-                            <TextBlock Text=" - " Foreground="White"/>
-                            <TextBlock Text="{Binding Schedule.FormattedEndDate}"/>
-                        </StackPanel>
-                    
-                            <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Prerequisites: " Foreground="DodgerBlue"/>
-                            <TextBlock Text="{Binding Prerequisites}" Foreground="White"/>
-                        </StackPanel>
-                    
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Credits: " Foreground="DodgerBlue"/>
-                            <TextBlock Text="{Binding Credits}" FontSize="14" Foreground="White"/>
-                        </StackPanel>
-                    </StackPanel>
-                </Expander>
-            </DataTemplate> </ItemsControl.ItemTemplate>
-        </ItemsControl>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" /> 
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0"
+                   Text="Student Dashboard"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   FontFamily="Arial"
+                   FontSize="30"
+                   Foreground="White"
+                   Margin="0 20 0 10"/>
+        
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      Margin="10">
+            <ItemsControl ItemsSource="{Binding Courses}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Expander Margin="0"
+                                  HorizontalAlignment="Stretch">
+                            
+                            <Expander.Header>
+                                <StackPanel Orientation="Horizontal" Spacing="10" Height="55">
+                                    <TextBlock Text="{Binding Code}" FontSize="19" 
+                                               FontWeight="Bold" Foreground="DodgerBlue"
+                                               VerticalAlignment="Center"/>
+                                    <TextBlock Text=" | " Foreground="Gray" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Location}" FontSize="17" 
+                                               Foreground="White" VerticalAlignment="Center"/>
+                                    <TextBlock Text=" | " Foreground="Gray" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Schedule}" FontSize="17"
+                                               Foreground="White" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </Expander.Header>
+
+                            <StackPanel Margin="10">
+                                <TextBlock Text="{Binding Name}" FontSize="19" 
+                                           FontWeight="Bold" Foreground="DodgerBlue"/>
+                                <TextBlock Text="{Binding Description}" FontSize="15" 
+                                           Foreground="White" TextWrapping="Wrap" Margin="0,5"/>
+                                
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Instructor: " Foreground="DodgerBlue" FontSize="15"/>
+                                    <TextBlock Text="{Binding Instructor}" FontSize="15" Foreground="White"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Meeting dates: " Foreground="DodgerBlue" FontSize="15"/>
+                                    <TextBlock Text="{Binding Schedule.FormattedStartDate}" FontSize="15"/>
+                                    <TextBlock Text=" - " Foreground="White" FontSize="15"/>
+                                    <TextBlock Text="{Binding Schedule.FormattedEndDate}" FontSize="15"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Prerequisites: " Foreground="DodgerBlue" FontSize="15"/>
+                                    <TextBlock Text="{Binding FormattedPrereqs}" Foreground="White"
+                                               FontSize="15"/>
+                                </StackPanel>
+                                
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Credits: " Foreground="DodgerBlue" FontSize="15"/>
+                                    <TextBlock Text="{Binding Credits}" FontSize="15" Foreground="White"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Expander>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
         </ScrollViewer>
-		
-	</DockPanel>
+    </Grid>
 </UserControl>
         

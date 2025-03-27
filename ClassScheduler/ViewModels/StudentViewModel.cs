@@ -16,9 +16,9 @@ public partial class StudentViewModel : ViewModelBase
     [ObservableProperty] private Student _student;
     [ObservableProperty] private ObservableCollection<Course> _courses;
     
-    private readonly NavigationService _navigation;
+    private readonly INavigationService _navigation;
 
-    public StudentViewModel(Student student, NavigationService navigation)
+    public StudentViewModel(INavigationService navigation, Student student)
     {
         Student = student;
         Courses = new ObservableCollection<Course>(student.Courses);

@@ -5,6 +5,7 @@ Date: 3-14-25
 */
 
 using ClassScheduler.CoreUI;
+using ClassScheduler.CoreUI.Admin;
 using ClassScheduler.CoreUI.Student;
 using ClassScheduler.Data;
 using ClassScheduler.Views;
@@ -46,10 +47,7 @@ public partial class LoginViewModel(INavigationService navigation) : ViewModelBa
             ErrorMessage = string.Empty;
             OpenDashboard();
         }
-        else
-        {
-            ErrorMessage = "Invalid email or password";
-        }
+        else ErrorMessage = "Invalid email or password";
     }
 
     private void OpenDashboard()
@@ -58,22 +56,13 @@ public partial class LoginViewModel(INavigationService navigation) : ViewModelBa
         {
             case "Student":
                 var student = SystemManager.GetStudent(Email);
-                if (student is not null)
-                {
-                    // Set both the CurrView and MainView
-                    navigation.NavigateTo<StudentView>(student);
-                    navigation.NavigateTo<StudentRootView>(student);
-                }
-
+                if (student is not null) navigation.SwitchTo<StudentRootView>(student);
+                
                 break;
             case "Admin":
                 var admin = SystemManager.GetAdmin(Email);
-                if (admin is not null)
-                {
-                    navigation.NavigateTo<AdminView>(admin);
-                    // navigation.NavigateTo<AdminRootView>(admin);
-                }
-
+                if (admin is not null) navigation.SwitchTo<AdminRootView>(admin);
+                
                 break;
         }
     }

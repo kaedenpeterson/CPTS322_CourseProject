@@ -1,50 +1,55 @@
 <UserControl xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:vm="using:ClassScheduler.CoreUI.Student"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="ClassScheduler.CoreUI.Student.StudentRootView"
-        x:DataType="vm:StudentRootViewModel"
-        Background="#3A3A3A">
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:ClassScheduler.CoreUI.Student"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ClassScheduler.CoreUI.Student.StudentRootView"
+             x:DataType="vm:StudentRootViewModel"
+             Background="#3A3A3A">
         
         <Design.DataContext>
                 <vm:StudentRootViewModel/>
         </Design.DataContext>
         
         <DockPanel>
-                <StackPanel DockPanel.Dock="Top" Background="Black" Orientation="Horizontal">
+                <StackPanel DockPanel.Dock="Top" Background="Black" Orientation="Horizontal"
+                            Height="40">
                         <Button Background="Transparent" 
                                 HorizontalAlignment="Left" 
-                                VerticalAlignment="Center">
-                        <Image Source="/Assets/back_arrow.png" Width="15" Height="20"/>
+                                VerticalAlignment="Center"
+                                Height="40">
+                        <Image Source="/Assets/back_arrow.png" Width="16" Height="40"/>
                         </Button>
                         <Button Background="Transparent" 
                                 HorizontalAlignment="Left" 
-                                VerticalAlignment="Center">
-                                <Image Source="/Assets/front_arrow.png" Width="15" Height="20"/>
+                                VerticalAlignment="Center"
+                                Height="40">
+                                <Image Source="/Assets/front_arrow.png" Width="16" Height="40"/>
                         </Button>
 
                         <Button Background="Transparent"
-                                Command="{Binding NavigateToHomeCommand}">
-                                <Image Source="/Assets/home.png" Width="17.5" Height="20"/> 
+                                Command="{Binding NavigateToHomeCommand}"
+                                Height="40">
+                                <Image Source="/Assets/home.png" Width="20" Height="40"/> 
                         </Button> 
                         
-                        <Menu>
-                                <MenuItem Header="{Binding FirstName}">
+                        <Menu Height="40">
+                                <MenuItem Header="{Binding FirstName}" FontSize="16">
                                         <MenuItem Header="Profile"/>
                                         <MenuItem Header="Settings"/>
                                         <MenuItem Header="Logout" PointerPressed="OnLogoutSelect"/>
                                 </MenuItem>
                         </Menu>
-                        <Menu>
-                                <MenuItem Header="Courses">
-                                        <MenuItem Header="Browse" Command="{Binding NavigateToCoursesCommand}"/>
+                        <Menu Height="40">
+                                <MenuItem Header="Courses" FontSize="16">
+                                        <MenuItem Header="Browse" 
+                                                  Command="{Binding NavigateToCoursesCommand}"/>
                                         <MenuItem Header="Cart"/>
                                 </MenuItem>
                         </Menu>
-                        <Menu>
-                                <MenuItem Header="Schedule">
+                        <Menu Height="40">
+                                <MenuItem Header="Schedule" FontSize="16">
                                         <MenuItem Header="View Timetable"/>
                                         <MenuItem Header="Drop Course"/>
                                         <MenuItem Header="Past Courses"/>

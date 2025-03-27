@@ -6,7 +6,6 @@ Date: 3-14-25
 
 using Avalonia.Controls;
 using Avalonia.Input;
-using Avalonia.LogicalTree;
 using Avalonia.Media;
 using Avalonia.VisualTree;
 using ClassScheduler.CoreUI;
@@ -25,35 +24,30 @@ public partial class LoginView : UserControl
 
     private void OnKeyDown(object? sender, KeyEventArgs e)
     {
-        if (e.Key == Key.Enter && DataContext is LoginViewModel vm)
-        {
-            vm.LoginCommand.Execute(null);
-        }
+        if (e.Key == Key.Enter && DataContext is LoginViewModel vm) vm.LoginCommand.Execute(null);
     }
     
     private void OnPointerEnter(object sender, PointerEventArgs e)
     {
-        if (sender is TextBlock textBlock)
-        {
-            textBlock.Foreground = Brushes.Gray;
-        }
+        if (sender is TextBlock textBlock) textBlock.Foreground = Brushes.Gray;
     }
 
     private void OnPointerExit(object sender, PointerEventArgs e)
     {
-        if (sender is TextBlock textBlock)
-        {
-            textBlock.Foreground = Brushes.DodgerBlue;
-        }
+        if (sender is TextBlock textBlock) textBlock.Foreground = Brushes.DodgerBlue;
     }
     
-    private void OnForgotPasswordClick(object sender, PointerPressedEventArgs e)
+    private void OnForgotPasswordSelect(object sender, PointerPressedEventArgs e)
     {
-        var resetPasswordWindow = new ResetPasswordWindow();
+        if (DataContext is not LoginViewModel vm) return;
+
+        var forgotPasswordPopup = new PopupWindow(
+            string.Empty,
+            "Too bad",
+            "OK"
+        );
+        
         var parentWindow = this.FindAncestorOfType<Window>();
-        if (parentWindow != null)
-        {
-            resetPasswordWindow.ShowDialog(parentWindow); 
-        }
+        if (parentWindow != null) forgotPasswordPopup.ShowDialog(parentWindow);
     }
 }

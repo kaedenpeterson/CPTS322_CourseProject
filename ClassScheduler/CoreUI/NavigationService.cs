@@ -1,17 +1,15 @@
 using System.ComponentModel;
-using System.Net.Mime;
 using Avalonia.Controls;
-using Avalonia.Platform;
+using ClassScheduler.CoreUI.Admin;
 using ClassScheduler.CoreUI.Student;
 using ClassScheduler.Views;
-using ClassScheduler.Models;
 
 namespace ClassScheduler.CoreUI;
 
 /// <summary>
 /// Responsible for managing and switching between views. Holds the <see cref="MainView"/>
-/// (switches between the login page and dashboard) and the <see cref="CurrView"/>
-/// (switches between different sub views such as <see cref="CoursesView"/>).
+/// (switches between the login page and logged in state) and the <see cref="CurrView"/>
+/// (switches between different sub views when logged in such as <see cref="CoursesView"/>).
 /// This is the only class responsible for instantiating and switching views.
 /// </summary>
 public sealed class NavigationService : INavigationService
@@ -22,11 +20,9 @@ public sealed class NavigationService : INavigationService
         get => _mainView;
         set
         {
-            if (_mainView != value)
-            {
-                _mainView = value;
-                OnPropertyChanged(nameof(MainView));
-            }
+            if (_mainView == value) return;
+            _mainView = value;
+            OnPropertyChanged(nameof(MainView));
         }
     }
     
@@ -36,11 +32,9 @@ public sealed class NavigationService : INavigationService
         get => _currView;
         set
         {
-            if (_currView != value)
-            {
-                _currView = value;
-                OnPropertyChanged(nameof(CurrView));
-            }
+            if (_currView == value) return;
+            _currView = value;
+            OnPropertyChanged(nameof(CurrView));
         }
     }
     
@@ -55,33 +49,28 @@ public sealed class NavigationService : INavigationService
         MainView = new LoginView(this);
     }
     
-    public void NavigateTo<T>(object? parameter = null) where T : UserControl
+    public void SwitchTo<T>(object? parameter = null) where T : UserControl
     {
         if (typeof(T) == typeof(StudentRootView) && parameter is Models.Student student)
         {
             MainView = new StudentRootView(this, student);
+            CurrView = new StudentView(this, student);
         }
-        /*
-        else if (typeof(T) == typeof(AdminRootView) && parameter is Admin admin)
+        else if (typeof(T) == typeof(AdminRootView) && parameter is Models.Admin admin)
         {
-            MainView = new AdminRootView(admin, this);
+            MainView = new AdminRootView(this, admin);
+            CurrView = new AdminView(this, admin);
         }
-        */
-        else if (typeof(T) == typeof(StudentView) && parameter is Models.Student aStudent)
-        {
-            CurrView = new StudentView(aStudent, this);
-        }
-        else if (typeof(T) == typeof(AdminView) && parameter is Admin admin)
-        {
-            CurrView = new AdminView(admin, this);
-        }
+        else if (typeof(T) == typeof(StudentView) && parameter is Models.Student s) 
+            CurrView = new StudentView(this, s);
+        
+        else if (typeof(T) == typeof(AdminView) && parameter is Models.Admin a)
+            CurrView = new AdminView(this, a);
+        
         else if (typeof(T) == typeof(CoursesView))
-        {
             CurrView = new CoursesView(this);
-        }
+        
         else if (typeof(T) == typeof(LoginView))
-        {
             MainView = new LoginView(this);
-        }
     }
 }

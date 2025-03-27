@@ -13,9 +13,9 @@ namespace ClassScheduler.Views;
 
 public partial class AdminView : UserControl
 {
-    public AdminView(Admin admin, NavigationService navigation)
+    public AdminView(INavigationService navigation, Admin admin)
     {
         InitializeComponent();
-        DataContext = new AdminViewModel(admin, navigation);
+        DataContext = new AdminViewModel(navigation, admin);
     }
 }

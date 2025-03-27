@@ -5,21 +5,21 @@ using ClassScheduler.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace ClassScheduler.CoreUI.Student;
+namespace ClassScheduler.CoreUI.Admin;
 
-public partial class StudentRootViewModel : ViewModelBase
+public partial class AdminRootViewModel : ViewModelBase
 {
     public readonly INavigationService Navigation;
 
-    private readonly Models.Student _student;
+    private readonly Models.Admin _admin;
     
     [ObservableProperty]
     private UserControl _currView;
     
-    public StudentRootViewModel(INavigationService navigation, Models.Student student)
+    public AdminRootViewModel(INavigationService navigation, Models.Admin admin)
     {
         Navigation = navigation;
-        _student = student;
+        _admin = admin;
         
         _currView = Navigation.CurrView;
         
@@ -29,12 +29,12 @@ public partial class StudentRootViewModel : ViewModelBase
         };
     }
     
-    public string? FirstName => _student.Name.Split(' ').FirstOrDefault();
+    public string? FirstName => _admin.Name.Split(' ').FirstOrDefault();
     
     [RelayCommand]
     private void NavigateToHome()
     {
-        Navigation.SwitchTo<StudentView>(_student);
+        Navigation.SwitchTo<AdminView>(_admin);
     }
 
     [RelayCommand]

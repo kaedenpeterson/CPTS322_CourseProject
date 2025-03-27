@@ -10,38 +10,29 @@ using System.Linq;
 
 namespace ClassScheduler.Models;
 
-public class Schedule
+public class Schedule(
+    List<DayOfWeek> days,
+    TimeSpan start,
+    TimeSpan end,
+    DateTime startDate,
+    DateTime endDate)
 {
-    internal List<DayOfWeek> Days { get; set; }
-    internal TimeSpan StartTime { get; set; }
-    internal TimeSpan EndTime { get; set; }
-    
-    internal DateTime StartDate { get; set; }
-    
-    internal DateTime EndDate { get; set; }
-    
+    private List<DayOfWeek> Days { get; } = days;
+    private TimeSpan StartTime { get; } = start;
+    private TimeSpan EndTime { get; } = end;
+    private DateTime StartDate { get; } = startDate;
+    private DateTime EndDate { get; } = endDate;
+
     public string FormattedStartDate => StartDate.ToString("MM/dd/yyyy");
     public string FormattedEndDate => EndDate.ToString("MM/dd/yyyy");
 
-    public Schedule(List<DayOfWeek> days, TimeSpan start, TimeSpan end,
-        DateTime startDate, DateTime endDate)
-    {
-        Days = days;
-        StartTime = start;
-        EndTime = end;
-        StartDate = startDate;
-        EndDate = endDate;
-    }
-
     // Format: Mon/Wed/Fri 9:00 - 10:00
-    public override string ToString()
-    {
-        return $"{string.Join("/", Days.Select(days => days.ToString()[..3]))} " +
-               $@"{FormatTime(StartTime)} - {FormatTime(EndTime)}";
-    }
+    public override string ToString() => 
+        $"{string.Join("/", Days.Select(days => days.ToString()[..3]))} " +
+        $"{FormatTime(StartTime)} - {FormatTime(EndTime)}";
     
     // Formats from 24 hour to 12 hour time and adds either AM or PM
-    private string FormatTime(TimeSpan time)
+    private static string FormatTime(TimeSpan time)
     {
         DateTime dt = DateTime.Today.Add(time);
         return dt.ToString("h:mmtt");

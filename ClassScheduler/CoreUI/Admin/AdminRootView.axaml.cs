@@ -3,19 +3,19 @@ using Avalonia.Input;
 using Avalonia.VisualTree;
 using ClassScheduler.Views;
 
-namespace ClassScheduler.CoreUI.Student;
+namespace ClassScheduler.CoreUI.Admin;
 
-public partial class StudentRootView : UserControl
+public partial class AdminRootView : UserControl
 {
-    public StudentRootView(INavigationService navigation, Models.Student student)
+    public AdminRootView(INavigationService navigation, Models.Admin admin)
     {
         InitializeComponent();
-        DataContext = new StudentRootViewModel(navigation, student);
+        DataContext = new AdminRootViewModel(navigation, admin);
     }                                                             
-
+    
     private void OnLogoutSelect(object sender, PointerPressedEventArgs e)
     {
-        if (DataContext is not StudentRootViewModel vm) return;
+        if (DataContext is not AdminRootViewModel vm) return;
         
         var confirmLogoutPopup = new PopupWindow(
             string.Empty,

@@ -56,7 +56,7 @@ Date: 3-14-25
                 <TextBlock Text="Forgot Password?" TextDecorations="Underline"
                         FontSize="12" Foreground="DodgerBlue"
                         HorizontalAlignment="Left" Cursor="Hand"
-                        PointerPressed="OnForgotPasswordClick"
+                        PointerPressed="OnForgotPasswordSelect"
                         PointerEntered="OnPointerEnter"
                         PointerExited="OnPointerExit"
                         Grid.Column="0"/>
@@ -71,54 +71,4 @@ Date: 3-14-25
         </StackPanel>
     </DockPanel>
     
-    <!-- Below commented code was used for a 600 by 400 window size -->
-    
-    <!--
-    <DockPanel Margin="10">
-        
-        <TextBlock Text="User Login" DockPanel.Dock="Top" Margin="0 20 0 -5"
-                   HorizontalAlignment="Center" VerticalAlignment="Center"
-                   FontFamily="Arial" FontSize="25"/>
-        
-        <StackPanel Margin="15">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0 5">
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                    <RadioButton GroupName="UserRole" 
-                                 Command="{Binding SetRoleCommand}"
-                                 CommandParameter="Student"/>
-                    <TextBlock Text="Student" VerticalAlignment="Center"/>
-                </StackPanel>
-                
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="15 0 0 0">
-                    <RadioButton GroupName="UserRole"
-                                 Command="{Binding SetRoleCommand}"
-                                 CommandParameter="Admin"/>
-                    <TextBlock Text="Admin" VerticalAlignment="Center"/>
-                </StackPanel>
-            </StackPanel>
-            
-            <TextBox Text="{Binding Email}" Watermark="Email" 
-                     HorizontalAlignment="Left" Width="550"
-                     KeyDown="OnKeyDown"/>
-            <TextBox Text="{Binding Password}" Watermark="Password"
-                     HorizontalAlignment="Left" Width="550"
-                     KeyDown="OnKeyDown" PasswordChar="*" Margin="0 10"/>
-            <TextBlock Text="Forgot Password?"
-                       TextDecorations="Underline"
-                       FontSize="12"
-                       Foreground="DodgerBlue"
-                       PointerPressed="OnForgotPasswordClick"
-                       PointerEntered="OnPointerEnter"
-                       PointerExited="OnPointerExit"/>
-            
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                <Button Command="{Binding LoginCommand}"
-                        Content="Login" Background="Blue" Margin="0 12 0 0 "/>  
-                <TextBlock Text="{Binding ErrorMessage}" 
-                           Foreground="Red" FontSize="15"
-                           Margin="10 18 0 0"/>
-            </StackPanel>
-        </StackPanel>
-    </DockPanel>
-    -->
 </UserControl>
