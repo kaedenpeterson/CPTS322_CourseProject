@@ -7,6 +7,10 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace ClassScheduler.CoreUI.Admin;
 
+/// <summary>
+/// ViewModel for the admin root view, responsible for handling navigation through a menu bar.
+/// Also displays the sub view (CurrView) as a ContentControl.
+/// </summary>
 public partial class AdminRootViewModel : ViewModelBase
 {
     public readonly INavigationService Navigation;

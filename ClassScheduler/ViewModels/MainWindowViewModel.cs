@@ -4,6 +4,9 @@ using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace ClassScheduler.ViewModels;
 
+/// <summary>
+/// ViewModel for the main window of the application.
+/// </summary>
 public partial class MainWindowViewModel : ViewModelBase
 {
     private readonly NavigationService _navigation;

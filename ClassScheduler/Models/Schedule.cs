@@ -10,6 +10,10 @@ using System.Linq;
 
 namespace ClassScheduler.Models;
 
+/// <summary>
+/// Represents the schedule of a course (days of week, class time, start/end date).
+/// Includes formatted representations of the schedule for display purposes.
+/// </summary>
 public class Schedule(
     List<DayOfWeek> days,
     TimeSpan start,

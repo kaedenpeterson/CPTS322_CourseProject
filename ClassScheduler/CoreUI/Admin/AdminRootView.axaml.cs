@@ -5,6 +5,9 @@ using ClassScheduler.Views;
 
 namespace ClassScheduler.CoreUI.Admin;
 
+/// <summary>
+/// Code-behind for AdminRootView.axaml.
+/// </summary>
 public partial class AdminRootView : UserControl
 {
     public AdminRootView(INavigationService navigation, Models.Admin admin)

@@ -1,15 +1,11 @@
-/*
-Description: Represents a course in the system. Stores course details.
-Author: Kaeden Peterson 11858249
-Date: 3-17-25
-*/
-
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 
 namespace ClassScheduler.Models;
 
+/// <summary>
+/// Represents a course in the system. Stores course details.
+/// </summary>
 public class Course(
     string code,
     string name,
@@ -39,7 +35,9 @@ public class Course(
     public List<Student> EnrolledStudents { get; set; } = enrolledStudents;
     
     public int OpenSeats => MaxSeats - EnrolledStudents.Count;
-
+    
+    public string Status => IsActive ? "Active" : "Inactive";
+    
     public string FormattedPrereqs => 
         Prerequisites.Count > 0 ? string.Join(", ", Prerequisites.Select(p => p.Code)) : "None";
 }

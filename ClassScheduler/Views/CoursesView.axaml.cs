@@ -1,10 +1,4 @@
-﻿/*
-Description: UI for admin view (logged in) in ClassScheduler
-Author: Bitna White 11812714
-Date: 3-15-25
-*/
-
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.Data.Converters;
 using Avalonia.Media;
 using ClassScheduler.CoreUI;
@@ -12,17 +6,29 @@ using ClassScheduler.ViewModels;
 
 namespace ClassScheduler.Views;
 
+/// <summary>
+/// Code-behind for CoursesView.axaml.
+/// </summary>
 public partial class CoursesView : UserControl
 {
-    public CoursesView(NavigationService navigation)
+    public CoursesView(INavigationService navigation)
     {
         InitializeComponent();
         
         var seatsColorConverter = new FuncValueConverter<int, IBrush>(openSeats =>
-            openSeats == 0 ? Brushes.Red : Brushes.LimeGreen
-        );
+            openSeats == 0 ? Brushes.Red : Brushes.LimeGreen);
+        
+        /*
+        var statusColorConverter = new FuncValueConverter<bool, IBrush>(isActive =>
+            isActive ? Brushes.LimeGreen : Brushes.Red);
+            
+        */
+        
         Resources["SeatsColorConverter"] = seatsColorConverter;
+        // Resources["StatusColorConverter"] = statusColorConverter;
         
         DataContext = new CoursesViewModel(navigation);
     }
+    
+    
 }

@@ -32,7 +32,7 @@
                       HorizontalAlignment="Stretch"
                       VerticalAlignment="Stretch"
                       Margin="10">
-            <ItemsControl ItemsSource="{Binding Courses}">
+            <ItemsControl ItemsSource="{Binding Courses}" Name="CoursesList">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Expander Margin="0"
@@ -77,6 +77,11 @@
                                 </StackPanel>
                                 
                                 <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Credits: " Foreground="DodgerBlue" FontSize="15"/>
+                                    <TextBlock Text="{Binding Credits}" FontSize="15" Foreground="White"/>
+                                </StackPanel>
+                                
+                                <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Seats: " Foreground="DodgerBlue" FontSize="15"/>
                                     <TextBlock Text="{Binding OpenSeats}"
                                                Foreground="{Binding OpenSeats, Converter={StaticResource SeatsColorConverter}}"
@@ -85,10 +90,6 @@
                                     <TextBlock Text="{Binding MaxSeats}" Foreground="White" FontSize="15"/>
                                 </StackPanel>
                                 
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="Credits: " Foreground="DodgerBlue" FontSize="15"/>
-                                    <TextBlock Text="{Binding Credits}" FontSize="15" Foreground="White"/>
-                                </StackPanel>
                             </StackPanel>
                         </Expander>
                     </DataTemplate>

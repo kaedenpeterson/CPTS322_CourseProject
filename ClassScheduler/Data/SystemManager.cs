@@ -1,20 +1,17 @@
-/*
-Description: Static class for system management. Used for getting information and storing records.
-Author: Kaeden Peterson 11858249
-Date: 3-14-25
-*/
-
 using System;
 using System.Collections.Generic;
 using ClassScheduler.Models;
 
 namespace ClassScheduler.Data;
 
+/// <summary>
+/// Static class for system management. Used for getting information and storing records.
+/// </summary>
 public static class SystemManager
 {
     private static readonly string UserDataFile;
     private static readonly string CourseDataFile;
-    
+
     private static readonly List<Student> Students = [];
     private static readonly List<Admin> Admins = [];
 
@@ -25,19 +22,19 @@ public static class SystemManager
         UserDataFile = "user_data.csv";
         CourseDataFile = "course_data.csv";
         PullData();
-        
+
         // Adding to lists through constructor because database handling is not implemented yet
-        
+
         var cpts101 = new Course(
             "CPTS 101", "Intro to Computer Science", "Parteek Kumar",
             "Introduction to programs within the School of Electrical Engineering" +
             " and Computer Science discussing resources, opportunities, and knowledge and skills" +
-            " necessary to succeed within EECS majors.", 
-            1, [], 120, "Cleveland Hall 30", true,
+            " necessary to succeed within EECS majors.",
+            1, [], 120, "Cleveland Hall 30", false,
             new Schedule([DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday],
-                new TimeSpan(10, 10, 0), new TimeSpan(11, 0, 0), 
-                     new DateTime(2025, 3, 23), new DateTime(2025, 5, 1)), []);
-        
+                new TimeSpan(10, 10, 0), new TimeSpan(11, 0, 0),
+                new DateTime(2025, 3, 23), new DateTime(2025, 5, 1)), []);
+
         var testStudent = new Student
             ("test", "pass", "Firstname Lastname", "01", [cpts101, cpts101, cpts101, cpts101, cpts101]);
         Students.Add(testStudent);
@@ -45,14 +42,14 @@ public static class SystemManager
         var testAdmin = new Admin
             ("test", "pass", "Firstname Lastname");
         Admins.Add(testAdmin);
-        
+
         cpts101.Prerequisites.Add(cpts101);
         cpts101.Prerequisites.Add(cpts101);
         cpts101.Prerequisites.Add(cpts101);
         cpts101.EnrolledStudents.Add(testStudent);
         Courses.Add(cpts101);
     }
-      
+    
     public static bool IsValidCredentials(string role, string email, string password)
     {
         switch (role)

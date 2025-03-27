@@ -5,6 +5,9 @@ using ClassScheduler.Views;
 
 namespace ClassScheduler.CoreUI.Student;
 
+/// <summary>
+/// Code-behind for StudentRootView.axaml.
+/// </summary>
 public partial class StudentRootView : UserControl
 {
     public StudentRootView(INavigationService navigation, Models.Student student)

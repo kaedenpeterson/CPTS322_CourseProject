@@ -14,6 +14,9 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace ClassScheduler.ViewModels;
 
+/// <summary>
+/// ViewModel for the login page. Provides logic for user login.
+/// </summary>
 public partial class LoginViewModel(INavigationService navigation) : ViewModelBase
 {
     [ObservableProperty] private string _email = string.Empty;

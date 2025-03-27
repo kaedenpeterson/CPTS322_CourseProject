@@ -3,6 +3,10 @@ using Avalonia.Controls;
 
 namespace ClassScheduler.CoreUI;
 
+/// <summary>
+/// Code-behind for PopupWindow.axaml.
+/// Defines a template that is used for creating popup windows.
+/// </summary>
 public partial class PopupWindow : Window
 {
     public string Message { get; set; }

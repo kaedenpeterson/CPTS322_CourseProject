@@ -13,6 +13,9 @@ using ClassScheduler.ViewModels;
 
 namespace ClassScheduler.Views;
 
+/// <summary>
+/// Code-behind for LoginView.axaml.
+/// </summary>
 public partial class LoginView : UserControl
 {
     private readonly NavigationService _navigation;

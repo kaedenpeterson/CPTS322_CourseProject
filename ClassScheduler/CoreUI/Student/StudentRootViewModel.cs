@@ -7,6 +7,10 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace ClassScheduler.CoreUI.Student;
 
+/// <summary>
+/// ViewModel for the student root view, responsible for handling navigation through a menu bar.
+/// Also displays the sub view (CurrView) as a ContentControl.
+/// </summary>
 public partial class StudentRootViewModel : ViewModelBase
 {
     public readonly INavigationService Navigation;
