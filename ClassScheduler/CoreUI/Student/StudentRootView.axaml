@@ -16,14 +16,10 @@
                 <StackPanel DockPanel.Dock="Top" Background="Black" Orientation="Horizontal"
                             Height="40">
                         <Button Background="Transparent" 
-                                HorizontalAlignment="Left" 
-                                VerticalAlignment="Center"
                                 Height="40">
                         <Image Source="/Assets/back_arrow.png" Width="16" Height="40"/>
                         </Button>
-                        <Button Background="Transparent" 
-                                HorizontalAlignment="Left" 
-                                VerticalAlignment="Center"
+                        <Button Background="Transparent"
                                 Height="40">
                                 <Image Source="/Assets/front_arrow.png" Width="16" Height="40"/>
                         </Button>
@@ -55,7 +51,6 @@
                                         <MenuItem Header="Past Courses"/>
                                 </MenuItem>
                         </Menu>
-                        
                 </StackPanel>
                 
                 <ContentControl Content="{Binding CurrView}" DockPanel.Dock="Bottom"

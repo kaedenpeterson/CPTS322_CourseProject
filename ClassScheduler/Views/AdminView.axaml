@@ -18,6 +18,28 @@ Date: 3-15-25
         <vm:AdminViewModel/>
     </Design.DataContext>
         
-    <TextBlock Text="Welcome" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" /> 
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0"
+                   Text="Admin Dashboard"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   FontFamily="Arial"
+                   FontSize="30"
+                   Foreground="White"
+                   Margin="0 40 0 10"/>
+        
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      Margin="10">
+            
+        </ScrollViewer>
+    </Grid>
         
 </UserControl>

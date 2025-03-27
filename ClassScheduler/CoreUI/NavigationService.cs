@@ -9,7 +9,7 @@ namespace ClassScheduler.CoreUI;
 /// <summary>
 /// Responsible for managing and switching between views. Holds the <see cref="MainView"/>
 /// (switches between the login page and logged in state) and the <see cref="CurrView"/>
-/// (switches between different sub views when logged in such as <see cref="CoursesView"/>).
+/// (switches between different sub views when in logged in state).
 /// This is the only class responsible for instantiating and switching views.
 /// </summary>
 public sealed class NavigationService : INavigationService
