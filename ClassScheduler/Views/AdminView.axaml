@@ -9,7 +9,7 @@ Date: 3-15-25
         xmlns:vm="using:ClassScheduler.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450" Width="1280" Height="720"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ClassScheduler.Views.AdminView"
         x:DataType="vm:AdminViewModel"
         Background="#3A3A3A">
@@ -31,7 +31,7 @@ Date: 3-15-25
                    FontFamily="Arial"
                    FontSize="30"
                    Foreground="White"
-                   Margin="0 40 0 10"/>
+                   Margin="0 20 0 10"/>
         
         <ScrollViewer Grid.Row="1"
                       VerticalScrollBarVisibility="Auto"

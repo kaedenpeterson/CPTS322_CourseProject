@@ -18,7 +18,7 @@ public static class SystemManager
     private static readonly List<Student> Students = [];
     private static readonly List<Admin> Admins = [];
 
-    private static readonly List<Course> Courses = [];
+    public static readonly List<Course> Courses = [];
 
     static SystemManager()
     {
@@ -33,21 +33,24 @@ public static class SystemManager
             "Introduction to programs within the School of Electrical Engineering" +
             " and Computer Science discussing resources, opportunities, and knowledge and skills" +
             " necessary to succeed within EECS majors.", 
-            1, new List<Course>(), 119, 120, "Cleveland Hall 30", true,
-            new Schedule(new List<DayOfWeek>{ DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday },
+            1, [], 120, "Cleveland Hall 30", true,
+            new Schedule([DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday],
                 new TimeSpan(10, 10, 0), new TimeSpan(11, 0, 0), 
-                     new DateTime(2025, 3, 23), new DateTime(2025, 5, 1)));
+                     new DateTime(2025, 3, 23), new DateTime(2025, 5, 1)), []);
+        
+        var testStudent = new Student
+            ("test", "pass", "Firstname Lastname", "01", [cpts101, cpts101, cpts101, cpts101, cpts101]);
+        Students.Add(testStudent);
+
+        var testAdmin = new Admin
+            ("test", "pass", "Firstname Lastname");
+        Admins.Add(testAdmin);
         
         cpts101.Prerequisites.Add(cpts101);
         cpts101.Prerequisites.Add(cpts101);
         cpts101.Prerequisites.Add(cpts101);
+        cpts101.EnrolledStudents.Add(testStudent);
         Courses.Add(cpts101);
-        
-        Students.Add(new Student
-            ("test", "pass", "Firstname Lastname", "01", [cpts101, cpts101, cpts101, cpts101, cpts101] ));
-                
-        Admins.Add(new Admin
-            ("test", "pass", "Firstname Lastname"));
     }
       
     public static bool IsValidCredentials(string role, string email, string password)

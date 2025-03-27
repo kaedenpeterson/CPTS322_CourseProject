@@ -17,11 +17,11 @@ public class Course(
     string description,
     int credits,
     List<Course> prerequisites,
-    int openSeats,
     int maxSeats,
     string location,
     bool isActive,
-    Schedule schedule)
+    Schedule schedule,
+    List<Student> enrolledStudents)
 {
     public string Code { get; set; } = code;
     public string Name { get; set; } = name;
@@ -29,15 +29,16 @@ public class Course(
     public string Description { get; set; } = description;
     public int Credits { get; set; } = credits;
     public List<Course> Prerequisites { get; set; } = prerequisites;
-    
-    public int OpenSeats { get; set; } = openSeats;
     public int MaxSeats { get; set; } = maxSeats;
 
     public string Location {get; set;} = location;
 
     public bool IsActive { get; set; } = isActive;
     public Schedule Schedule { get; set; } = schedule;
-
+    
+    public List<Student> EnrolledStudents { get; set; } = enrolledStudents;
+    
+    public int OpenSeats => MaxSeats - EnrolledStudents.Count;
 
     public string FormattedPrereqs => 
         Prerequisites.Count > 0 ? string.Join(", ", Prerequisites.Select(p => p.Code)) : "None";
