@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using ClassScheduler.Models;
 
 namespace ClassScheduler.Data;
@@ -82,8 +83,16 @@ public static class SystemManager
     }
 
     // PushData() will save the current system data to the database .csv files
-    public static void PushData()
+    public static void PushCourseData()
     {
-        
+    //    using (StreamWriter writer = new StreamWriter(CourseDataFile))
+    //    {
+    //        writer.WriteLine("CourseID,Title,Instructor,Description,Credits,MaxStudents,Location,IsOnline,StartDate,EndDate,Days,StartTime,EndTime");
+    //        foreach (var course in Course)
+    //        {
+    //            string days = string.Join("|", course.Schedule.Days);
+    //            writer.WriteLine($"{course.CourseID},{course.Title},{course.Instructor},\"{course.Description}\",{course.Credits},{course.MaxStudents},{course.Location},{course.IsOnline},{course.Schedule.StartDate:yyyy-MM-dd},{course.Schedule.EndDate:yyyy-MM-dd},{days},{course.Schedule.StartTime},{course.Schedule.EndTime}");
+    //        }
+    //    }
     }
 }
