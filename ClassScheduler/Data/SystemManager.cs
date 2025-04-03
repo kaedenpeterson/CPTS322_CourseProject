@@ -97,14 +97,14 @@ public static class SystemManager
 
         using (StreamWriter writer = new StreamWriter(UserDataFile))
         {
-            writer.WriteLine("email, name, password, typeOfUser");
+            writer.WriteLine("email, name, password, typeOfUser, studentId, courses");
             foreach (var admin in Admins)
             {
-                writer.WriteLine($"{admin.Email}, {admin.Name}, {admin.Password}, admin");
+                writer.WriteLine($"{admin.Email}, {admin.Name}, {admin.Password}, admin, n/a, n/a");
             }
             foreach (var student in Students)
             {
-                writer.WriteLine($"{student.Email}, {student.Name}, {student.Password}, ");
+                writer.WriteLine($"{student.Email}, {student.Name}, {student.Password}, {student.StudentId}"); //I am not sure how to get the courses to be printed into the csv
             }
         }
     }
