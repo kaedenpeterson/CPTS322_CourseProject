@@ -79,7 +79,21 @@ public static class SystemManager
     // PullData() will load data from the database .csv files and populate the lists
     public static void PullData() 
     {
-        
+        using (StreamReader reader = new StreamReader(CourseDataFile))
+        {
+            while (!reader.EndOfStream)
+            {
+                string line = reader.ReadLine();
+                string[] values = line.Split(',');
+
+                List<Course> prereqs = values[5]; // this depends on how the prereqs are printed to the csv
+
+                Schedule schedule = new Schedule(); // assembling this seems to be impossible based on how the schedule is made in the first place
+
+                var course = new Course(values[0], values[1], values[2], values[3], int.Parse(values[4]), prereqs, int.Parse(values[6]), values[7], bool.Parse(values[8]), values[9], values[10]);
+                Courses.Add(course);
+            }
+        }
     }
 
     // PushData() will save the current system data to the database .csv files
@@ -87,11 +101,11 @@ public static class SystemManager
     {
         using (StreamWriter writer = new StreamWriter(CourseDataFile))
         {
-            writer.WriteLine("CourseID,Title,Instructor,Description,Credits,maxSeats,Location,isActive,StartDate,EndDate,Days,StartTime,EndTime");
+            writer.WriteLine("CourseID,Title,Instructor,Description,Credits,prereques,maxSeats,Location,isActive,StartDate,EndDate,Days,StartTime,EndTime,enrolled students");
             foreach (var course in Courses)
             {
                 //string days = string.Join("|", course.Schedule.Days);
-                writer.WriteLine($"{course.Code},{course.Name},{course.Instructor},\"{course.Description}\",{course.Credits},{course.MaxSeats},{course.Location},{course.IsActive},{course.Schedule.FormattedStartDate:yyyy-MM-dd},{course.Schedule.FormattedEndDate:yyyy-MM-dd}");
+                writer.WriteLine($"{course.Code},{course.Name},{course.Instructor},\"{course.Description}\",{course.Credits}, {course.Prerequisites}, {course.MaxSeats},{course.Location},{course.IsActive},{course.Schedule.FormattedStartDate:yyyy-MM-dd},{course.Schedule.FormattedEndDate:yyyy-MM-dd}, {course.EnrolledStudents}");
             }
         }
 
@@ -102,7 +116,7 @@ public static class SystemManager
             {
                 writer.WriteLine($"{admin.Email}, {admin.Name}, {admin.Password}, admin, n/a, n/a");
             }
-            foreach (var student in Students)
+           foreach (var student in Students)
             {
                 writer.WriteLine($"{student.Email}, {student.Name}, {student.Password}, {student.StudentId}"); //I am not sure how to get the courses to be printed into the csv
             }

@@ -1,0 +1,2 @@
+CourseID,Title,Instructor,Description,Credits,prereques,maxSeats,Location,isActive,StartDate,EndDate,Days,StartTime,EndTime,enrolledstudents
+"CPTS 101", "Intro to Computer Science", "Parteek Kumar, "Introduction to programs within the School of Electrical Engineering and Computer Science discussing resources, opportunities, and knowledge and skills necessary to succeed within EECS majors, 1, [], 120, "Cleveland Hall 30", false, Monday, Tuesday, Wednesday, 10, 10, 0, 11, 0, 0, 2025, 3, 23, 2025, 5, 1, []
