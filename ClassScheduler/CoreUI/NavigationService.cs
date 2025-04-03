@@ -67,8 +67,8 @@ public sealed class NavigationService : INavigationService
         else if (typeof(T) == typeof(AdminView) && parameter is Models.Admin a)
             CurrView = new AdminView(this, a);
         
-        else if (typeof(T) == typeof(CoursesView))
-            CurrView = new CoursesView(this);
+        else if (typeof(T) == typeof(StudentCoursesView))
+            CurrView = new StudentCoursesView(this);
         
         else if (typeof(T) == typeof(LoginView))
             MainView = new LoginView(this);

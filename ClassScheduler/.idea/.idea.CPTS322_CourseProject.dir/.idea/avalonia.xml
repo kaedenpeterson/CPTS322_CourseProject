@@ -14,6 +14,7 @@
         <entry key="Views/LoginView.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/MainWindow.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/ResetPasswordWindow.axaml" value="ClassScheduler.csproj" />
+        <entry key="Views/StudentCoursesView.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/StudentView.axaml" value="ClassScheduler.csproj" />
       </map>
     </option>

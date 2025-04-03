@@ -36,13 +36,13 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/AdminView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/CoursesView.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
 [/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/LoginView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/StudentCoursesView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/StudentView.axaml]

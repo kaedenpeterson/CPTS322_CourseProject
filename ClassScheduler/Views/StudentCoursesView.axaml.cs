@@ -7,11 +7,11 @@ using ClassScheduler.ViewModels;
 namespace ClassScheduler.Views;
 
 /// <summary>
-/// Code-behind for CoursesView.axaml.
+/// Code-behind for StudentCoursesView.axaml.
 /// </summary>
-public partial class CoursesView : UserControl
+public partial class StudentCoursesView : UserControl
 {
-    public CoursesView(INavigationService navigation)
+    public StudentCoursesView(INavigationService navigation)
     {
         InitializeComponent();
         
@@ -27,7 +27,7 @@ public partial class CoursesView : UserControl
         Resources["SeatsColorConverter"] = seatsColorConverter;
         // Resources["StatusColorConverter"] = statusColorConverter;
         
-        DataContext = new CoursesViewModel(navigation);
+        DataContext = new StudentCoursesViewModel(navigation);
     }
     
     
