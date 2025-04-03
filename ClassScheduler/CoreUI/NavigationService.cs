@@ -69,7 +69,10 @@ public sealed class NavigationService : INavigationService
         
         else if (typeof(T) == typeof(CoursesView))
             CurrView = new CoursesView(this);
-        
+
+        else if (typeof(T) == typeof(AdminCoursesView))
+            CurrView = new AdminCoursesView(this);
+
         else if (typeof(T) == typeof(LoginView))
             MainView = new LoginView(this);
     }
