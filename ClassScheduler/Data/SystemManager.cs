@@ -22,6 +22,7 @@ public static class SystemManager
     {
         UserDataFile = "user_data.csv";
         CourseDataFile = "course_data.csv";
+        
         PullData();
 
         // Adding to lists through constructor because database handling is not implemented yet
@@ -48,9 +49,11 @@ public static class SystemManager
         cpts101.Prerequisites.Add(cpts101);
         cpts101.Prerequisites.Add(cpts101);
         cpts101.EnrolledStudents.Add(testStudent);
-        Courses.Add(cpts101);
+        Courses.Add(cpts101); 
+        PushData();
+
     }
-    
+
     public static bool IsValidCredentials(string role, string email, string password)
     {
         switch (role)
@@ -79,29 +82,29 @@ public static class SystemManager
     // PullData() will load data from the database .csv files and populate the lists
     public static void PullData() 
     {
-        using (StreamReader reader = new StreamReader(CourseDataFile))
-        {
-            while (!reader.EndOfStream)
-            {
-                string line = reader.ReadLine();
-                string[] values = line.Split(',');
+        //using (StreamReader reader = new StreamReader(CourseDataFile))
+        //{
+        //    while (!reader.EndOfStream)
+        //    {
+        //        string line = reader.ReadLine();
+        //        string[] values = line.Split(',');
 
-                List<Course> prereqs = values[5]; // this depends on how the prereqs are printed to the csv
+        //        List<Course> prereqs = values[5]; // this depends on how the prereqs are printed to the csv
 
-                Schedule schedule = new Schedule(); // assembling this seems to be impossible based on how the schedule is made in the first place
+        //        Schedule schedule = new Schedule(); // assembling this seems to be impossible based on how the schedule is made in the first place
 
-                var course = new Course(values[0], values[1], values[2], values[3], int.Parse(values[4]), prereqs, int.Parse(values[6]), values[7], bool.Parse(values[8]), values[9], values[10]);
-                Courses.Add(course);
-            }
-        }
+        //        var course = new Course(values[0], values[1], values[2], values[3], int.Parse(values[4]), prereqs, int.Parse(values[6]), values[7], bool.Parse(values[8]), values[9], values[10]);
+        //        Courses.Add(course);
+        //    }
+        //}
     }
 
     // PushData() will save the current system data to the database .csv files
     public static void PushData()
     {
-        using (StreamWriter writer = new StreamWriter(CourseDataFile))
+        using (StreamWriter writer = new("course_database.csv"))
         {
-            writer.WriteLine("CourseID,Title,Instructor,Description,Credits,prereques,maxSeats,Location,isActive,StartDate,EndDate,Days,StartTime,EndTime,enrolled students");
+            writer.WriteLine("CourseID,Title,Instructor,Description,Credits,prereques,maxSeats,Location,isActive,StartDate,EndDate,enrolled students");
             foreach (var course in Courses)
             {
                 //string days = string.Join("|", course.Schedule.Days);
@@ -109,7 +112,7 @@ public static class SystemManager
             }
         }
 
-        using (StreamWriter writer = new StreamWriter(UserDataFile))
+        using (StreamWriter writer = new("user_database.csv"))
         {
             writer.WriteLine("email, name, password, typeOfUser, studentId, courses");
             foreach (var admin in Admins)
