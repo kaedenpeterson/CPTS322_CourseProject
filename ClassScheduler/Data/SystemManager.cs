@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using ClassScheduler.Models;
 
 namespace ClassScheduler.Data;
@@ -20,9 +21,6 @@ public static class SystemManager
 
     static SystemManager()
     {
-        UserDataFile = "user_data.csv";
-        CourseDataFile = "course_data.csv";
-        
         PullData();
 
         // Adding to lists through constructor because database handling is not implemented yet
@@ -38,7 +36,7 @@ public static class SystemManager
                 new DateTime(2025, 3, 23), new DateTime(2025, 5, 1)), []);
 
         var testStudent = new Student
-            ("test", "pass", "Firstname Lastname", "01", [cpts101, cpts101, cpts101, cpts101, cpts101]);
+            ("test", "pass", "Firstname Lastname", "01", 10, 2.0, [cpts101, cpts101, cpts101, cpts101, cpts101], [cpts101]);
         Students.Add(testStudent);
 
         var testAdmin = new Admin
@@ -50,8 +48,8 @@ public static class SystemManager
         cpts101.Prerequisites.Add(cpts101);
         cpts101.EnrolledStudents.Add(testStudent);
         Courses.Add(cpts101); 
+        
         PushData();
-
     }
 
     public static bool IsValidCredentials(string role, string email, string password)
@@ -102,26 +100,38 @@ public static class SystemManager
     // PushData() will save the current system data to the database .csv files
     public static void PushData()
     {
-        using (StreamWriter writer = new("course_database.csv"))
+        using (StreamWriter writer = new StreamWriter("course_data.csv"))
         {
-            writer.WriteLine("CourseID,Title,Instructor,Description,Credits,prereques,maxSeats,Location,isActive,StartDate,EndDate,enrolled students");
+            writer.WriteLine("CourseID,Title,Instructor,Description,Credits,Prerequisites," +
+                             "maxSeats,Location,isActive,StartDate,EndDate," +
+                             "Days,StartTime,EndTime,EnrolledStudents");
             foreach (var course in Courses)
             {
-                //string days = string.Join("|", course.Schedule.Days);
-                writer.WriteLine($"{course.Code},{course.Name},{course.Instructor},\"{course.Description}\",{course.Credits}, {course.Prerequisites}, {course.MaxSeats},{course.Location},{course.IsActive},{course.Schedule.FormattedStartDate:yyyy-MM-dd},{course.Schedule.FormattedEndDate:yyyy-MM-dd}, {course.EnrolledStudents}");
+                var prerequisites = course.Prerequisites.Any()
+                    ? string.Join("|", course.Prerequisites.Select(p => p.Code))
+                    : "N/A";
+                var enrolledStudents = course.EnrolledStudents.Any()
+                    ? string.Join("|", course.EnrolledStudents.Select(s => s.Name))
+                    : "N/A";
+                var days = course.Schedule.Days.Any()
+                    ? string.Join("|", course.Schedule.Days.Select(d => d.ToString()[..3]))
+                    : "N/A";
+                writer.WriteLine($"{course.Code},{course.Name},{course.Instructor},\"{course.Description}\",{course.Credits},{prerequisites}," +
+                                 $"{course.MaxSeats},{course.Location},{course.IsActive},{course.Schedule.FormattedStartDate},{course.Schedule.FormattedEndDate}," +
+                                 $"{days},{course.Schedule.FormatTime(course.Schedule.StartTime)},{course.Schedule.FormatTime(course.Schedule.EndTime)},{enrolledStudents}");
             }
         }
 
-        using (StreamWriter writer = new("user_database.csv"))
+        using (StreamWriter writer = new("user_data.csv"))
         {
-            writer.WriteLine("email, name, password, typeOfUser, studentId, courses");
+            writer.WriteLine("typeOfUser,email,password,name,studentId,courses,pastCourses,totalCredits,GPA");
             foreach (var admin in Admins)
             {
-                writer.WriteLine($"{admin.Email}, {admin.Name}, {admin.Password}, admin, n/a, n/a");
+                writer.WriteLine($"Admin,{admin.Email},{admin.Password},{admin.Name},N/A,N/A,N/A,N/A,N/A");
             }
-           foreach (var student in Students)
+            foreach (var student in Students)
             {
-                writer.WriteLine($"{student.Email}, {student.Name}, {student.Password}, {student.StudentId}"); //I am not sure how to get the courses to be printed into the csv
+                writer.WriteLine($"Student,{student.Email},{student.Password},{student.Name},{student.StudentId}"); // Add rest of fields and write them to file just like with the course data
             }
         }
     }

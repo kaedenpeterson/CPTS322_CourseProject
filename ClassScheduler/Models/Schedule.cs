@@ -21,11 +21,11 @@ public class Schedule(
     DateTime startDate,
     DateTime endDate)
 {
-    private List<DayOfWeek> Days { get; } = days;
-    private TimeSpan StartTime { get; } = start;
-    private TimeSpan EndTime { get; } = end;
-    private DateTime StartDate { get; } = startDate;
-    private DateTime EndDate { get; } = endDate;
+    public List<DayOfWeek> Days { get; } = days;
+    public TimeSpan StartTime { get; } = start;
+    public TimeSpan EndTime { get; } = end;
+    public DateTime StartDate { get; } = startDate;
+    public DateTime EndDate { get; } = endDate;
 
     public string FormattedStartDate => StartDate.ToString("MM/dd/yyyy");
     public string FormattedEndDate => EndDate.ToString("MM/dd/yyyy");
@@ -36,7 +36,7 @@ public class Schedule(
         $"{FormatTime(StartTime)} - {FormatTime(EndTime)}";
     
     // Formats from 24 hour to 12 hour time and adds either AM or PM
-    private static string FormatTime(TimeSpan time)
+    public string FormatTime(TimeSpan time)
     {
         DateTime dt = DateTime.Today.Add(time);
         return dt.ToString("h:mmtt");
