@@ -83,16 +83,29 @@ public static class SystemManager
     }
 
     // PushData() will save the current system data to the database .csv files
-    public static void PushCourseData()
+    public static void PushData()
     {
-    //    using (StreamWriter writer = new StreamWriter(CourseDataFile))
-    //    {
-    //        writer.WriteLine("CourseID,Title,Instructor,Description,Credits,MaxStudents,Location,IsOnline,StartDate,EndDate,Days,StartTime,EndTime");
-    //        foreach (var course in Course)
-    //        {
-    //            string days = string.Join("|", course.Schedule.Days);
-    //            writer.WriteLine($"{course.CourseID},{course.Title},{course.Instructor},\"{course.Description}\",{course.Credits},{course.MaxStudents},{course.Location},{course.IsOnline},{course.Schedule.StartDate:yyyy-MM-dd},{course.Schedule.EndDate:yyyy-MM-dd},{days},{course.Schedule.StartTime},{course.Schedule.EndTime}");
-    //        }
-    //    }
+        using (StreamWriter writer = new StreamWriter(CourseDataFile))
+        {
+            writer.WriteLine("CourseID,Title,Instructor,Description,Credits,maxSeats,Location,isActive,StartDate,EndDate,Days,StartTime,EndTime");
+            foreach (var course in Courses)
+            {
+                //string days = string.Join("|", course.Schedule.Days);
+                writer.WriteLine($"{course.Code},{course.Name},{course.Instructor},\"{course.Description}\",{course.Credits},{course.MaxSeats},{course.Location},{course.IsActive},{course.Schedule.FormattedStartDate:yyyy-MM-dd},{course.Schedule.FormattedEndDate:yyyy-MM-dd}");
+            }
+        }
+
+        using (StreamWriter writer = new StreamWriter(UserDataFile))
+        {
+            writer.WriteLine("email, name, password, typeOfUser");
+            foreach (var admin in Admins)
+            {
+                writer.WriteLine($"{admin.Email}, {admin.Name}, {admin.Password}, admin");
+            }
+            foreach (var student in Students)
+            {
+                writer.WriteLine($"{student.Email}, {student.Name}, {student.Password}, ");
+            }
+        }
     }
 }
