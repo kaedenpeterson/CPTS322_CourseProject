@@ -47,8 +47,8 @@ public static class SystemManager
         cpts101.Prerequisites.Add(cpts101);
         cpts101.Prerequisites.Add(cpts101);
         cpts101.EnrolledStudents.Add(testStudent);
-        Courses.Add(cpts101); 
-        
+        Courses.Add(cpts101);
+
         PushData();
     }
 
@@ -80,21 +80,84 @@ public static class SystemManager
     // PullData() will load data from the database .csv files and populate the lists
     public static void PullData() 
     {
-        //using (StreamReader reader = new StreamReader(CourseDataFile))
+        //using (StreamReader reader = new StreamReader("user_data.csv"))
         //{
-        //    while (!reader.EndOfStream)
+        //    string line = reader.ReadLine();
+        //    line = reader.ReadLine();
+        //    string[] values = line.Split(',');
+
+        //    if (values[0].Equals("Student"))
         //    {
-        //        string line = reader.ReadLine();
-        //        string[] values = line.Split(',');
 
-        //        List<Course> prereqs = values[5]; // this depends on how the prereqs are printed to the csv
-
-        //        Schedule schedule = new Schedule(); // assembling this seems to be impossible based on how the schedule is made in the first place
-
-        //        var course = new Course(values[0], values[1], values[2], values[3], int.Parse(values[4]), prereqs, int.Parse(values[6]), values[7], bool.Parse(values[8]), values[9], values[10]);
-        //        Courses.Add(course);
+        //        List<Course> enrolledCourses = [];
+        //        List<Course> pastCourses = [];
+        //        var student = new Student(values[1], values[2], values[3], values[4], int.Parse(values[5]), double.Parse(values[6]), enrolledCourses, pastCourses);
+        //        Students.Add(student);
         //    }
+        //    //else //user is an admin
+        //    //{
+        //    //    var admin = new Admin(values[1], values[2], values[3]);
+        //    //    Admins.Add(admin);
+        //    //}
         //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        using (StreamReader reader = new StreamReader("course_data.csv"))
+        {
+            while (!reader.EndOfStream)
+            {
+                string line = reader.ReadLine();
+                line = reader.ReadLine();
+                string[] values = line.Split(',');
+
+                string[] startDate = values[11].Split('/');
+                string[] endDate = values[12].Split('/');
+
+                string[] startTime = values[14].Split(':');
+                string[] endTime = values[15].Split(':');
+
+                List<Course> prereqs = [];
+                List<Student> enrolledStudents = [];
+                //I do not think this is literally possible to make, because prereqs is a list of courses, to add it to the list I would need to take the string "CPTS101" for example
+                //and literally assemble an entire class out of that
+
+                //down below is an idea for how to get the previous students
+                //because student.Courses is a list of courses, to run a "contains" it needs to match with a course variable type but of course I only have the ID value which is a string, so I'm not sure how to make it work
+
+                //foreach (var student in Students)
+                //{
+                //    if (student.Courses.Contains(values[0])) {
+                //        enrolledStudents.Add(student);
+                //    }
+                //}
+
+                Schedule schedule = new Schedule([DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday],
+                    new TimeSpan(int.Parse(startTime[0]), int.Parse(startTime[1].Substring(0, 2)), 0), new TimeSpan(int.Parse(endTime[0]), int.Parse(endTime[1].Substring(0, 2)), 0),
+                    new DateTime(int.Parse(startDate[0]), int.Parse(startDate[1]), int.Parse(startDate[2])), new DateTime(int.Parse(endTime[0]), int.Parse(endTime[1]), int.Parse(endTime[2])));
+
+                var course = new Course(values[0], values[1], values[2], values[3] + values[5], int.Parse(values[6]), prereqs, int.Parse(values[8]), values[9], bool.Parse(values[10]), schedule, enrolledStudents);
+                Courses.Add(course);
+            }
+        }
     }
 
     // PushData() will save the current system data to the database .csv files
@@ -122,16 +185,22 @@ public static class SystemManager
             }
         }
 
-        using (StreamWriter writer = new("user_data.csv"))
+        using (StreamWriter writer = new StreamWriter("user_data.csv"))
         {
-            writer.WriteLine("typeOfUser,email,password,name,studentId,courses,pastCourses,totalCredits,GPA");
+            writer.WriteLine("typeOfUser,email,password,name,studentId,totalCredits,GPA,course,pastcourses");
             foreach (var admin in Admins)
             {
-                writer.WriteLine($"Admin,{admin.Email},{admin.Password},{admin.Name},N/A,N/A,N/A,N/A,N/A");
+                writer.WriteLine($"Admin,{admin.Email},{admin.Password},{admin.Name},N/A,N/A,N/A,N/A,N/A,N/A,N/A");
             }
             foreach (var student in Students)
             {
-                writer.WriteLine($"Student,{student.Email},{student.Password},{student.Name},{student.StudentId}"); // Add rest of fields and write them to file just like with the course data
+                var courses = student.Courses.Any()
+                    ? string.Join("|", student.Courses.Select(p => p.Code))
+                    : "N/A";
+                var pastCourses = student.PastCourses.Any()
+                    ? string.Join("|", student.PastCourses.Select(p => p.Code))
+                    : "N/A";
+                writer.WriteLine($"Student,{student.Email},{student.Password},{student.Name},{student.StudentId}, {student.Gpa}, {courses}, {pastCourses}");
             }
         }
     }

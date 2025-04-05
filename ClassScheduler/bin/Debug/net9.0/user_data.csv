@@ -1,3 +1,3 @@
-email, name, password, typeOfUser, studentId, courses
-test, Firstname Lastname, pass, admin, n/a, n/a
-test, Firstname Lastname, pass, 01
+typeOfUser,email,password,name,studentId,courses,pastCourses,totalCredits,GPA,course,pastcourses
+Admin,test,pass,Firstname Lastname,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Student,test,pass,Firstname Lastname,01, 2, CPTS 101|CPTS 101|CPTS 101|CPTS 101|CPTS 101, CPTS 101
