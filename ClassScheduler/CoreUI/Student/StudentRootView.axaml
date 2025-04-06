@@ -41,7 +41,8 @@
                                 <MenuItem Header="Courses" FontSize="16">
                                         <MenuItem Header="Browse" 
                                                   Command="{Binding NavigateToCoursesCommand}"/>
-                                        <MenuItem Header="Cart"/>
+                                        <MenuItem Header="Cart"
+                                                  Command="{Binding NavigateToCartCommand}"/>
                                 </MenuItem>
                         </Menu>
                         <Menu Height="40">

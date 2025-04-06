@@ -44,6 +44,6 @@ public partial class AdminRootViewModel : ViewModelBase
     [RelayCommand]
     private void NavigateToCourses()
     {
-        Navigation.SwitchTo<CoursesView>();
+        Navigation.SwitchTo<StudentCoursesView>();
     }
 }

@@ -9,18 +9,18 @@ namespace ClassScheduler.ViewModels;
 /// </summary>
 public partial class MainWindowViewModel : ViewModelBase
 {
-    private readonly NavigationService _navigation;
+    private readonly INavigationService _navigation;
     
     [ObservableProperty] private UserControl _mainView;
 
-    public MainWindowViewModel(NavigationService navigation)
+    public MainWindowViewModel(INavigationService navigation)
     {
         _navigation = navigation;
         _mainView = _navigation.MainView;
 
         _navigation.PropertyChanged += (_, args) =>
         {
-            if (args.PropertyName == nameof(NavigationService.MainView))
+            if (args.PropertyName == nameof(INavigationService.MainView))
             {
                 MainView = _navigation.MainView;
             }

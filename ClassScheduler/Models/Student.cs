@@ -1,16 +1,15 @@
-/*
-Description: Represents a student. Inherits from user. Includes student-specific properties.
-Author: Kaeden Peterson 11858249
-Date: 3-14-25
-*/
-
 using System.Collections.Generic;
 
 namespace ClassScheduler.Models;
 
+/// <summary>
+/// Represents a student. Inherits from user. Includes student-specific properties.
+/// </summary>
 public class Student : User
 {
     public List<Course> Courses { get; set; }
+    
+    public List<Course> Cart { get; set; } = [];
     
     // Below properties will be shown on profile page
     public string StudentId { get; set; }
