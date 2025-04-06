@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mQ8n2jT+8OA=",
+  "dgSpecHash": "AT1w8u7W9Pg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\RyanJ\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
+  "projectFilePath": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RyanJ\\.nuget\\packages\\avalonia\\11.2.1\\avalonia.11.2.1.nupkg.sha512",
     "C:\\Users\\RyanJ\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.22045.20230930\\avalonia.angle.windows.natives.2.1.22045.20230930.nupkg.sha512",

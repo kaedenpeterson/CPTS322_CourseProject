@@ -1480,11 +1480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RyanJ\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
+      "projectUniqueName": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
       "projectName": "ClassScheduler",
-      "projectPath": "C:\\Users\\RyanJ\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
+      "projectPath": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
       "packagesPath": "C:\\Users\\RyanJ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RyanJ\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\obj\\",
+      "outputPath": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

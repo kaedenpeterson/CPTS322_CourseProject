@@ -1,3 +1,0 @@
-typeOfUser,email,password,name,studentId,courses,pastCourses,totalCredits,GPA
-Admin,test,pass,Firstname Lastname,N/A,N/A,N/A,N/A,N/A
-Student,test,pass,Firstname Lastname,01
