@@ -21,7 +21,7 @@ Kanban board at end of sprint:
 **Sprint 2**
 | Name            | ID       | Task                       | Status      |
 |-----------------|----------|----------------------------|-------------|
-| Bitna White     | 11812714 |                            |             |
-| Ishaan Joshi    | 11834312 |                            |             |
-| Kaeden Peterson | 11858249 |                            |             |
-| Ryan Hughes     | 11828460 |                            |             |
+| Bitna White     | 11812714 | Edit Course #11            |             |
+| Ishaan Joshi    | 11834312 | Drop Course #7             |             |
+| Kaeden Peterson | 11858249 | Enroll In Course #5        |             |
+| Ryan Hughes     | 11828460 | Sync With Database #12     |             |
