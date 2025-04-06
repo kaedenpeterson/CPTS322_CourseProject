@@ -1,4 +1,4 @@
-<UserControl xmlns="https://github.com/avaloniaui"
+ <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:ClassScheduler.ViewModels"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -27,12 +27,25 @@
                    Foreground="White"
                    Margin="0 20 0 10"/>
         
+        <Button Grid.Row="0" Content="Enroll"
+                Command="{Binding EnrollCommand}"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="17"
+                Margin="0 0 15 0"
+                Width="120" 
+                Height="40"
+                Background="Blue"
+                Foreground="White"/>
+        
         <ScrollViewer Grid.Row="1"
                       VerticalScrollBarVisibility="Auto"
                       HorizontalAlignment="Stretch"
                       VerticalAlignment="Stretch"
                       Margin="10">
-            <ItemsControl ItemsSource="{Binding Courses}" Name="CoursesList">
+            <ItemsControl ItemsSource="{Binding SelectableCartCourses}" Name="CoursesList">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Expander Margin="0"
@@ -40,54 +53,57 @@
                             
                             <Expander.Header>
                                 <StackPanel Orientation="Horizontal" Spacing="10" Height="55">
-                                    <TextBlock Text="{Binding Code}" FontSize="19" 
+                                    
+                                    <CheckBox IsChecked="{Binding IsSelected}"/>
+                                    
+                                    <TextBlock Text="{Binding Course.Code}" FontSize="19" 
                                                FontWeight="Bold" Foreground="DodgerBlue"
                                                VerticalAlignment="Center"/>
                                     <TextBlock Text=" | " Foreground="Gray" VerticalAlignment="Center"/>
-                                    <TextBlock Text="{Binding Location}" FontSize="17" 
+                                    <TextBlock Text="{Binding Course.Location}" FontSize="17" 
                                                Foreground="White" VerticalAlignment="Center"/>
                                     <TextBlock Text=" | " Foreground="Gray" VerticalAlignment="Center"/>
-                                    <TextBlock Text="{Binding Schedule}" FontSize="17"
+                                    <TextBlock Text="{Binding Course.Schedule}" FontSize="17"
                                                Foreground="White" VerticalAlignment="Center"/>
                                 </StackPanel>
                             </Expander.Header>
 
                             <StackPanel Margin="10">
-                                <TextBlock Text="{Binding Name}" FontSize="19" 
+                                <TextBlock Text="{Binding Course.Name}" FontSize="19" 
                                            FontWeight="Bold" Foreground="DodgerBlue"/>
-                                <TextBlock Text="{Binding Description}" FontSize="15" 
+                                <TextBlock Text="{Binding Course.Description}" FontSize="15" 
                                            Foreground="White" TextWrapping="Wrap" Margin="0,5"/>
                                 
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Instructor: " Foreground="DodgerBlue" FontSize="15"/>
-                                    <TextBlock Text="{Binding Instructor}" FontSize="15" Foreground="White"/>
+                                    <TextBlock Text="{Binding Course.Instructor}" FontSize="15" Foreground="White"/>
                                 </StackPanel>
 
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Meeting dates: " Foreground="DodgerBlue" FontSize="15"/>
-                                    <TextBlock Text="{Binding Schedule.FormattedStartDate}" FontSize="15"/>
+                                    <TextBlock Text="{Binding Course.Schedule.FormattedStartDate}" FontSize="15"/>
                                     <TextBlock Text=" - " Foreground="White" FontSize="15"/>
-                                    <TextBlock Text="{Binding Schedule.FormattedEndDate}" FontSize="15"/>
+                                    <TextBlock Text="{Binding Course.Schedule.FormattedEndDate}" FontSize="15"/>
                                 </StackPanel>
 
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Prerequisites: " Foreground="DodgerBlue" FontSize="15"/>
-                                    <TextBlock Text="{Binding FormattedPrereqs}" Foreground="White"
+                                    <TextBlock Text="{Binding Course.FormattedPrereqs}" Foreground="White"
                                                FontSize="15"/>
                                 </StackPanel>
                                 
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Credits: " Foreground="DodgerBlue" FontSize="15"/>
-                                    <TextBlock Text="{Binding Credits}" FontSize="15" Foreground="White"/>
+                                    <TextBlock Text="{Binding Course.Credits}" FontSize="15" Foreground="White"/>
                                 </StackPanel>
                                 
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Seats: " Foreground="DodgerBlue" FontSize="15"/>
-                                    <TextBlock Text="{Binding OpenSeats}"
-                                               Foreground="{Binding OpenSeats, Converter={StaticResource SeatsColorConverter}}"
+                                    <TextBlock Text="{Binding Course.OpenSeats}"
+                                               Foreground="{Binding Course.OpenSeats, Converter={StaticResource SeatsColorConverter}}"
                                                FontSize="15"/>
                                     <TextBlock Text="/" Foreground="White" FontSize="15"/>
-                                    <TextBlock Text="{Binding MaxSeats}" Foreground="White" FontSize="15"/>
+                                    <TextBlock Text="{Binding Course.MaxSeats}" Foreground="White" FontSize="15"/>
                                 </StackPanel>
                                 
                             </StackPanel>
