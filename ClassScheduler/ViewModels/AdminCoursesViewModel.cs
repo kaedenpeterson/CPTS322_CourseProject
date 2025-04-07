@@ -1,15 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Windows.Input;
 using ClassScheduler.CoreUI;
+using ClassScheduler.CoreUI.Admin;
+using ClassScheduler.CoreUI.Student;
 using ClassScheduler.Data;
 using ClassScheduler.Models;
+using ClassScheduler.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
 namespace ClassScheduler.ViewModels;
 
 /// <summary>
-/// ViewModel for the Admin Courses page, responsible for managing the list of courses displayed.
-/// Shown as a sub view (CurrView) in the window.
+/// ViewModel for the Admin Courses page, responsible for managing the list of courses displayed for
+/// users logged in as Admin.
 /// </summary>
 public partial class AdminCoursesViewModel : ViewModelBase
 {
@@ -23,8 +28,9 @@ public partial class AdminCoursesViewModel : ViewModelBase
     }
 
     [RelayCommand]
-    private void EditCourses()
+    private void EditCourse(Course course)
     {
- 
+        var fetchedCourse = SystemManager.GetCourse(course.Name);
+        if (fetchedCourse is not null) _navigation.SwitchTo<EditCourseView>(fetchedCourse);
     }
 }

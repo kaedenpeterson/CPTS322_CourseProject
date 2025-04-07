@@ -1,3 +1,8 @@
+using ClassScheduler.CoreUI;
+using ClassScheduler.Data;
+using ClassScheduler.ViewModels;
+using ClassScheduler.Views;
+using CommunityToolkit.Mvvm.Input;
 using System.Collections.Generic;
 using System.Linq;
 

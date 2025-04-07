@@ -1,0 +1,20 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:ClassScheduler.ViewModels"
+             x:Class="ClassScheduler.Views.EditCourseView"
+             x:DataType="vm:EditCourseViewModel"
+             Background="#2B2B2B">
+
+	<StackPanel Margin="20" Spacing="10">
+		<TextBlock Text="Edit Course" FontSize="24" Foreground="White" HorizontalAlignment="Center"/>
+
+		<TextBox Text="{Binding Name}" Watermark="Course Name"/>
+		<TextBox Text="{Binding Code}" Watermark="Course Code"/>
+		<TextBox Text="{Binding Instructor}" Watermark="Instructor"/>
+		<TextBox Text="{Binding Description}" AcceptsReturn="True" Height="100" Watermark="Description"/>
+		<TextBox Text="{Binding Credits}" Watermark="Credits"/>
+		<TextBox Text="{Binding Location}" Watermark="Location"/>
+		<Button Content="Save Changes" Command="{Binding SaveCommand}"/>
+		<Button Content="Cancel" Command="{Binding CancelCommand}" Background="Gray"/>
+	</StackPanel>
+</UserControl>

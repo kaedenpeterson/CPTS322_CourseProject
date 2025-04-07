@@ -3,6 +3,7 @@ using Avalonia.Data.Converters;
 using Avalonia.Media;
 using ClassScheduler.CoreUI;
 using ClassScheduler.ViewModels;
+using System.Windows.Input;
 
 namespace ClassScheduler.Views;
 
@@ -15,6 +16,8 @@ public partial class AdminCoursesView : UserControl
     {
         InitializeComponent();
 
+        DataContext = new AdminCoursesViewModel(navigation);
+
         var seatsColorConverter = new FuncValueConverter<int, IBrush>(openSeats =>
             openSeats == 0 ? Brushes.Red : Brushes.LimeGreen);
 
@@ -26,7 +29,5 @@ public partial class AdminCoursesView : UserControl
 
         Resources["SeatsColorConverter"] = seatsColorConverter;
         // Resources["StatusColorConverter"] = statusColorConverter;
-
-        DataContext = new AdminCoursesViewModel(navigation);
     }
 }

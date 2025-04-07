@@ -42,6 +42,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/bitna/OneDrive/Documents/GitHub/CPTS322_CourseProject/ClassScheduler/Views/CoursesView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/bitna/OneDrive/Documents/GitHub/CPTS322_CourseProject/ClassScheduler/Views/EditCourseView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/bitna/OneDrive/Documents/GitHub/CPTS322_CourseProject/ClassScheduler/Views/LoginView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

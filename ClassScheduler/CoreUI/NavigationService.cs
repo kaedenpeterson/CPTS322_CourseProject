@@ -2,6 +2,7 @@ using System.ComponentModel;
 using Avalonia.Controls;
 using ClassScheduler.CoreUI.Admin;
 using ClassScheduler.CoreUI.Student;
+using ClassScheduler.Models;
 using ClassScheduler.Views;
 
 namespace ClassScheduler.CoreUI;
@@ -75,5 +76,8 @@ public sealed class NavigationService : INavigationService
 
         else if (typeof(T) == typeof(LoginView))
             MainView = new LoginView(this);
+
+        else if (typeof(T) == typeof(EditCourseView) && parameter is Course course)
+            CurrView = new EditCourseView(this, course);
     }
 }
