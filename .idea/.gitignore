@@ -14,5 +14,6 @@
 # Ignore build output and cache files
 bin/
 obj/
+.vs/
 # Ignore macOS system files
 .DS_Store
