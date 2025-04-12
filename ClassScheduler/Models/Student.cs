@@ -22,7 +22,7 @@ public class Student : User
     
     public double Gpa { get; set; }
     
-    public Student(string email, string password, string name, string studentId, int totalCredits, double gpa, List<Course> courses, List<Course> pastCourses) 
+    public Student(string email, string password, string name, string studentId, int totalCredits, double gpa, List<Course?> courses, List<Course?> pastCourses) 
         : base(email, password, name)
     {
         StudentId = studentId;

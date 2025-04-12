@@ -4,6 +4,7 @@ using Avalonia.Data.Core.Plugins;
 using System.Linq;
 using Avalonia.Markup.Xaml;
 using ClassScheduler.CoreUI;
+using ClassScheduler.Data;
 using ClassScheduler.ViewModels;
 using ClassScheduler.Views;
 
@@ -29,6 +30,11 @@ public partial class App : Application
             desktop.MainWindow = new MainWindow
             {
                 DataContext = new MainWindowViewModel(navigation)
+            };
+
+            desktop.Exit += (_, __) =>
+            {
+                SystemManager.PushData();
             };
         }
 
