@@ -1,0 +1,3 @@
+email, name, password, typeOfUser, studentId, courses
+test, Firstname Lastname, pass, admin, n/a, n/a
+test, Firstname Lastname, pass, 01

@@ -46,4 +46,10 @@ public partial class AdminRootViewModel : ViewModelBase
     {
         Navigation.SwitchTo<StudentCoursesView>();
     }
+
+    [RelayCommand]
+    private void NaviagatetoSyncWithDatabase()
+    {
+        Navigation.SwitchTo<AdminView>(_admin);
+    }
 }

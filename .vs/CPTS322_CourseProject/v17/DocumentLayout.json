@@ -1,12 +1,107 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\Data\\SystemManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassScheduler\\Data\\SystemManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\Models\\Schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassScheduler\\Models\\Schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\Models\\Course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassScheduler\\Models\\Course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\App.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassScheduler\\App.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SystemManager.cs",
+              "DocumentMoniker": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\Data\\SystemManager.cs",
+              "RelativeDocumentMoniker": "ClassScheduler\\Data\\SystemManager.cs",
+              "ToolTip": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\Data\\SystemManager.cs",
+              "RelativeToolTip": "ClassScheduler\\Data\\SystemManager.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGoAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T23:09:01.506Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\Models\\Schedule.cs",
+              "RelativeDocumentMoniker": "ClassScheduler\\Models\\Schedule.cs",
+              "ToolTip": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\Models\\Schedule.cs",
+              "RelativeToolTip": "ClassScheduler\\Models\\Schedule.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T23:19:08.06Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "ClassScheduler\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\Models\\Course.cs",
+              "RelativeToolTip": "ClassScheduler\\Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T23:19:06.83Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\App.axaml.cs",
+              "RelativeDocumentMoniker": "ClassScheduler\\App.axaml.cs",
+              "ToolTip": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\App.axaml.cs",
+              "RelativeToolTip": "ClassScheduler\\App.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T23:33:14.517Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

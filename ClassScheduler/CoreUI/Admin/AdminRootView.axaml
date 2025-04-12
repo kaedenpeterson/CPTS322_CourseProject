@@ -45,6 +45,8 @@
                                         <MenuItem Header="Edit Course"/>
                                         <MenuItem Header="Remove Course"/>
                                         <MenuItem Header="Add Course"/>
+									<MenuItem Header="Sync with Database"
+											  Command="{Binding NaviagatetoSyncWithDatabaseCommand}"/>
                                 </MenuItem>
                         </Menu>
                 </StackPanel>
