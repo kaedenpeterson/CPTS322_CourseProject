@@ -1,17 +1,15 @@
-﻿using Avalonia.Controls;
+using Avalonia.Controls;
 using Avalonia.Data.Converters;
 using Avalonia.Media;
 using ClassScheduler.CoreUI;
+using ClassScheduler.Models;
 using ClassScheduler.ViewModels;
 
 namespace ClassScheduler.Views;
 
-/// <summary>
-/// Code-behind for CoursesView.axaml.
-/// </summary>
-public partial class CoursesView : UserControl
+public partial class CartView : UserControl
 {
-    public CoursesView(INavigationService navigation)
+    public CartView(INavigationService navigation, Student student)
     {
         InitializeComponent();
         
@@ -21,14 +19,12 @@ public partial class CoursesView : UserControl
         /*
         var statusColorConverter = new FuncValueConverter<bool, IBrush>(isActive =>
             isActive ? Brushes.LimeGreen : Brushes.Red);
-            
+
         */
         
         Resources["SeatsColorConverter"] = seatsColorConverter;
         // Resources["StatusColorConverter"] = statusColorConverter;
         
-        DataContext = new CoursesViewModel(navigation);
+        DataContext = new CartViewModel(navigation, student);
     }
-    
-    
 }

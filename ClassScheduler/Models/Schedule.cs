@@ -1,9 +1,3 @@
-/*
-Description: Represents the schedule of a course (days of week, time).
-Author: Kaeden Peterson 11858249
-Date: 3-17-25
-*/
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
