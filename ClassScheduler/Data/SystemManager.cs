@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using ClassScheduler.Models;
+using Microsoft.VisualBasic.FileIO;
 
 namespace ClassScheduler.Data;
 
@@ -19,35 +20,7 @@ public static class SystemManager
 
     public static readonly List<Course> Courses = [];
 
-    static SystemManager()
-    {
-        PullData();
-        //Adding to lists through constructor because database handling is not implemented yet
-        
-        /*
-        var cpts101 = new Course(
-            "CPTS 101", "Intro to Computer Science", "Parteek Kumar",
-            "Introduction to programs within the School of Electrical Engineering" +
-            " and Computer Science discussing resources and knowledge and skills", 1, 
-            [], 120, "Cleveland Hall 30", false,
-            new Schedule([DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday],
-                new TimeSpan(10, 10, 0), new TimeSpan(11, 0, 0),
-                new DateTime(2025, 3, 23), new DateTime(2025, 5, 1)));
-
-        var testStudent = new Student
-            ("test", "pass", "Firstname Lastname", "01", 10, 2.4, [cpts101, cpts101, cpts101, cpts101, cpts101], [cpts101]);
-        Students.Add(testStudent);
-
-        var testAdmin = new Admin
-            ("test", "pass", "Firstname Lastname");
-        Admins.Add(testAdmin);
-
-        cpts101.Prerequisites.Add("CPTS 101");
-        cpts101.Prerequisites.Add("CPTS 101");
-        cpts101.Prerequisites.Add("CPTS 101");
-        Courses.Add(cpts101);
-        */
-    }
+    static SystemManager() { }
 
     public static bool IsValidCredentials(string role, string email, string password)
      {
@@ -75,22 +48,24 @@ public static class SystemManager
     }
 
     // PullData() will load data from the database .csv files and populate the lists
-    private static void PullData()
+    public static void PullData()
     {
-        using (StreamReader reader = new StreamReader("course_data.csv"))
+        using (TextFieldParser parser = new TextFieldParser("course_data.csv"))
         {
-            reader.ReadLine();
+            parser.TextFieldType = FieldType.Delimited;
+            parser.SetDelimiters(",");
+            parser.HasFieldsEnclosedInQuotes = true;
 
-            while (!reader.EndOfStream)
+            // Skip header
+            parser.ReadLine();
+
+            while (!parser.EndOfData)
             {
-                string line = reader.ReadLine();
-                if (string.IsNullOrWhiteSpace(line)) continue;
-
-                string[] values = line.Split(',');
-
+                string[]? values = parser.ReadFields();
+                
                 string[] days = values[11].Contains("|") ? values[11].Split('|') : [];
 
-                List<DayOfWeek> dayOfWeeks = new();
+                List<DayOfWeek> dayOfWeeks = [];
                 foreach (var day in days)
                 {
                     switch (day.Trim())
@@ -103,15 +78,15 @@ public static class SystemManager
                     }
                 }
 
-                DateTime startTime = DateTime.Parse(values[12]);
-                DateTime endTime = DateTime.Parse(values[13]);
-                DateTime startDate = DateTime.Parse(values[9]);
-                DateTime endDate = DateTime.Parse(values[10]);
+                TimeSpan startTime = DateTime.ParseExact(values[12].Trim(), "h:mmtt", null).TimeOfDay;
+                TimeSpan endTime = DateTime.ParseExact(values[13].Trim(), "h:mmtt", null).TimeOfDay;
+                DateTime startDate = DateTime.ParseExact(values[9].Trim(), "MM/dd/yyyy", null);
+                DateTime endDate = DateTime.ParseExact(values[10].Trim(), "MM/dd/yyyy", null);
 
                 Schedule schedule = new Schedule(
                     dayOfWeeks,
-                    startTime.TimeOfDay,
-                    endTime.TimeOfDay,
+                    startTime,
+                    endTime,
                     startDate,
                     endDate
                 );
@@ -119,10 +94,12 @@ public static class SystemManager
                 List<string> prereqs = values[5].Split('|', StringSplitOptions.RemoveEmptyEntries)
                     .Where(p => p != "N/A").ToList();
 
-                var course = new Course(values[0], values[1], values[2], values[3],
+                var course = new Course(
+                    values[0], values[1], values[2], values[3],
                     int.Parse(values[4]), prereqs,
                     int.Parse(values[6]), values[7],
-                    bool.Parse(values[8]), schedule);
+                    bool.Parse(values[8]), schedule
+                );
 
                 Courses.Add(course);
             }
@@ -194,7 +171,7 @@ public static class SystemManager
                 var days = course.Schedule.Days.Any()
                     ? string.Join("|", course.Schedule.Days.Select(d => d.ToString()[..3]))
                     : "N/A";
-                writer.WriteLine($"{course.Code},{course.Name},{course.Instructor},{course.Description},{course.Credits},{prerequisites}," +
+                writer.WriteLine($"{course.Code},{course.Name},{course.Instructor},\"{course.Description}\",{course.Credits},{prerequisites}," +
                                  $"{course.MaxSeats},{course.Location},{course.IsActive},{course.Schedule.FormattedStartDate},{course.Schedule.FormattedEndDate}," +
                                  $"{days},{course.Schedule.FormatTime(course.Schedule.StartTime)},{course.Schedule.FormatTime(course.Schedule.EndTime)}");
             }

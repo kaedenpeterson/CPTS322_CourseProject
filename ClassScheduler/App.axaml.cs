@@ -25,6 +25,7 @@ public partial class App : Application
             // More info: https://docs.avaloniaui.net/docs/guides/development-guides/data-validation#manage-validationplugins
             DisableAvaloniaDataAnnotationValidation();
             
+            SystemManager.PullData();
             var navigation = new NavigationService();
             
             desktop.MainWindow = new MainWindow
@@ -33,7 +34,7 @@ public partial class App : Application
             };
 
             desktop.Exit += (_, __) =>
-            {
+            { 
                 SystemManager.PushData();
             };
         }
