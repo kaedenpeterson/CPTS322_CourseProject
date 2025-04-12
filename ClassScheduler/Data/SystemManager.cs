@@ -55,8 +55,7 @@ public static class SystemManager
             parser.TextFieldType = FieldType.Delimited;
             parser.SetDelimiters(",");
             parser.HasFieldsEnclosedInQuotes = true;
-
-            // Skip header
+            
             parser.ReadLine();
 
             while (!parser.EndOfData)
