@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
-using ClassScheduler.Data;
 using System.Windows.Input;
+using ClassScheduler.Data;
 
 namespace ClassScheduler.Models;
 

@@ -159,8 +159,8 @@ public static class SystemManager
     {
         using (StreamWriter writer = new StreamWriter("course_data.csv"))
         {
-            writer.WriteLine("CourseID,Title,Instructor,Description,Credits,Prerequisites," +
-                             "maxSeats,Location,isActive,StartDate,EndDate," +
+            writer.WriteLine("Code,Title,Instructor,Description,Credits,Prerequisites," +
+                             "Capacity,Location,IsActive,StartDate,EndDate," +
                              "Days,StartTime,EndTime");
             foreach (var course in Courses)
             {
@@ -179,7 +179,7 @@ public static class SystemManager
 
         using (StreamWriter writer = new StreamWriter("user_data.csv"))
         {
-            writer.WriteLine("typeOfUser,email,password,name,studentId,totalCredits,GPA,courses,pastCourses");
+            writer.WriteLine("Role,Email,Password,Name,StudentID,TotalCredits,GPA,Courses,PastCourses");
             foreach (var admin in Admins)
             {
                 writer.WriteLine($"Admin,{admin.Email},{admin.Password},{admin.Name},N/A,N/A,N/A,N/A,N/A");
