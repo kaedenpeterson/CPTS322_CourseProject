@@ -1,7 +1,10 @@
 # CPTS322_CourseProject
 SW8_Class Scheduler
 
-Backlog
+## Known bugs
+- If admin logs out and logs back in, the cancel and save buttons in edit courses view is grayed out
+
+## Backlog
 
 **Sprint 1**  
 | Name            | ID       | Task                       | Status      |
