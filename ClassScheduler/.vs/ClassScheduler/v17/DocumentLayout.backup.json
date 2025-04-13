@@ -1,114 +1,170 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\",
+  "WorkspaceRootPath": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\coursesview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\coursesview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\admincoursesview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\admincoursesview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\coursesview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\coursesview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\admincoursesview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\admincoursesview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\loginview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\loginview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\adminview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\adminview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\loginview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\loginview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\studentview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\studentview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\studentview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\studentview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\adminview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\adminview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\coursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\coursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewlocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewlocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\viewmodels\\admincoursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\admincoursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\data\\systemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\viewmodels\\coursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\coursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\viewmodels\\editcourseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\editcourseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\loginview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\loginview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\data\\systemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:data\\systemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\viewmodels\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\studentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\coreui\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:coreui\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\coreui\\inavigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:coreui\\inavigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\editcourseview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\editcourseview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\editcourseview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\editcourseview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\coursesview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\coursesview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\adminview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\adminview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\adminview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\adminview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\editcourseview.axaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\editcourseview.axaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\coreui\\admin\\adminrootviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:coreui\\admin\\adminrootviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\coreui\\admin\\adminrootview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:coreui\\admin\\adminrootview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\views\\coursesview.axaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\coursesview.axaml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\assets\\avalonia-logo.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:assets\\avalonia-logo.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\beebe\\source\\repos\\cpts322_courseproject\\classscheduler\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\studentview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\studentview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\loginview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\loginview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\viewlocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:viewlocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\coreui\\student\\studentrootview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:coreui\\student\\studentrootview.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\coreui\\student\\studentrootviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:coreui\\student\\studentrootviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\coursesview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\coursesview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\coreui\\popupwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:coreui\\popupwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\coreui\\popupwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:coreui\\popupwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|c:\\users\\bitna\\onedrive\\documents\\github\\cpts322_courseproject\\classscheduler\\views\\admincoursesview.axaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F437BD99-F6E8-917F-2FBE-86615A9F215E}|ClassScheduler.csproj|solutionrelative:views\\admincoursesview.axaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,333 +174,541 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CoursesView.axaml",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml",
-              "RelativeDocumentMoniker": "Views\\CoursesView.axaml",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml",
-              "RelativeToolTip": "Views\\CoursesView.axaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AdminCoursesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\AdminCoursesViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AdminCoursesViewModel.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\AdminCoursesViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AdminCoursesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:40:46.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\AdminViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AdminViewModel.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\AdminViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AdminViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:42:42.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CoursesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\CoursesViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CoursesViewModel.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\CoursesViewModel.cs",
+              "RelativeToolTip": "ViewModels\\CoursesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:41:04.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminCoursesView.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminCoursesView.axaml",
+              "RelativeDocumentMoniker": "Views\\AdminCoursesView.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminCoursesView.axaml",
+              "RelativeToolTip": "Views\\AdminCoursesView.axaml",
+              "ViewState": "AgIAADcAAAAAAAAAAAAmwF8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-16T22:39:45.526Z",
+              "WhenOpened": "2025-04-03T19:42:03.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminCoursesView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminCoursesView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\AdminCoursesView.axaml.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminCoursesView.axaml.cs",
+              "RelativeToolTip": "Views\\AdminCoursesView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:40:20.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:45:05.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditCourseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\EditCourseViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\EditCourseViewModel.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\EditCourseViewModel.cs",
+              "RelativeToolTip": "ViewModels\\EditCourseViewModel.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAswDQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:33:29.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:45:00.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginView.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml",
+              "RelativeDocumentMoniker": "Views\\LoginView.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml",
+              "RelativeToolTip": "Views\\LoginView.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-07T03:35:15.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "MainWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\MainWindow.axaml",
               "RelativeDocumentMoniker": "Views\\MainWindow.axaml",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\MainWindow.axaml",
               "RelativeToolTip": "Views\\MainWindow.axaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-16T22:18:33.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginView.axaml",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml",
-              "RelativeDocumentMoniker": "Views\\LoginView.axaml",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml",
-              "RelativeToolTip": "Views\\LoginView.axaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-16T22:09:53.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StudentView.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\StudentView.axaml.cs",
-              "RelativeDocumentMoniker": "Views\\StudentView.axaml.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\StudentView.axaml.cs",
-              "RelativeToolTip": "Views\\StudentView.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:38:29.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\MainWindow.axaml.cs",
-              "RelativeDocumentMoniker": "Views\\MainWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\MainWindow.axaml.cs",
-              "RelativeToolTip": "Views\\MainWindow.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:38:03.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CoursesView.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml.cs",
-              "RelativeDocumentMoniker": "Views\\CoursesView.axaml.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml.cs",
-              "RelativeToolTip": "Views\\CoursesView.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:37:30.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StudentView.axaml",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\StudentView.axaml",
-              "RelativeDocumentMoniker": "Views\\StudentView.axaml",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\StudentView.axaml",
-              "RelativeToolTip": "Views\\StudentView.axaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-16T22:09:48.737Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\StudentViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\StudentViewModel.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\StudentViewModel.cs",
-              "RelativeToolTip": "ViewModels\\StudentViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:11:58.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginView.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml.cs",
-              "RelativeDocumentMoniker": "Views\\LoginView.axaml.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml.cs",
-              "RelativeToolTip": "Views\\LoginView.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:38:14.892Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminView.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml.cs",
-              "RelativeDocumentMoniker": "Views\\AdminView.axaml.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml.cs",
-              "RelativeToolTip": "Views\\AdminView.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:38:23.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AdminView.axaml",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml",
-              "RelativeDocumentMoniker": "Views\\AdminView.axaml",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml",
-              "RelativeToolTip": "Views\\AdminView.axaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-16T22:09:46.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:11:42.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CoursesViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\CoursesViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\CoursesViewModel.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\CoursesViewModel.cs",
-              "RelativeToolTip": "ViewModels\\CoursesViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:12:31.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ViewLocator.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewLocator.cs",
-              "RelativeDocumentMoniker": "ViewLocator.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewLocator.cs",
-              "RelativeToolTip": "ViewLocator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:43:48.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:43:50.18Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MainWindowViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:12:03.956Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "Models\\Student.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\Student.cs",
-              "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:11:36.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:11:33.067Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AdminViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\AdminViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\AdminViewModel.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\AdminViewModel.cs",
-              "RelativeToolTip": "ViewModels\\AdminViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:11:41.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\Admin.cs",
-              "RelativeDocumentMoniker": "Models\\Admin.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Models\\Admin.cs",
-              "RelativeToolTip": "Models\\Admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:11:38.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SystemManager.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Data\\SystemManager.cs",
-              "RelativeDocumentMoniker": "Data\\SystemManager.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Data\\SystemManager.cs",
-              "RelativeToolTip": "Data\\SystemManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:17:40.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "ViewModels\\ViewModelBase.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\ViewModelBase.cs",
-              "RelativeToolTip": "ViewModels\\ViewModelBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:12:18.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "App.axaml",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\App.axaml",
-              "RelativeDocumentMoniker": "App.axaml",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\App.axaml",
-              "RelativeToolTip": "App.axaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-16T22:09:32.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "app.manifest",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\app.manifest",
-              "RelativeDocumentMoniker": "app.manifest",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\app.manifest",
-              "RelativeToolTip": "app.manifest",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
-              "WhenOpened": "2025-03-16T22:47:01.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CoursesView.axaml",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml",
-              "RelativeDocumentMoniker": "Views\\CoursesView.axaml",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml",
-              "RelativeToolTip": "Views\\CoursesView.axaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-16T22:37:10.506Z",
+              "WhenOpened": "2025-04-03T19:46:58.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SystemManager.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Data\\SystemManager.cs",
+              "RelativeDocumentMoniker": "Data\\SystemManager.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Data\\SystemManager.cs",
+              "RelativeToolTip": "Data\\SystemManager.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwE0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:53:09.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwCcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T22:32:27.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\StudentViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\StudentViewModel.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\StudentViewModel.cs",
+              "RelativeToolTip": "ViewModels\\StudentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:45:06.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T20:46:41.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Models\\Schedule.cs",
+              "RelativeDocumentMoniker": "Models\\Schedule.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Models\\Schedule.cs",
+              "RelativeToolTip": "Models\\Schedule.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:48:21.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "ViewModels\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:45:08.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\NavigationService.cs",
+              "RelativeDocumentMoniker": "CoreUI\\NavigationService.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\NavigationService.cs",
+              "RelativeToolTip": "CoreUI\\NavigationService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:49:05.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "INavigationService.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\INavigationService.cs",
+              "RelativeDocumentMoniker": "CoreUI\\INavigationService.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\INavigationService.cs",
+              "RelativeToolTip": "CoreUI\\INavigationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:49:01.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EditCourseView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\EditCourseView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\EditCourseView.axaml.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\EditCourseView.axaml.cs",
+              "RelativeToolTip": "Views\\EditCourseView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:43:19.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EditCourseView.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\EditCourseView.axaml",
+              "RelativeDocumentMoniker": "Views\\EditCourseView.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\EditCourseView.axaml",
+              "RelativeToolTip": "Views\\EditCourseView.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-07T02:40:33.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CoursesView.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml",
+              "RelativeDocumentMoniker": "Views\\CoursesView.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml",
+              "RelativeToolTip": "Views\\CoursesView.axaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADgAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-03T19:41:05.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Models\\Admin.cs",
+              "RelativeToolTip": "Models\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T03:45:16.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AdminView.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml",
+              "RelativeDocumentMoniker": "Views\\AdminView.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml",
+              "RelativeToolTip": "Views\\AdminView.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-03T19:43:22.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AdminView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\AdminView.axaml.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminView.axaml.cs",
+              "RelativeToolTip": "Views\\AdminView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:43:38.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EditCourseView.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\EditCourseView.axaml",
+              "RelativeDocumentMoniker": "Views\\EditCourseView.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\EditCourseView.axaml",
+              "RelativeToolTip": "Views\\EditCourseView.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-07T02:34:29.786Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "avalonia-logo.ico - Icon [16x16, 32 bit, BMP]",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Assets\\avalonia-logo.ico",
-              "RelativeDocumentMoniker": "Assets\\avalonia-logo.ico",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\Assets\\avalonia-logo.ico - Icon [16x16, 32 bit, BMP]",
-              "RelativeToolTip": "Assets\\avalonia-logo.ico - Icon [16x16, 32 bit, BMP]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2025-03-16T22:22:53.867Z",
-              "EditorCaption": " - Icon [16x16, 32 bit, BMP]"
+              "Title": "AdminRootViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\Admin\\AdminRootViewModel.cs",
+              "RelativeDocumentMoniker": "CoreUI\\Admin\\AdminRootViewModel.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\Admin\\AdminRootViewModel.cs",
+              "RelativeToolTip": "CoreUI\\Admin\\AdminRootViewModel.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwCUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:49:18.818Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "App.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\App.axaml.cs",
-              "RelativeDocumentMoniker": "App.axaml.cs",
-              "ToolTip": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\App.axaml.cs",
-              "RelativeToolTip": "App.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Title": "AdminRootView.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\Admin\\AdminRootView.axaml",
+              "RelativeDocumentMoniker": "CoreUI\\Admin\\AdminRootView.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\Admin\\AdminRootView.axaml",
+              "RelativeToolTip": "CoreUI\\Admin\\AdminRootView.axaml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwCwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-03T19:48:29.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:09:34.406Z"
+              "WhenOpened": "2025-04-03T20:44:44.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "app.manifest",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\app.manifest",
+              "RelativeDocumentMoniker": "app.manifest",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\app.manifest",
+              "RelativeToolTip": "app.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2025-04-03T20:44:49.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\App.axaml",
+              "RelativeDocumentMoniker": "App.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\App.axaml",
+              "RelativeToolTip": "App.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-03T20:44:50.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "StudentView.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\StudentView.axaml",
+              "RelativeDocumentMoniker": "Views\\StudentView.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\StudentView.axaml",
+              "RelativeToolTip": "Views\\StudentView.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-03T20:04:31.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\App.axaml.cs",
+              "RelativeDocumentMoniker": "App.axaml.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\App.axaml.cs",
+              "RelativeToolTip": "App.axaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T22:06:59.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "LoginView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\LoginView.axaml.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\LoginView.axaml.cs",
+              "RelativeToolTip": "Views\\LoginView.axaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwB8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:56:47.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ViewLocator.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewLocator.cs",
+              "RelativeDocumentMoniker": "ViewLocator.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\ViewLocator.cs",
+              "RelativeToolTip": "ViewLocator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:38:15.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "StudentRootView.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\Student\\StudentRootView.axaml",
+              "RelativeDocumentMoniker": "CoreUI\\Student\\StudentRootView.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\Student\\StudentRootView.axaml",
+              "RelativeToolTip": "CoreUI\\Student\\StudentRootView.axaml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACoAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-03T20:51:53.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "StudentRootViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\Student\\StudentRootViewModel.cs",
+              "RelativeDocumentMoniker": "CoreUI\\Student\\StudentRootViewModel.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\Student\\StudentRootViewModel.cs",
+              "RelativeToolTip": "CoreUI\\Student\\StudentRootViewModel.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA+wCUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T20:51:55.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CoursesView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\CoursesView.axaml.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\CoursesView.axaml.cs",
+              "RelativeToolTip": "Views\\CoursesView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:41:14.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PopupWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\PopupWindow.axaml.cs",
+              "RelativeDocumentMoniker": "CoreUI\\PopupWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\PopupWindow.axaml.cs",
+              "RelativeToolTip": "CoreUI\\PopupWindow.axaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T20:50:59.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PopupWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\PopupWindow.axaml",
+              "RelativeDocumentMoniker": "CoreUI\\PopupWindow.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\CoreUI\\PopupWindow.axaml",
+              "RelativeToolTip": "CoreUI\\PopupWindow.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-03T20:49:01.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T20:46:44.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AdminCoursesView.axaml",
+              "DocumentMoniker": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminCoursesView.axaml",
+              "RelativeDocumentMoniker": "Views\\AdminCoursesView.axaml",
+              "ToolTip": "C:\\Users\\bitna\\OneDrive\\Documents\\GitHub\\CPTS322_CourseProject\\ClassScheduler\\Views\\AdminCoursesView.axaml",
+              "RelativeToolTip": "Views\\AdminCoursesView.axaml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAowGkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-03T19:40:00.452Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1345,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }
