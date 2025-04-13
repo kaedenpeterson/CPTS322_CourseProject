@@ -42,7 +42,6 @@
                                 <MenuItem Header="Manage" FontSize="16">
                                         <MenuItem Header="View Courses" 
                                                   Command="{Binding NavigateToAdminCoursesCommand}"/>
-                                        <MenuItem Header="Edit Course"/>
                                         <MenuItem Header="Remove Course"/>
                                         <MenuItem Header="Add Course"/>
                                 </MenuItem>

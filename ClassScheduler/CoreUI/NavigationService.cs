@@ -2,6 +2,7 @@ using System.ComponentModel;
 using Avalonia.Controls;
 using ClassScheduler.CoreUI.Admin;
 using ClassScheduler.CoreUI.Student;
+using ClassScheduler.Data;
 using ClassScheduler.Models;
 using ClassScheduler.Views;
 
@@ -54,11 +55,13 @@ public sealed class NavigationService : INavigationService
     {
         if (typeof(T) == typeof(StudentRootView) && parameter is Models.Student s1)
         {
+            SystemManager.PullData();
             MainView = new StudentRootView(this, s1);
             CurrView = new StudentView(this, s1);
         }
         else if (typeof(T) == typeof(AdminRootView) && parameter is Models.Admin a1)
         {
+            SystemManager.PullData();
             MainView = new AdminRootView(this, a1);
             CurrView = new AdminView(this, a1);
         }
@@ -78,7 +81,10 @@ public sealed class NavigationService : INavigationService
             CurrView = new CartView(this, s4);
         
         else if (typeof(T) == typeof(LoginView))
+        {
+            SystemManager.PushData();
             MainView = new LoginView(this);
+        }
 
         else if (typeof(T) == typeof(EditCourseView) && parameter is Course course)
             CurrView = new EditCourseView(this, course);

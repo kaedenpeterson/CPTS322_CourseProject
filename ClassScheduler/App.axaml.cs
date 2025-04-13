@@ -26,6 +26,7 @@ public partial class App : Application
             DisableAvaloniaDataAnnotationValidation();
             
             SystemManager.PullData();
+            
             var navigation = new NavigationService();
             
             desktop.MainWindow = new MainWindow

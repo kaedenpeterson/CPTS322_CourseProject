@@ -37,7 +37,7 @@ public partial class EditCourseViewModel : ViewModelBase
         Location = course.Location;
         Status = course.IsActive ? "Active" : "Inactive";
     }
-
+    
     [RelayCommand]
     private void Save()
     {
@@ -51,7 +51,7 @@ public partial class EditCourseViewModel : ViewModelBase
 
         _navigation.SwitchTo<AdminCoursesView>();
     }
-
+    
     [RelayCommand]
     private void Cancel()
     {

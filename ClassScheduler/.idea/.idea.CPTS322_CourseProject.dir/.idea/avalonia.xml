@@ -8,10 +8,12 @@
         <entry key="CoreUI/PopupWindow.axaml" value="ClassScheduler.csproj" />
         <entry key="CoreUI/RootView.axaml" value="ClassScheduler.csproj" />
         <entry key="CoreUI/Student/StudentRootView.axaml" value="ClassScheduler.csproj" />
+        <entry key="Views/AdminCoursesView.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/AdminView.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/CartView.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/ConfirmLogoutWindow.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/CoursesView.axaml" value="ClassScheduler.csproj" />
+        <entry key="Views/EditCourseView.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/LoginView.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/MainWindow.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/ResetPasswordWindow.axaml" value="ClassScheduler.csproj" />

@@ -1,4 +1,4 @@
-CourseID,Title,Instructor,Description,Credits,Prerequisites,maxSeats,Location,isActive,StartDate,EndDate,Days,StartTime,EndTime
+Code,Title,Instructor,Description,Credits,Prerequisites,Capacity,Location,IsActive,StartDate,EndDate,Days,StartTime,EndTime
 CPTS 101,Intro to Computer Science,Parteek Kumar,"Introduction to programs within the School of Electrical Engineering and Computer Science discussing resources and knowledge and skills.",1,N/A,180,Cleveland Hall 30,False,08/18/2025,12/05/2025,Mon|Tue|Wed,10:10AM,11:00AM
 CPTS 121,Program Design and Development C/C++,Andrew O'Fallon,"Formulation of problems and top-down design of programs in a modern structured language (C/C++) for their solution on a digital computer.",4,CPTS 111|MATH 108,160,Abelson Hall 201,False,08/18/2025,12/05/2025,Mon|Tue|Wed,11:10AM,12:00PM
 CPTS 122,Data Structures C/C++,Andrew O'Fallon,"Advanced programming techniques: data structures, recursion, sorting and searching, and basics of algorithm analysis taught in C/C++ programming language.",4,CPTS 121,160,Todd Hall 276,False,08/18/2025,12/05/2025,Mon|Tue|Wed,10:10AM,11:00AM

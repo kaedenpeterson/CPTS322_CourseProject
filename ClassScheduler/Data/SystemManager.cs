@@ -12,14 +12,11 @@ namespace ClassScheduler.Data;
 /// </summary>
 public static class SystemManager
 {
-    private static readonly string UserDataFile;
-    private static readonly string CourseDataFile;
-
+    public static readonly List<Course> Courses = [];
+    
     public static readonly List<Student> Students = [];
     private static readonly List<Admin> Admins = [];
-
-    public static readonly List<Course> Courses = [];
-
+    
     static SystemManager() { }
 
     public static bool IsValidCredentials(string role, string email, string password)
@@ -55,6 +52,11 @@ public static class SystemManager
     // PullData() will load data from the database .csv files and populate the lists
     public static void PullData()
     {
+        // Clearing allows for multiple calls of this method without appending to the old lists
+        Courses.Clear();
+        Students.Clear();
+        Admins.Clear();
+        
         using (TextFieldParser parser = new TextFieldParser("course_data.csv"))
         {
             parser.TextFieldType = FieldType.Delimited;
@@ -65,9 +67,9 @@ public static class SystemManager
 
             while (!parser.EndOfData)
             {
-                string[]? values = parser.ReadFields();
+                var values = parser.ReadFields();
                 
-                string[] days = values[11].Contains("|") ? values[11].Split('|') : [];
+                var days = values[11].Contains("|") ? values[11].Split('|') : [];
 
                 List<DayOfWeek> dayOfWeeks = [];
                 foreach (var day in days)
@@ -82,10 +84,10 @@ public static class SystemManager
                     }
                 }
 
-                TimeSpan startTime = DateTime.ParseExact(values[12].Trim(), "h:mmtt", null).TimeOfDay;
-                TimeSpan endTime = DateTime.ParseExact(values[13].Trim(), "h:mmtt", null).TimeOfDay;
-                DateTime startDate = DateTime.ParseExact(values[9].Trim(), "MM/dd/yyyy", null);
-                DateTime endDate = DateTime.ParseExact(values[10].Trim(), "MM/dd/yyyy", null);
+                var startTime = DateTime.ParseExact(values[12].Trim(), "h:mmtt", null).TimeOfDay;
+                var endTime = DateTime.ParseExact(values[13].Trim(), "h:mmtt", null).TimeOfDay;
+                var startDate = DateTime.ParseExact(values[9].Trim(), "MM/dd/yyyy", null);
+                var endDate = DateTime.ParseExact(values[10].Trim(), "MM/dd/yyyy", null);
 
                 Schedule schedule = new Schedule(
                     dayOfWeeks,
@@ -95,7 +97,7 @@ public static class SystemManager
                     endDate
                 );
 
-                List<string> prereqs = values[5].Split('|', StringSplitOptions.RemoveEmptyEntries)
+                var prereqs = values[5].Split('|', StringSplitOptions.RemoveEmptyEntries)
                     .Where(p => p != "N/A").ToList();
 
                 var course = new Course(
@@ -111,11 +113,11 @@ public static class SystemManager
 
         using (StreamReader reader = new StreamReader("user_data.csv"))
         {
-            string? line = reader.ReadLine();
+            var line = reader.ReadLine();
 
             while ((line = reader.ReadLine()) != null)
             {
-                string[] values = line.Split(',');
+                var values = line.Split(',');
 
                 if (values.Length == 0 || string.IsNullOrWhiteSpace(values[0]))
                     continue;
