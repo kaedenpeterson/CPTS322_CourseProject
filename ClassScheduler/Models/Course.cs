@@ -5,6 +5,7 @@ using ClassScheduler.Views;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Input;
 
 namespace ClassScheduler.Models;
 
@@ -38,6 +39,8 @@ public class Course(
     public Schedule Schedule { get; set; } = schedule;
     
     public List<Student> EnrolledStudents { get; set; } = enrolledStudents;
+    
+    public ICommand EditCourseCommand { get; set; }
     
     public int OpenSeats => MaxSeats - EnrolledStudents.Count;
     

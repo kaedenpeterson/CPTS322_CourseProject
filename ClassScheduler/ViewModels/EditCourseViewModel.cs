@@ -1,7 +1,4 @@
-﻿using System.Windows.Input;
-using Avalonia.Controls;
-using Avalonia;
-using System.Xml.Linq;
+﻿using System.Collections.Generic;
 using ClassScheduler.CoreUI;
 using ClassScheduler.Models;
 using ClassScheduler.Views;
@@ -20,6 +17,10 @@ public partial class EditCourseViewModel : ViewModelBase
     [ObservableProperty] private string description;
     [ObservableProperty] private int credits;
     [ObservableProperty] private string location;
+    [ObservableProperty] private string status;
+    
+    public List<int> CreditOptions { get; } = [1, 2, 3, 4];
+    public List<string> StatusOptions { get; } = ["Active", "Inactive"];
 
     private readonly Course _originalCourse;
 
@@ -27,14 +28,14 @@ public partial class EditCourseViewModel : ViewModelBase
     {
         _navigation = navigation;
         _originalCourse = course;
-
-        // Pre-fill properties from course
+        
         Name = course.Name;
         Code = course.Code;
         Instructor = course.Instructor;
         Description = course.Description;
         Credits = course.Credits;
         Location = course.Location;
+        Status = course.IsActive ? "Active" : "Inactive";
     }
 
     [RelayCommand]
@@ -46,6 +47,7 @@ public partial class EditCourseViewModel : ViewModelBase
         _originalCourse.Description = Description;
         _originalCourse.Credits = Credits;
         _originalCourse.Location = Location;
+        _originalCourse.IsActive = Status == "Active";
 
         _navigation.SwitchTo<AdminCoursesView>();
     }

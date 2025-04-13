@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows.Input;
+﻿using System.Collections.Generic;
 using ClassScheduler.CoreUI;
-using ClassScheduler.CoreUI.Admin;
-using ClassScheduler.CoreUI.Student;
 using ClassScheduler.Data;
 using ClassScheduler.Models;
 using ClassScheduler.Views;
-using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
 namespace ClassScheduler.ViewModels;
@@ -25,6 +20,11 @@ public partial class AdminCoursesViewModel : ViewModelBase
     {
         _navigation = navigation;
         Courses = SystemManager.Courses;
+        
+        foreach (var course in Courses)
+        {
+            course.EditCourseCommand = new RelayCommand(() => EditCourse(course));
+        }
     }
 
     [RelayCommand]

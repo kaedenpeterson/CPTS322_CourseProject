@@ -19,7 +19,7 @@
 		</Grid.RowDefinitions>
 
 		<TextBlock Grid.Row="0"
-                   Text="Available Courses"
+                   Text="All Courses"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
                    FontFamily="Arial"
@@ -90,12 +90,19 @@
 													FontSize="15"/>
 										<TextBlock Text="/" Foreground="White" FontSize="15"/>
 										<TextBlock Text="{Binding MaxSeats}" Foreground="White" FontSize="15"/>
-										<Button Command="{Binding EditCourseCommand, RelativeSource={RelativeSource AncestorType={x:Type vm:AdminCoursesViewModel}}}"
-												CommandParameter="{Binding}" Content="Edit Course" Background="Blue" Width="200"
-												HorizontalContentAlignment="Center" VerticalContentAlignment="Center" DockPanel.Dock="Right"/>
 										<DataGrid />
 									</DockPanel>
 								</Grid>
+								
+								<Button Command="{Binding EditCourseCommand}"
+								        CommandParameter="{Binding}" Content="Edit Course"
+								        HorizontalAlignment="Right"
+								        VerticalAlignment="Bottom"
+								        HorizontalContentAlignment="Center" 
+								        VerticalContentAlignment="Center"
+								        Background="Blue" Foreground="White"
+								        Width="120" Height="40" FontSize="17"/>
+								
 							</StackPanel>
 						</Expander>
 					</DataTemplate>
