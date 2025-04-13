@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using ClassScheduler.Data;
+using SystemManager = ClassScheduler.Data.SystemManager;
 using System.Windows.Input;
 
 namespace ClassScheduler.Models;
@@ -35,6 +35,8 @@ public class Course(
     public int OpenSeats => MaxSeats - SystemManager.Students.Count(s => s.Courses.Contains(this));
     
     public ICommand AddToCartCommand { get; set; }
+    
+    public ICommand EditCourseCommand { get; set; }
     
     public bool IsInCart { get; set; }
     

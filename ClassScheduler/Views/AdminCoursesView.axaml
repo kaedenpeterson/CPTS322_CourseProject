@@ -1,0 +1,113 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:ClassScheduler.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ClassScheduler.Views.AdminCoursesView"
+             x:DataType="vm:AdminCoursesViewModel"
+             Background="#3A3A3A">
+
+	<Design.DataContext>
+		<vm:AdminCoursesViewModel/>
+	</Design.DataContext>
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<TextBlock Grid.Row="0"
+                   Text="All Courses"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   FontFamily="Arial"
+                   FontSize="30"
+                   Foreground="White"
+                   Margin="0 20 0 10"/>
+
+		<ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      Margin="10">
+			<ItemsControl ItemsSource="{Binding Courses}" Name="CoursesList">
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<Expander Margin="0"
+                                  HorizontalAlignment="Stretch">
+
+							<Expander.Header>
+								<StackPanel Orientation="Horizontal" Spacing="10" Height="55">
+									<TextBlock Text="{Binding Code}" FontSize="19"
+                                               FontWeight="Bold" Foreground="DodgerBlue"
+                                               VerticalAlignment="Center"/>
+									<TextBlock Text=" | " Foreground="Gray" VerticalAlignment="Center"/>
+									<TextBlock Text="{Binding Location}" FontSize="17"
+                                               Foreground="White" VerticalAlignment="Center"/>
+									<TextBlock Text=" | " Foreground="Gray" VerticalAlignment="Center"/>
+									<TextBlock Text="{Binding Schedule}" FontSize="17"
+                                               Foreground="White" VerticalAlignment="Center"/>
+								</StackPanel>
+							</Expander.Header>
+
+							<StackPanel Margin="10">
+								<TextBlock Text="{Binding Name}" FontSize="19"
+		                                   FontWeight="Bold" Foreground="DodgerBlue"/>
+
+								<TextBlock Text="{Binding Description}" FontSize="15"
+                                           Foreground="White" TextWrapping="Wrap" Margin="0,5"/>
+
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="Instructor: " Foreground="DodgerBlue" FontSize="15"/>
+									<TextBlock Text="{Binding Instructor}" FontSize="15" Foreground="White"/>
+								</StackPanel>
+
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="Meeting dates: " Foreground="DodgerBlue" FontSize="15"/>
+									<TextBlock Text="{Binding Schedule.FormattedStartDate}" FontSize="15"/>
+									<TextBlock Text=" - " Foreground="White" FontSize="15"/>
+									<TextBlock Text="{Binding Schedule.FormattedEndDate}" FontSize="15"/>
+								</StackPanel>
+
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="Prerequisites: " Foreground="DodgerBlue" FontSize="15"/>
+									<TextBlock Text="{Binding FormattedPrereqs}" Foreground="White"
+                                               FontSize="15"/>
+								</StackPanel>
+
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="Credits: " Foreground="DodgerBlue" FontSize="15"/>
+									<TextBlock Text="{Binding Credits}" FontSize="15" Foreground="White"/>
+								</StackPanel>
+
+								<Grid>
+									<DockPanel LastChildFill="True">
+										<TextBlock Text="Seats: " Foreground="DodgerBlue" FontSize="15"/>
+										<TextBlock Text="{Binding OpenSeats}"
+													Foreground="{Binding OpenSeats, Converter={StaticResource SeatsColorConverter}}"
+													FontSize="15"/>
+										<TextBlock Text="/" Foreground="White" FontSize="15"/>
+										<TextBlock Text="{Binding MaxSeats}" Foreground="White" FontSize="15"/>
+										<DataGrid />
+									</DockPanel>
+								</Grid>
+								
+								<Button Command="{Binding EditCourseCommand}"
+								        CommandParameter="{Binding}" Content="Edit Course"
+								        HorizontalAlignment="Right"
+								        VerticalAlignment="Bottom"
+								        HorizontalContentAlignment="Center" 
+								        VerticalContentAlignment="Center"
+								        Background="Blue" Foreground="White"
+								        Width="120" Height="40" FontSize="17"/>
+								
+							</StackPanel>
+						</Expander>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</ScrollViewer>
+	</Grid>
+</UserControl>

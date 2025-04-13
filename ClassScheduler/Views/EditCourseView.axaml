@@ -1,0 +1,76 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:ClassScheduler.ViewModels"
+             x:Class="ClassScheduler.Views.EditCourseView"
+             x:DataType="vm:EditCourseViewModel"
+             Background="#3A3A3A">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		
+		<TextBlock Grid.Row="0"
+		           Text="Edit Course"
+		           HorizontalAlignment="Center"
+		           VerticalAlignment="Top"
+		           FontFamily="Arial"
+		           FontSize="30"
+		           Foreground="White"
+		           Margin="0 20 0 10"/>
+		
+		<ScrollViewer Grid.Row="1"
+		              VerticalScrollBarVisibility="Auto"
+		              HorizontalAlignment="Stretch"
+		              VerticalAlignment="Stretch"
+		              Margin="10">
+			
+			<StackPanel Margin="10 0 10 10" Spacing="10">
+				<TextBlock Text="Course Code" Foreground="DodgerBlue" FontSize="15"/>
+				<TextBox Text="{Binding Code}"/>
+
+				<TextBlock Text="Course Name" Foreground="DodgerBlue" FontSize="15"/>
+				<TextBox Text="{Binding Name}"/>
+
+				<TextBlock Text="Instructor" Foreground="DodgerBlue" FontSize="15"/>
+				<TextBox Text="{Binding Instructor}"/>
+
+				<TextBlock Text="Description" Foreground="DodgerBlue" FontSize="15"/>
+				<TextBox Text="{Binding Description}" TextWrapping="Wrap"/>
+
+				<TextBlock Text="Credits" Foreground="DodgerBlue" FontSize="15"/>
+				<ComboBox ItemsSource="{Binding CreditOptions}"
+				          SelectedItem="{Binding Credits, Mode=TwoWay}"
+				          Width="100" Foreground="White"/>
+
+				<TextBlock Text="Location" Foreground="DodgerBlue" FontSize="15"/>
+				<TextBox Text="{Binding Location}"/>
+				
+				<TextBlock Text="Status" Foreground="DodgerBlue" FontSize="15"/>
+				<ComboBox
+					ItemsSource="{Binding StatusOptions}"
+					SelectedItem="{Binding Status, Mode=TwoWay}"
+					Width="100" Foreground="White"/>
+
+				<StackPanel Orientation="Horizontal"
+				            HorizontalAlignment="Right"
+				            Margin="0 10 0 0"
+				            Spacing="10">
+					<Button Content="Cancel" Command="{Binding CancelCommand}"
+					        Background="Gray" Foreground="White"
+					        HorizontalContentAlignment="Center" 
+					        VerticalContentAlignment="Center"
+					        Height="40" FontSize="16"/>
+
+					<Button Content="Save Changes" Command="{Binding SaveCommand}"
+					        Background="Blue" Foreground="White"
+					        HorizontalContentAlignment="Center" 
+					        VerticalContentAlignment="Center"
+					        Height="40" FontSize="16"/>
+				</StackPanel>
+			</StackPanel>
+		</ScrollViewer>
+	</Grid>
+	
+</UserControl>

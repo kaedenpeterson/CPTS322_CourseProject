@@ -41,12 +41,10 @@
                         <Menu Height="40">
                                 <MenuItem Header="Manage" FontSize="16">
                                         <MenuItem Header="View Courses" 
-                                                  Command="{Binding NavigateToCoursesCommand}"/>
+                                                  Command="{Binding NavigateToAdminCoursesCommand}"/>
                                         <MenuItem Header="Edit Course"/>
                                         <MenuItem Header="Remove Course"/>
                                         <MenuItem Header="Add Course"/>
-									<MenuItem Header="Sync with Database"
-											  Command="{Binding NaviagatetoSyncWithDatabaseCommand}"/>
                                 </MenuItem>
                         </Menu>
                 </StackPanel>

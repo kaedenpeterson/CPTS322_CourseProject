@@ -47,6 +47,11 @@ public static class SystemManager
         return Admins.Find(admin => admin.Email == email);
     }
 
+    public static Course? GetCourse(string name)
+    {
+        return Courses.Find(course => course.Name == name);
+    }
+
     // PullData() will load data from the database .csv files and populate the lists
     public static void PullData()
     {
