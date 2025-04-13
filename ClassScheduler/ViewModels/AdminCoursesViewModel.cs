@@ -26,11 +26,9 @@ public partial class AdminCoursesViewModel : ViewModelBase
             course.EditCourseCommand = new RelayCommand(() => EditCourse(course));
         }
     }
-
-    [RelayCommand]
+    
     private void EditCourse(Course course)
     {
-        var fetchedCourse = SystemManager.GetCourse(course.Name);
-        if (fetchedCourse is not null) _navigation.SwitchTo<EditCourseView>(fetchedCourse);
+        _navigation.SwitchTo<EditCourseView>(course);
     }
 }
