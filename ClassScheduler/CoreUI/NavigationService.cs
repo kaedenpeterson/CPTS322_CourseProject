@@ -55,13 +55,11 @@ public sealed class NavigationService : INavigationService
     {
         if (typeof(T) == typeof(StudentRootView) && parameter is Models.Student s1)
         {
-            SystemManager.PullData();
             MainView = new StudentRootView(this, s1);
             CurrView = new StudentView(this, s1);
         }
         else if (typeof(T) == typeof(AdminRootView) && parameter is Models.Admin a1)
         {
-            SystemManager.PullData();
             MainView = new AdminRootView(this, a1);
             CurrView = new AdminView(this, a1);
         }

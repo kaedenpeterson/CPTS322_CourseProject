@@ -30,7 +30,7 @@ public partial class StudentCoursesViewModel : ViewModelBase
     
     private void AddToCart(Course course)
     {
-        _student.Cart.Add(course);
+        _student.CartCourses.Add(course);
         course.IsInCart = true;
     }
 }

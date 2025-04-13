@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ClassScheduler.CoreUI;
 using ClassScheduler.Models;
+using ClassScheduler.Views;
 using CommunityToolkit.Mvvm.Input;
 
 namespace ClassScheduler.ViewModels;
@@ -19,8 +20,8 @@ public partial class CartViewModel : ViewModelBase
     { 
         _navigation = navigation;
         _student = student;
-        SelectableCartCourses = _student.Cart.Select(course => new SelectableCourse(course)).ToList();
-        CartCourses = _student.Cart;
+        SelectableCartCourses = _student.CartCourses.Select(course => new SelectableCourse(course)).ToList();
+        CartCourses = _student.CartCourses;
         EnrolledCourses = _student.Courses;
     }
 
@@ -40,6 +41,7 @@ public partial class CartViewModel : ViewModelBase
             }
             CartCourses.Remove(course);
             EnrolledCourses.Add(course);
+            _navigation.SwitchTo<CartView>(_student);
             
             OnPropertyChanged(nameof(SelectableCartCourses));
             OnPropertyChanged(nameof(CartCourses));
