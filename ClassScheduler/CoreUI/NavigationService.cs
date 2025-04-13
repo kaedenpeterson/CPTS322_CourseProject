@@ -52,28 +52,31 @@ public sealed class NavigationService : INavigationService
     
     public void SwitchTo<T>(object? parameter = null) where T : UserControl
     {
-        if (typeof(T) == typeof(StudentRootView) && parameter is Models.Student student)
+        if (typeof(T) == typeof(StudentRootView) && parameter is Models.Student s1)
         {
-            MainView = new StudentRootView(this, student);
-            CurrView = new StudentView(this, student);
+            MainView = new StudentRootView(this, s1);
+            CurrView = new StudentView(this, s1);
         }
-        else if (typeof(T) == typeof(AdminRootView) && parameter is Models.Admin admin)
+        else if (typeof(T) == typeof(AdminRootView) && parameter is Models.Admin a1)
         {
-            MainView = new AdminRootView(this, admin);
-            CurrView = new AdminView(this, admin);
+            MainView = new AdminRootView(this, a1);
+            CurrView = new AdminView(this, a1);
         }
-        else if (typeof(T) == typeof(StudentView) && parameter is Models.Student s) 
-            CurrView = new StudentView(this, s);
+        else if (typeof(T) == typeof(StudentView) && parameter is Models.Student s2) 
+            CurrView = new StudentView(this, s2);
         
-        else if (typeof(T) == typeof(AdminView) && parameter is Models.Admin a)
-            CurrView = new AdminView(this, a);
-        
-        else if (typeof(T) == typeof(CoursesView))
-            CurrView = new CoursesView(this);
+        else if (typeof(T) == typeof(AdminView) && parameter is Models.Admin a2)
+            CurrView = new AdminView(this, a2);
 
         else if (typeof(T) == typeof(AdminCoursesView))
             CurrView = new AdminCoursesView(this);
+        
+        else if (typeof(T) == typeof(StudentCoursesView) && parameter is Models.Student s3)
+            CurrView = new StudentCoursesView(this, s3);
 
+        else if (typeof(T) == typeof(CartView) && parameter is Models.Student s4)
+            CurrView = new CartView(this, s4);
+        
         else if (typeof(T) == typeof(LoginView))
             MainView = new LoginView(this);
 

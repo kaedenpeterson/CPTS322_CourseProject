@@ -44,6 +44,12 @@ public partial class StudentRootViewModel : ViewModelBase
     [RelayCommand]
     private void NavigateToCourses()
     {
-        Navigation.SwitchTo<CoursesView>();
+        Navigation.SwitchTo<StudentCoursesView>(_student);
+    }
+
+    [RelayCommand]
+    private void NavigateToCart()
+    {
+        Navigation.SwitchTo<CartView>(_student);
     }
 }
