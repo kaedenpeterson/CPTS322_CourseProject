@@ -20,14 +20,15 @@ public partial class AdminCoursesView : UserControl
 
         var seatsColorConverter = new FuncValueConverter<int, IBrush>(openSeats =>
             openSeats == 0 ? Brushes.Red : Brushes.LimeGreen);
-
-        /*
+        
+        var statusTextConverter = new FuncValueConverter<bool, string>(isActive =>
+            isActive ? "Active" : "Inactive");
+        
         var statusColorConverter = new FuncValueConverter<bool, IBrush>(isActive =>
             isActive ? Brushes.LimeGreen : Brushes.Red);
-            
-        */
 
         Resources["SeatsColorConverter"] = seatsColorConverter;
-        // Resources["StatusColorConverter"] = statusColorConverter;
+        Resources["StatusTextConverter"] = statusTextConverter;
+        Resources["StatusColorConverter"] = statusColorConverter;
     }
 }

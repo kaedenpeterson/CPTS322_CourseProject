@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Input;
 using ClassScheduler.CoreUI;
 using ClassScheduler.Models;
 using ClassScheduler.Views;
@@ -23,8 +24,13 @@ public partial class CartViewModel : ViewModelBase
         SelectableCartCourses = _student.CartCourses.Select(course => new SelectableCourse(course)).ToList();
         CartCourses = _student.CartCourses;
         EnrolledCourses = _student.Courses;
+        
+        foreach (var course in SelectableCartCourses)
+        {
+            course.RemoveCommand = new RelayCommand(() => Remove(course));
+        }
     }
-
+    
     [RelayCommand]
     private void Enroll()
     {
@@ -48,11 +54,25 @@ public partial class CartViewModel : ViewModelBase
             OnPropertyChanged(nameof(EnrolledCourses));
         }
     }
+    
+    private void Remove(SelectableCourse selectableCourse)
+    {
+        if (selectableCourse is null) return;
+        
+        SelectableCartCourses.Remove(selectableCourse);
+        CartCourses.Remove(selectableCourse.Course);
+        _navigation.SwitchTo<CartView>(_student);
+        
+        OnPropertyChanged(nameof(SelectableCartCourses));
+        OnPropertyChanged(nameof(CartCourses));
+    }
 
     public class SelectableCourse : ViewModelBase
     {
         public Course Course { get; set; }
         private bool _isSelected;
+        
+        public ICommand RemoveCommand {get; set;}
 
         public bool IsSelected
         {

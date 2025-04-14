@@ -1,4 +1,4 @@
- <UserControl xmlns="https://github.com/avaloniaui"
+<UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:ClassScheduler.ViewModels"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -106,6 +106,19 @@
                                     <TextBlock Text="{Binding Course.MaxSeats}" Foreground="White" FontSize="15"/>
                                 </StackPanel>
                                 
+                                <Button Content="Remove"
+                                        Command="{Binding RemoveCommand}"
+                                        CommandParameter="{Binding}"
+                                        HorizontalAlignment="Right"
+                                        VerticalAlignment="Bottom"
+                                        HorizontalContentAlignment="Center"
+                                        VerticalContentAlignment="Center"
+                                        FontSize="17"
+                                        Margin="0 0 0 0 "
+                                        Width="120" 
+                                        Height="40"
+                                        Background="Blue"
+                                        Foreground="White"/>
                             </StackPanel>
                         </Expander>
                     </DataTemplate>
