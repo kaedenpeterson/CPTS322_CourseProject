@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using ClassScheduler.CoreUI;
 using ClassScheduler.Data;
 using ClassScheduler.Models;
@@ -20,7 +21,11 @@ public partial class StudentCoursesViewModel : ViewModelBase
     { 
         _navigation = navigation;
         _student = student;
-        Courses = SystemManager.Courses;
+        
+        // Only display courses that are set as active
+        Courses = SystemManager.Courses
+            .Where(course => course.IsActive)
+            .ToList();
         
         foreach (var course in Courses)
         {
