@@ -48,7 +48,8 @@
                         <Menu Height="40">
                                 <MenuItem Header="Schedule" FontSize="16">
                                         <MenuItem Header="View Timetable"/>
-                                        <MenuItem Header="Drop Course"/>
+                                        <MenuItem Header="Drop Courses"
+                                                  Command="{Binding NavigateToDropCoursesCommand}"/>
                                         <MenuItem Header="Past Courses"/>
                                 </MenuItem>
                         </Menu>

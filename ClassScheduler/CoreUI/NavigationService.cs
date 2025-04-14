@@ -83,8 +83,11 @@ public sealed class NavigationService : INavigationService
             SystemManager.PushData();
             MainView = new LoginView(this);
         }
-
+        
         else if (typeof(T) == typeof(EditCourseView) && parameter is Course course)
             CurrView = new EditCourseView(this, course);
+        
+        else if (typeof(T) == typeof(DropCoursesView) && parameter is Models.Student s5)
+            CurrView = new DropCoursesView(this, s5);
     }
 }

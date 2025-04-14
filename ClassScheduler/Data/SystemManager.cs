@@ -46,12 +46,7 @@ public static class SystemManager
     // PullData() will load data from the database .csv files and populate the lists
     public static void PullData()
     {
-        Console.WriteLine("SystemManager.PullData() called");
-        
-        // Clearing allows for multiple calls of this method without appending to the old lists
-        Courses.Clear();
-        Students.Clear();
-        Admins.Clear();
+        Console.WriteLine("[DEBUG] SystemManager.PullData() called");
         
         using (var parser = new TextFieldParser("course_data.csv"))
         {
@@ -150,7 +145,7 @@ public static class SystemManager
     // PushData() will save the current system data to the database .csv files
     public static void PushData()
     {
-        Console.WriteLine("SystemManager.PushData() called");
+        Console.WriteLine("[DEBUG] SystemManager.PushData() called");
         
         using (var writer = new StreamWriter("course_data.csv"))
         {

@@ -52,4 +52,10 @@ public partial class StudentRootViewModel : ViewModelBase
     {
         Navigation.SwitchTo<CartView>(_student);
     }
+
+    [RelayCommand]
+    private void NavigateToDropCourses()
+    {
+        Navigation.SwitchTo<DropCoursesView>(_student);
+    }
 }
