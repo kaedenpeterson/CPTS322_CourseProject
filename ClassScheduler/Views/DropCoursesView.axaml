@@ -1,0 +1,106 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:ClassScheduler.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ClassScheduler.Views.DropCoursesView"
+             x:DataType="vm:DropCoursesViewModel"
+             Background="#3A3A3A">
+	
+	<Design.DataContext>
+		<vm:DropCoursesViewModel/>
+	</Design.DataContext>
+    
+	<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/> 
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0"
+                   Text="Drop Courses"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   FontFamily="Arial"
+                   FontSize="30"
+                   Foreground="White"
+                   Margin="0 20 0 10"/>
+        
+        <Button Grid.Row="0" Content="Drop Courses"
+                Command="{Binding DropCoursesCommand}"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="17"
+                Margin="0 0 15 0"
+                Width="140" 
+                Height="40"
+                Background="Blue"
+                Foreground="White"/>
+        
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      Margin="10">
+            <ItemsControl ItemsSource="{Binding SelectableEnrolledCourses}" Name="CoursesList">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Expander Margin="0"
+                                  HorizontalAlignment="Stretch">
+                            
+                            <Expander.Header>
+                                <StackPanel Orientation="Horizontal" Spacing="10" Height="55">
+                                    
+                                    <CheckBox IsChecked="{Binding IsSelected}"/>
+                                    
+                                    <TextBlock Text="{Binding Course.Code}" FontSize="19" 
+                                               FontWeight="Bold" Foreground="DodgerBlue"
+                                               VerticalAlignment="Center"/>
+                                    <TextBlock Text=" | " Foreground="Gray" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Course.Location}" FontSize="17" 
+                                               Foreground="White" VerticalAlignment="Center"/>
+                                    <TextBlock Text=" | " Foreground="Gray" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Course.Schedule}" FontSize="17"
+                                               Foreground="White" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </Expander.Header>
+
+                            <StackPanel Margin="10">
+                                <TextBlock Text="{Binding Course.Name}" FontSize="19" 
+                                           FontWeight="Bold" Foreground="DodgerBlue"/>
+                                <TextBlock Text="{Binding Course.Description}" FontSize="15" 
+                                           Foreground="White" TextWrapping="Wrap" Margin="0,5"/>
+                                
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Instructor: " Foreground="DodgerBlue" FontSize="15"/>
+                                    <TextBlock Text="{Binding Course.Instructor}" FontSize="15" Foreground="White"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Meeting dates: " Foreground="DodgerBlue" FontSize="15"/>
+                                    <TextBlock Text="{Binding Course.Schedule.FormattedStartDate}" FontSize="15"/>
+                                    <TextBlock Text=" - " Foreground="White" FontSize="15"/>
+                                    <TextBlock Text="{Binding Course.Schedule.FormattedEndDate}" FontSize="15"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Prerequisites: " Foreground="DodgerBlue" FontSize="15"/>
+                                    <TextBlock Text="{Binding Course.FormattedPrereqs}" Foreground="White"
+                                               FontSize="15"/>
+                                </StackPanel>
+                                
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Credits: " Foreground="DodgerBlue" FontSize="15"/>
+                                    <TextBlock Text="{Binding Course.Credits}" FontSize="15" Foreground="White"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Expander>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

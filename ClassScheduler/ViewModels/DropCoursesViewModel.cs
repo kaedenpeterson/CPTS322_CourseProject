@@ -7,44 +7,40 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace ClassScheduler.ViewModels;
 
-public partial class CartViewModel : ViewModelBase
+public partial class DropCoursesViewModel : ViewModelBase
 {
     private readonly INavigationService _navigation;
     private readonly Student _student;
 
-    public List<SelectableCourse> SelectableCartCourses { get; }
-    public List<Course> CartCourses { get; }
+    public List<SelectableCourse> SelectableEnrolledCourses { get; }
     public List<Course> EnrolledCourses { get; }
 
-    public CartViewModel(INavigationService navigation, Student student)
+    public DropCoursesViewModel(INavigationService navigation, Student student)
     { 
         _navigation = navigation;
         _student = student;
-        SelectableCartCourses = _student.CartCourses.Select(course => new SelectableCourse(course)).ToList();
-        CartCourses = _student.CartCourses;
+        SelectableEnrolledCourses = _student.Courses.Select(course => new SelectableCourse(course)).ToList();
         EnrolledCourses = _student.Courses;
     }
 
     [RelayCommand]
-    private void Enroll()
+    private void DropCourses()
     {
-        var selectedCourses = SelectableCartCourses.Where(c => c.IsSelected)
+        var selectedCourses = SelectableEnrolledCourses.Where(c => c.IsSelected)
             .Select(c => c.Course)
             .ToList();
 
         foreach (var course in selectedCourses)
         {
-            var selectableCourse = SelectableCartCourses.FirstOrDefault(c => c.Course == course);
+            var selectableCourse = SelectableEnrolledCourses.FirstOrDefault(c => c.Course == course);
             if (selectableCourse != null)
             {
-                SelectableCartCourses.Remove(selectableCourse);
+                SelectableEnrolledCourses.Remove(selectableCourse);
             }
-            CartCourses.Remove(course);
-            EnrolledCourses.Add(course);
-            _navigation.SwitchTo<CartView>(_student);
+            EnrolledCourses.Remove(course);
+            _navigation.SwitchTo<DropCoursesView>(_student);
             
-            OnPropertyChanged(nameof(SelectableCartCourses));
-            OnPropertyChanged(nameof(CartCourses));
+            OnPropertyChanged(nameof(SelectableEnrolledCourses));
             OnPropertyChanged(nameof(EnrolledCourses));
         }
     }
@@ -64,6 +60,5 @@ public partial class CartViewModel : ViewModelBase
         {
             Course = course;
         }
-        
     }
 }

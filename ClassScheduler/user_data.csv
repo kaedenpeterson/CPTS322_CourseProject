@@ -1,3 +1,3 @@
-Role,Email,Password,Name,StudentID,TotalCredits,GPA,Courses,PastCourses
-Admin,test,pass,Firstname Lastname,N/A,N/A,N/A,N/A,N/A
-Student,test,pass,Firstname Lastname,01,10,2.4,CPTS 101,CPTS 101
+Role,Email,Password,Name,StudentID,TotalCredits,GPA,Courses,CartCourses,PastCourses
+Admin,test,pass,Firstname Lastname,N/A,N/A,N/A,N/A,N/A,N/A
+Student,test,pass,Firstname Lastname,0001,10,2.4,MATH 108|CPTS 101|CPTS 121,MATH 171,CPTS 101

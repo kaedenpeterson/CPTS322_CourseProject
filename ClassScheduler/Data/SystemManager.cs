@@ -13,7 +13,6 @@ namespace ClassScheduler.Data;
 public static class SystemManager
 {
     public static readonly List<Course> Courses = [];
-    
     public static readonly List<Student> Students = [];
     private static readonly List<Admin> Admins = [];
     
@@ -47,12 +46,9 @@ public static class SystemManager
     // PullData() will load data from the database .csv files and populate the lists
     public static void PullData()
     {
-        // Clearing allows for multiple calls of this method without appending to the old lists
-        Courses.Clear();
-        Students.Clear();
-        Admins.Clear();
+        Console.WriteLine("[DEBUG] SystemManager.PullData() called");
         
-        using (TextFieldParser parser = new TextFieldParser("course_data.csv"))
+        using (var parser = new TextFieldParser("course_data.csv"))
         {
             parser.TextFieldType = FieldType.Delimited;
             parser.SetDelimiters(",");
@@ -64,7 +60,7 @@ public static class SystemManager
             {
                 var values = parser.ReadFields();
                 
-                var days = values[11].Contains("|") ? values[11].Split('|') : [];
+                var days = values[11].Contains('|') ? values[11].Split('|') : [];
 
                 List<DayOfWeek> dayOfWeeks = [];
                 foreach (var day in days)
@@ -84,7 +80,7 @@ public static class SystemManager
                 var startDate = DateTime.ParseExact(values[9].Trim(), "MM/dd/yyyy", null);
                 var endDate = DateTime.ParseExact(values[10].Trim(), "MM/dd/yyyy", null);
 
-                Schedule schedule = new Schedule(
+                var schedule = new Schedule(
                     dayOfWeeks,
                     startTime,
                     endTime,
@@ -106,11 +102,9 @@ public static class SystemManager
             }
         }
 
-        using (StreamReader reader = new StreamReader("user_data.csv"))
+        using (var reader = new StreamReader("user_data.csv"))
         {
-            var line = reader.ReadLine();
-
-            while ((line = reader.ReadLine()) != null)
+            while (reader.ReadLine() is { } line)
             {
                 var values = line.Split(',');
 
@@ -119,36 +113,28 @@ public static class SystemManager
 
                 if (values[0].Equals("Student", StringComparison.OrdinalIgnoreCase))
                 {
-                    if (values.Length < 9)
-                    {
-                        Console.WriteLine("Invalid student data line: " + line);
-                        continue;
-                    }
-                
-                    List<Course?> enrolledCourses = values[7] != "N/A"
-                        ? values[7].Split('|').Select(code => Courses.FirstOrDefault(c => c.Code == code)).Where(c => c != null).ToList()!
-                        : new();
+                    var enrolledCourses = values[7] != "N/A"
+                        ? values[7].Split('|').Select(code => Courses.FirstOrDefault(c => c.Code == code)).Where(c => c != null).ToList() 
+                        : [];
+                    
+                    var cartCourses = values[8] != "N/A"
+                        ? values[8].Split('|').Select(code => Courses.FirstOrDefault(c => c.Code == code)).Where(c => c != null).ToList()
+                        : [];
 
-                    List<Course?> pastCourses = values[8] != "N/A"
-                        ? values[8].Split('|').Select(code => Courses.FirstOrDefault(c => c.Code == code)).Where(c => c != null).ToList()!
-                        : new();
+                    var pastCourses = values[9] != "N/A"
+                        ? values[9].Split('|').Select(code => Courses.FirstOrDefault(c => c.Code == code)).Where(c => c != null).ToList()
+                        : [];
 
                     var student = new Student(
                         values[1], values[2], values[3], values[4],
                         int.Parse(values[5]), double.Parse(values[6]),
-                        enrolledCourses, pastCourses
+                        enrolledCourses, cartCourses, pastCourses
                     );
 
                     Students.Add(student);
                 }
                 else if (values[0].Equals("Admin", StringComparison.OrdinalIgnoreCase))
                 {
-                    if (values.Length < 4)
-                    {
-                        Console.WriteLine("Invalid admin data line: " + line);
-                        continue;
-                    }
-
                     var admin = new Admin(values[1], values[2], values[3]);
                     Admins.Add(admin);
                 }
@@ -159,7 +145,9 @@ public static class SystemManager
     // PushData() will save the current system data to the database .csv files
     public static void PushData()
     {
-        using (StreamWriter writer = new StreamWriter("course_data.csv"))
+        Console.WriteLine("[DEBUG] SystemManager.PushData() called");
+        
+        using (var writer = new StreamWriter("course_data.csv"))
         {
             writer.WriteLine("Code,Title,Instructor,Description,Credits,Prerequisites," +
                              "Capacity,Location,IsActive,StartDate,EndDate," +
@@ -167,10 +155,10 @@ public static class SystemManager
             foreach (var course in Courses)
             {
                 var prerequisites = course.Prerequisites.Any()
-                    ? string.Join("|", course.Prerequisites)
+                    ? string.Join('|', course.Prerequisites)
                     : "N/A";
                 var days = course.Schedule.Days.Any()
-                    ? string.Join("|", course.Schedule.Days.Select(d => d.ToString()[..3]))
+                    ? string.Join('|', course.Schedule.Days.Select(d => d.ToString()[..3]))
                     : "N/A";
                 writer.WriteLine($"{course.Code},{course.Name},{course.Instructor},\"{course.Description}\",{course.Credits},{prerequisites}," +
                                  $"{course.MaxSeats},{course.Location},{course.IsActive},{course.Schedule.FormattedStartDate},{course.Schedule.FormattedEndDate}," +
@@ -179,22 +167,26 @@ public static class SystemManager
         }
            
 
-        using (StreamWriter writer = new StreamWriter("user_data.csv"))
+        using (var writer = new StreamWriter("user_data.csv"))
         {
-            writer.WriteLine("Role,Email,Password,Name,StudentID,TotalCredits,GPA,Courses,PastCourses");
+            writer.WriteLine("Role,Email,Password,Name,StudentID,TotalCredits,GPA,Courses,CartCourses,PastCourses");
             foreach (var admin in Admins)
             {
-                writer.WriteLine($"Admin,{admin.Email},{admin.Password},{admin.Name},N/A,N/A,N/A,N/A,N/A");
+                writer.WriteLine($"Admin,{admin.Email},{admin.Password},{admin.Name},N/A,N/A,N/A,N/A,N/A,N/A");
             }
             foreach (var student in Students)
             {
                 var courses = student.Courses.Any()
-                    ? string.Join("|", student.Courses.Select(p => p.Code))
+                    ? string.Join('|', student.Courses.Select(p => p.Code))
+                    : "N/A";
+                var cartCourses = student.CartCourses.Any()
+                    ? string.Join('|', student.CartCourses.Select(p => p.Code))
                     : "N/A";
                 var pastCourses = student.PastCourses.Any()
-                    ? string.Join("|", student.PastCourses.Select(p => p.Code))
+                    ? string.Join('|', student.PastCourses.Select(p => p.Code))
                     : "N/A";
-                writer.WriteLine($"Student,{student.Email},{student.Password},{student.Name},{student.StudentId},{student.TotalCredits},{student.Gpa},{courses},{pastCourses}");
+                writer.WriteLine($"Student,{student.Email},{student.Password},{student.Name}," +
+                                 $"{student.StudentId},{student.TotalCredits},{student.Gpa},{courses},{cartCourses},{pastCourses}");
             }
         }
     }

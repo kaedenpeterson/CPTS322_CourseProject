@@ -55,13 +55,11 @@ public sealed class NavigationService : INavigationService
     {
         if (typeof(T) == typeof(StudentRootView) && parameter is Models.Student s1)
         {
-            SystemManager.PullData();
             MainView = new StudentRootView(this, s1);
             CurrView = new StudentView(this, s1);
         }
         else if (typeof(T) == typeof(AdminRootView) && parameter is Models.Admin a1)
         {
-            SystemManager.PullData();
             MainView = new AdminRootView(this, a1);
             CurrView = new AdminView(this, a1);
         }
@@ -85,8 +83,11 @@ public sealed class NavigationService : INavigationService
             SystemManager.PushData();
             MainView = new LoginView(this);
         }
-
+        
         else if (typeof(T) == typeof(EditCourseView) && parameter is Course course)
             CurrView = new EditCourseView(this, course);
+        
+        else if (typeof(T) == typeof(DropCoursesView) && parameter is Models.Student s5)
+            CurrView = new DropCoursesView(this, s5);
     }
 }
