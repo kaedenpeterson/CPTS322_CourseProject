@@ -103,7 +103,6 @@
                                         Height="40"
                                         Background="Blue"
                                         Foreground="White"/>
-                                
                             </StackPanel>
                         </Expander>
                     </DataTemplate>

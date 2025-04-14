@@ -49,6 +49,11 @@
 									<TextBlock Text=" | " Foreground="Gray" VerticalAlignment="Center"/>
 									<TextBlock Text="{Binding Schedule}" FontSize="17"
                                                Foreground="White" VerticalAlignment="Center"/>
+									<TextBlock Text=" | " Foreground="Gray" VerticalAlignment="Center"/>
+									<TextBlock Text="{Binding IsActive, Converter={StaticResource StatusTextConverter}}" 
+									           Foreground="{Binding IsActive, Converter={StaticResource StatusColorConverter}}"
+									           FontSize="17"
+									           VerticalAlignment="Center"/>
 								</StackPanel>
 							</Expander.Header>
 
@@ -90,9 +95,15 @@
 													FontSize="15"/>
 										<TextBlock Text="/" Foreground="White" FontSize="15"/>
 										<TextBlock Text="{Binding MaxSeats}" Foreground="White" FontSize="15"/>
-										<DataGrid />
 									</DockPanel>
 								</Grid>
+								
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="Status: " Foreground="DodgerBlue" FontSize="15"/>
+									<TextBlock Text="{Binding IsActive, Converter={StaticResource StatusTextConverter}}"
+									           Foreground="{Binding IsActive, Converter={StaticResource StatusColorConverter}}"
+									           FontSize="15"/>
+								</StackPanel>
 								
 								<Button Command="{Binding EditCourseCommand}"
 								        CommandParameter="{Binding}" Content="Edit Course"
