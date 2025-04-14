@@ -2,8 +2,8 @@
 SW8_Class Scheduler
 
 ## Known bugs
-- If admin logs out and logs back in, the cancel and save buttons in edit courses view is grayed out
-- If student logs out and logs back in, the enroll button in cart view and drop courses button in drop courses view is grayed out
+- If admin logs out and logs back in, the cancel and save buttons in edit courses view and the add course button in admin courses view is grayed out
+- If student logs out and logs back in, the enroll button in cart view and the drop courses button in drop courses view is grayed out
 
 ## Backlog
 
