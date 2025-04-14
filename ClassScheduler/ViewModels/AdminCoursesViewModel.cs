@@ -24,11 +24,23 @@ public partial class AdminCoursesViewModel : ViewModelBase
         foreach (var course in Courses)
         {
             course.EditCourseCommand = new RelayCommand(() => EditCourse(course));
+            course.DeleteCourseCommand = new RelayCommand(() => DeleteCourse(course));
         }
     }
     
     private void EditCourse(Course course)
     {
         _navigation.SwitchTo<EditCourseView>(course);
+    }
+
+    private void DeleteCourse(Course course)
+    {
+        _navigation.SwitchTo<AdminCoursesView>();
+    }
+
+    [RelayCommand]
+    private void AddCourse()
+    {
+        // _navigation.SwitchTo<AddCoursesView>();
     }
 }

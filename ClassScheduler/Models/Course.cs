@@ -38,6 +38,8 @@ public class Course(
     
     public ICommand EditCourseCommand { get; set; }
     
+    public ICommand DeleteCourseCommand { get; set; }
+    
     public bool IsInCart { get; set; }
     
     public string Status => IsActive ? "Active" : "Inactive";

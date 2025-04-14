@@ -37,15 +37,13 @@
                                         <MenuItem Header="Logout" PointerPressed="OnLogoutSelect"/>
                                 </MenuItem>
                         </Menu>
-                         
-                        <Menu Height="40">
-                                <MenuItem Header="Manage" FontSize="16">
-                                        <MenuItem Header="View Courses" 
-                                                  Command="{Binding NavigateToAdminCoursesCommand}"/>
-                                        <MenuItem Header="Remove Course"/>
-                                        <MenuItem Header="Add Course"/>
-                                </MenuItem>
-                        </Menu>
+                        
+                        <Button Height="40" Background="Transparent"
+                                Content="Manage" FontSize="16"
+                                Command="{Binding NavigateToAdminCoursesCommand}"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center">
+                        </Button>
                 </StackPanel>
                 
                 <ContentControl Content="{Binding CurrView}" DockPanel.Dock="Bottom"
