@@ -33,9 +33,12 @@ public partial class AdminCoursesViewModel : ViewModelBase
         _navigation.SwitchTo<EditCourseView>(course);
     }
 
-    private void DeleteCourse(Course course)
+    public void DeleteCourse(Course course)
     {
+        Courses.Remove(course);
         _navigation.SwitchTo<AdminCoursesView>();
+        
+        OnPropertyChanged(nameof(Courses));
     }
 
     [RelayCommand]

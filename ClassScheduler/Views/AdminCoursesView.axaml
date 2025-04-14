@@ -130,9 +130,9 @@
 									        HorizontalContentAlignment="Center" 
 									        VerticalContentAlignment="Center"/>
 
-									<Button Command="{Binding DeleteCourseCommand}"
-									        CommandParameter="{Binding}" 
-									        Content="Delete Course"
+									<Button Content="Delete Course"
+									        Click="OnDeleteCourseSelect"
+									        Tag="{Binding}"
 									        Background="Blue" 
 									        Foreground="White"
 									        Width="140" 
