@@ -44,7 +44,7 @@ public partial class AdminCoursesView : UserControl
         if (sender is not Button { Tag: Course courseToDelete }) return;
 
         var confirmDeleteCourse = new PopupWindow(
-            string.Empty,
+            "Confirm Deletion",
             $"Are you sure you want to delete {courseToDelete.Code}?",
             "Yes", () => vm.DeleteCourse(courseToDelete),
             "Cancel"

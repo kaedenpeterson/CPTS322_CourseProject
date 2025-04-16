@@ -15,15 +15,8 @@ public partial class CartView : UserControl
         
         var seatsColorConverter = new FuncValueConverter<int, IBrush>(openSeats =>
             openSeats == 0 ? Brushes.Red : Brushes.LimeGreen);
-        
-        /*
-        var statusColorConverter = new FuncValueConverter<bool, IBrush>(isActive =>
-            isActive ? Brushes.LimeGreen : Brushes.Red);
 
-        */
-        
         Resources["SeatsColorConverter"] = seatsColorConverter;
-        // Resources["StatusColorConverter"] = statusColorConverter;
         
         DataContext = new CartViewModel(navigation, student);
     }

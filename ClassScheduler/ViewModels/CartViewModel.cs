@@ -1,6 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
+using Avalonia;
+using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
 using ClassScheduler.CoreUI;
 using ClassScheduler.Models;
 using ClassScheduler.Views;
@@ -30,6 +34,32 @@ public partial class CartViewModel : ViewModelBase
             course.RemoveCommand = new RelayCommand(() => Remove(course));
         }
     }
+
+    private bool TryEnrollCourse(Course courseToEnroll)
+    {
+        var conflict = EnrolledCourses.FirstOrDefault(enrolled =>
+        {
+            var conflictingDays = enrolled.Schedule.Days.Intersect(courseToEnroll.Schedule.Days);
+            if (!conflictingDays.Any()) return false;
+
+            return enrolled.Schedule.StartTime < courseToEnroll.Schedule.EndTime &&
+                   courseToEnroll.Schedule.StartTime < enrolled.Schedule.EndTime;
+        });
+
+        if (conflict == null) return true;
+        
+        var conflictPopup = new PopupWindow(
+            "Schedule Conflict",
+            $"Cannot enroll in {courseToEnroll.Code} because it conflicts with {conflict.Code}.",
+            "OK"
+        );
+
+        var parentWindow = (Application.Current?.ApplicationLifetime as IClassicDesktopStyleApplicationLifetime)
+            ?.MainWindow;
+        if (parentWindow != null) conflictPopup.ShowDialog(parentWindow);
+        
+        return false;
+    }
     
     [RelayCommand]
     private void Enroll()
@@ -40,24 +70,25 @@ public partial class CartViewModel : ViewModelBase
 
         foreach (var course in selectedCourses)
         {
+            if (!TryEnrollCourse(course)) continue;
+
             var selectableCourse = SelectableCartCourses.FirstOrDefault(c => c.Course == course);
-            if (selectableCourse != null)
-            {
-                SelectableCartCourses.Remove(selectableCourse);
-            }
+            if (selectableCourse != null) SelectableCartCourses.Remove(selectableCourse);
+
             CartCourses.Remove(course);
             EnrolledCourses.Add(course);
-            _navigation.SwitchTo<CartView>(_student);
-            
-            OnPropertyChanged(nameof(SelectableCartCourses));
-            OnPropertyChanged(nameof(CartCourses));
-            OnPropertyChanged(nameof(EnrolledCourses));
         }
+        
+        OnPropertyChanged(nameof(SelectableCartCourses));
+        OnPropertyChanged(nameof(CartCourses));
+        OnPropertyChanged(nameof(EnrolledCourses));
+            
+        _navigation.SwitchTo<CartView>(_student);
     }
     
     private void Remove(SelectableCourse selectableCourse)
     {
-        if (selectableCourse is null) return;
+        if (selectableCourse == null) return;
         
         SelectableCartCourses.Remove(selectableCourse);
         CartCourses.Remove(selectableCourse.Course);
