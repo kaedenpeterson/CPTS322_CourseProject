@@ -28,7 +28,7 @@
                    Margin="0 20 0 10"/>
         
         <Button Grid.Row="0" Content="Drop Courses"
-                Command="{Binding DropCoursesCommand}"
+                Click="OnDropCoursesSelect"
                 HorizontalAlignment="Right"
                 VerticalAlignment="Bottom"
                 HorizontalContentAlignment="Center"

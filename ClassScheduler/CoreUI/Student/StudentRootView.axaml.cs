@@ -21,7 +21,7 @@ public partial class StudentRootView : UserControl
         if (DataContext is not StudentRootViewModel vm) return;
         
         var confirmLogoutPopup = new PopupWindow(
-            string.Empty,
+            "End Session",
             "Are you sure you want to log out?",
             "Yes", () => vm.Navigation.SwitchTo<LoginView>(),
             "Cancel"

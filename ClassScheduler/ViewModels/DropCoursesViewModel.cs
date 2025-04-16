@@ -13,14 +13,12 @@ public partial class DropCoursesViewModel : ViewModelBase
     private readonly Student _student;
 
     public List<SelectableCourse> SelectableEnrolledCourses { get; }
-    public List<Course> EnrolledCourses { get; }
 
     public DropCoursesViewModel(INavigationService navigation, Student student)
     { 
         _navigation = navigation;
         _student = student;
-        SelectableEnrolledCourses = _student.Courses.Select(course => new SelectableCourse(course)).ToList();
-        EnrolledCourses = _student.Courses;
+        SelectableEnrolledCourses = _student.EnrolledCourses.Select(course => new SelectableCourse(course)).ToList();
     }
 
     [RelayCommand]
@@ -37,11 +35,11 @@ public partial class DropCoursesViewModel : ViewModelBase
             {
                 SelectableEnrolledCourses.Remove(selectableCourse);
             }
-            EnrolledCourses.Remove(course);
+            _student.EnrolledCourses.Remove(course);
             _navigation.SwitchTo<DropCoursesView>(_student);
             
             OnPropertyChanged(nameof(SelectableEnrolledCourses));
-            OnPropertyChanged(nameof(EnrolledCourses));
+            OnPropertyChanged(nameof(_student.EnrolledCourses));
         }
     }
 

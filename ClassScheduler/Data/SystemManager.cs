@@ -46,8 +46,6 @@ public static class SystemManager
     // PullData() will load data from the database .csv files and populate the lists
     public static void PullData()
     {
-        Console.WriteLine("[DEBUG] SystemManager.PullData() called");
-        
         using (var parser = new TextFieldParser("course_data.csv"))
         {
             parser.TextFieldType = FieldType.Delimited;
@@ -145,8 +143,6 @@ public static class SystemManager
     // PushData() will save the current system data to the database .csv files
     public static void PushData()
     {
-        Console.WriteLine("[DEBUG] SystemManager.PushData() called");
-        
         using (var writer = new StreamWriter("course_data.csv"))
         {
             writer.WriteLine("Code,Title,Instructor,Description,Credits,Prerequisites," +
@@ -176,8 +172,8 @@ public static class SystemManager
             }
             foreach (var student in Students)
             {
-                var courses = student.Courses.Any()
-                    ? string.Join('|', student.Courses.Select(p => p.Code))
+                var courses = student.EnrolledCourses.Any()
+                    ? string.Join('|', student.EnrolledCourses.Select(p => p.Code))
                     : "N/A";
                 var cartCourses = student.CartCourses.Any()
                     ? string.Join('|', student.CartCourses.Select(p => p.Code))

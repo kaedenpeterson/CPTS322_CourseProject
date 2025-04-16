@@ -32,7 +32,7 @@ public class Course(
 
     public bool IsActive { get; set; } = isActive;
     public Schedule Schedule { get; set; } = schedule;
-    public int OpenSeats => MaxSeats - SystemManager.Students.Count(s => s.Courses.Contains(this));
+    public int OpenSeats => MaxSeats - SystemManager.Students.Count(s => s.EnrolledCourses.Contains(this));
     
     public ICommand AddToCartCommand { get; set; }
     

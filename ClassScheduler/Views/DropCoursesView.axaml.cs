@@ -1,6 +1,8 @@
 using Avalonia.Controls;
 using Avalonia.Data.Converters;
+using Avalonia.Interactivity;
 using Avalonia.Media;
+using Avalonia.VisualTree;
 using ClassScheduler.CoreUI;
 using ClassScheduler.Models;
 using ClassScheduler.ViewModels;
@@ -13,18 +15,21 @@ public partial class DropCoursesView : UserControl
     {
         InitializeComponent();
         
-        var seatsColorConverter = new FuncValueConverter<int, IBrush>(openSeats =>
-            openSeats == 0 ? Brushes.Red : Brushes.LimeGreen);
-        
-        /*
-        var statusColorConverter = new FuncValueConverter<bool, IBrush>(isActive =>
-            isActive ? Brushes.LimeGreen : Brushes.Red);
-
-        */
-        
-        Resources["SeatsColorConverter"] = seatsColorConverter;
-        // Resources["StatusColorConverter"] = statusColorConverter;
-        
         DataContext = new DropCoursesViewModel(navigation, student);
+    }
+
+    private void OnDropCoursesSelect(object sender, RoutedEventArgs e)
+    {
+        if (DataContext is not DropCoursesViewModel vm) return;
+
+        var confirmDropCourses = new PopupWindow(
+            "Confirm Drop",
+            "Are you sure you want to drop the selected courses?",
+            "Yes", () => vm.DropCoursesCommand.Execute(null),
+            "Cancel"
+        );
+        
+        var parentWindow = this.FindAncestorOfType<Window>();
+        if (parentWindow != null) confirmDropCourses.ShowDialog(parentWindow);
     }
 }
