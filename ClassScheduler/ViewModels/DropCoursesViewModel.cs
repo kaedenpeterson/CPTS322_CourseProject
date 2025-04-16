@@ -19,8 +19,8 @@ public partial class DropCoursesViewModel : ViewModelBase
     { 
         _navigation = navigation;
         _student = student;
-        SelectableEnrolledCourses = _student.Courses.Select(course => new SelectableCourse(course)).ToList();
-        EnrolledCourses = _student.Courses;
+        SelectableEnrolledCourses = _student.EnrolledCourses.Select(course => new SelectableCourse(course)).ToList();
+        EnrolledCourses = _student.EnrolledCourses;
     }
 
     [RelayCommand]

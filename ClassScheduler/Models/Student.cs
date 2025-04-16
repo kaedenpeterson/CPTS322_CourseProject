@@ -8,7 +8,7 @@ namespace ClassScheduler.Models;
 /// </summary>
 public class Student : User
 {
-    public List<Course> Courses { get; set; }
+    public List<Course> EnrolledCourses { get; set; }
     public List<Course> PastCourses { get; set; }
 
     public List<Course> CartCourses { get; set; }
@@ -18,17 +18,17 @@ public class Student : User
     
     public int TotalCredits { get; set; }
     
-    public int CurrentCredits => Courses.Sum(c => c.Credits);
+    public int CurrentCredits => EnrolledCourses.Sum(c => c.Credits);
     
     public double Gpa { get; set; }
     
-    public Student(string email, string password, string name, string studentId, int totalCredits, double gpa, List<Course> courses, List<Course> cartCourses, List<Course> pastCourses) 
+    public Student(string email, string password, string name, string studentId, int totalCredits, double gpa, List<Course> enrolledCourses, List<Course> cartCourses, List<Course> pastCourses) 
         : base(email, password, name)
     {
         StudentId = studentId;
         TotalCredits = totalCredits;
         Gpa = gpa;
-        Courses = courses;
+        EnrolledCourses = enrolledCourses;
         CartCourses = cartCourses;
         PastCourses = pastCourses;
     }

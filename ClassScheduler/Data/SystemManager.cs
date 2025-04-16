@@ -176,8 +176,8 @@ public static class SystemManager
             }
             foreach (var student in Students)
             {
-                var courses = student.Courses.Any()
-                    ? string.Join('|', student.Courses.Select(p => p.Code))
+                var courses = student.EnrolledCourses.Any()
+                    ? string.Join('|', student.EnrolledCourses.Select(p => p.Code))
                     : "N/A";
                 var cartCourses = student.CartCourses.Any()
                     ? string.Join('|', student.CartCourses.Select(p => p.Code))

@@ -1,9 +1,7 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
 using Avalonia;
-using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using ClassScheduler.CoreUI;
 using ClassScheduler.Models;
@@ -18,17 +16,12 @@ public partial class CartViewModel : ViewModelBase
     private readonly Student _student;
 
     public List<SelectableCourse> SelectableCartCourses { get; }
-    public List<Course> CartCourses { get; }
-    public List<Course> EnrolledCourses { get; }
-
     public CartViewModel(INavigationService navigation, Student student)
     { 
         _navigation = navigation;
         _student = student;
         SelectableCartCourses = _student.CartCourses.Select(course => new SelectableCourse(course)).ToList();
-        CartCourses = _student.CartCourses;
-        EnrolledCourses = _student.Courses;
-        
+
         foreach (var course in SelectableCartCourses)
         {
             course.RemoveCommand = new RelayCommand(() => Remove(course));
@@ -37,7 +30,30 @@ public partial class CartViewModel : ViewModelBase
 
     private bool TryEnrollCourse(Course courseToEnroll)
     {
-        var conflict = EnrolledCourses.FirstOrDefault(enrolled =>
+        var pastCourseCodes = _student.PastCourses.Select(c => c.Code).ToHashSet();
+        
+        var missingPrereqs = courseToEnroll.Prerequisites
+            .Where(prereq => !pastCourseCodes.Contains(prereq))
+            .ToList();
+
+        if (missingPrereqs.Any())
+        {
+            var missingList = string.Join(", ", missingPrereqs);
+
+            var prereqPopup = new PopupWindow(
+                "Missing Prerequisites",
+                $"Cannot enroll in {courseToEnroll.Code}.\n\nMissing prerequisites: {missingList}",
+                "OK"
+            );
+            
+            var window = (Application.Current?.ApplicationLifetime as IClassicDesktopStyleApplicationLifetime)
+                ?.MainWindow;
+            if (window != null) prereqPopup.ShowDialog(window);
+
+            return false;
+        }
+        
+        var conflict = _student.EnrolledCourses.FirstOrDefault(enrolled =>
         {
             var conflictingDays = enrolled.Schedule.Days.Intersect(courseToEnroll.Schedule.Days);
             if (!conflictingDays.Any()) return false;
@@ -75,13 +91,11 @@ public partial class CartViewModel : ViewModelBase
             var selectableCourse = SelectableCartCourses.FirstOrDefault(c => c.Course == course);
             if (selectableCourse != null) SelectableCartCourses.Remove(selectableCourse);
 
-            CartCourses.Remove(course);
-            EnrolledCourses.Add(course);
+            _student.CartCourses.Remove(course);
+            _student.EnrolledCourses.Add(course);
         }
         
         OnPropertyChanged(nameof(SelectableCartCourses));
-        OnPropertyChanged(nameof(CartCourses));
-        OnPropertyChanged(nameof(EnrolledCourses));
             
         _navigation.SwitchTo<CartView>(_student);
     }
@@ -91,11 +105,11 @@ public partial class CartViewModel : ViewModelBase
         if (selectableCourse == null) return;
         
         SelectableCartCourses.Remove(selectableCourse);
-        CartCourses.Remove(selectableCourse.Course);
+        _student.CartCourses.Remove(selectableCourse.Course);
         _navigation.SwitchTo<CartView>(_student);
         
         OnPropertyChanged(nameof(SelectableCartCourses));
-        OnPropertyChanged(nameof(CartCourses));
+        OnPropertyChanged(nameof(_student.CartCourses));
     }
 
     public class SelectableCourse : ViewModelBase

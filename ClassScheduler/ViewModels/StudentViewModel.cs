@@ -18,7 +18,7 @@ public partial class StudentViewModel : ViewModelBase
     public StudentViewModel(INavigationService navigation, Student student)
     {
         Student = student;
-        Courses = new ObservableCollection<Course>(student.Courses);
+        Courses = new ObservableCollection<Course>(student.EnrolledCourses);
 
         _navigation = navigation;
         
