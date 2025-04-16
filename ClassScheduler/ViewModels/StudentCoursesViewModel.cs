@@ -35,6 +35,7 @@ public partial class StudentCoursesViewModel : ViewModelBase
     
     private void AddToCart(Course course)
     {
+        if (_student.CartCourses.Contains(course)) return;
         _student.CartCourses.Add(course);
         course.IsInCart = true;
     }

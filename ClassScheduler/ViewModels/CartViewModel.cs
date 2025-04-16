@@ -106,10 +106,10 @@ public partial class CartViewModel : ViewModelBase
         
         SelectableCartCourses.Remove(selectableCourse);
         _student.CartCourses.Remove(selectableCourse.Course);
-        _navigation.SwitchTo<CartView>(_student);
         
         OnPropertyChanged(nameof(SelectableCartCourses));
-        OnPropertyChanged(nameof(_student.CartCourses));
+        
+        _navigation.SwitchTo<CartView>(_student);
     }
 
     public class SelectableCourse : ViewModelBase
