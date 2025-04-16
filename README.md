@@ -40,5 +40,5 @@ Kanban board at end of sprint:
 |-----------------|----------|----------------------------|-------------|
 | Bitna White     | 11812714 | View Timetable #8          | To Do       |
 | Ishaan Joshi    | 11834312 | Remove Course #10          | Complete    |
-| Kaeden Peterson | 11858249 | Check Conflicts #6         | Testing     |
+| Kaeden Peterson | 11858249 | Check Conflicts #6         | Complete    |
 | Ryan Hughes     | 11828460 | Add New Course #9          | To Do       |
