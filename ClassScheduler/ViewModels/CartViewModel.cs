@@ -42,7 +42,7 @@ public partial class CartViewModel : ViewModelBase
 
             var prereqPopup = new PopupWindow(
                 "Missing Prerequisites",
-                $"Cannot enroll in {courseToEnroll.Code}.\n\nMissing prerequisites: {missingList}",
+                $"Cannot enroll in {courseToEnroll.Code}.\nMissing prerequisites: {missingList}",
                 "OK"
             );
             

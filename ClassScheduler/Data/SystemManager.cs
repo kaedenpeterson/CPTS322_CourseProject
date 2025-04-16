@@ -46,8 +46,6 @@ public static class SystemManager
     // PullData() will load data from the database .csv files and populate the lists
     public static void PullData()
     {
-        Console.WriteLine("[DEBUG] SystemManager.PullData() called");
-        
         using (var parser = new TextFieldParser("course_data.csv"))
         {
             parser.TextFieldType = FieldType.Delimited;
@@ -145,8 +143,6 @@ public static class SystemManager
     // PushData() will save the current system data to the database .csv files
     public static void PushData()
     {
-        Console.WriteLine("[DEBUG] SystemManager.PushData() called");
-        
         using (var writer = new StreamWriter("course_data.csv"))
         {
             writer.WriteLine("Code,Title,Instructor,Description,Credits,Prerequisites," +
