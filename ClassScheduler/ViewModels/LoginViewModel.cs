@@ -1,9 +1,3 @@
-/*
-Description: ViewModel for login page in ClassScheduler. Handles user authentication logic and data binding.
-Author: Kaeden Peterson 11858249
-Date: 3-14-25
-*/
-
 using ClassScheduler.CoreUI;
 using ClassScheduler.CoreUI.Admin;
 using ClassScheduler.CoreUI.Student;
@@ -59,12 +53,12 @@ public partial class LoginViewModel(INavigationService navigation) : ViewModelBa
         {
             case "Student":
                 var student = SystemManager.GetStudent(Email);
-                if (student is not null) navigation.SwitchTo<StudentRootView>(student);
+                if (student != null) navigation.SwitchTo<StudentRootView>(student);
                 
                 break;
             case "Admin":
                 var admin = SystemManager.GetAdmin(Email);
-                if (admin is not null) navigation.SwitchTo<AdminRootView>(admin);
+                if (admin != null) navigation.SwitchTo<AdminRootView>(admin);
                 
                 break;
         }

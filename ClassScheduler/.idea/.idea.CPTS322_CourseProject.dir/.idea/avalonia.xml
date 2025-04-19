@@ -13,6 +13,7 @@
         <entry key="Views/CartView.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/ConfirmLogoutWindow.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/CoursesView.axaml" value="ClassScheduler.csproj" />
+        <entry key="Views/DropCoursesView.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/EditCourseView.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/LoginView.axaml" value="ClassScheduler.csproj" />
         <entry key="Views/MainWindow.axaml" value="ClassScheduler.csproj" />

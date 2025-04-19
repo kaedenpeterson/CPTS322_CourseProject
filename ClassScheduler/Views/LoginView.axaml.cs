@@ -18,8 +18,7 @@ namespace ClassScheduler.Views;
 /// </summary>
 public partial class LoginView : UserControl
 {
-    private readonly NavigationService _navigation;
-    public LoginView(NavigationService navigation)
+    public LoginView(INavigationService navigation)
     {
        InitializeComponent();
        DataContext = new LoginViewModel(navigation);

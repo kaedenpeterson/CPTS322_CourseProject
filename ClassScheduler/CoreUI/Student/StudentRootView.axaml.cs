@@ -23,7 +23,7 @@ public partial class StudentRootView : UserControl
         var confirmLogoutPopup = new PopupWindow(
             "End Session",
             "Are you sure you want to log out?",
-            "Yes", () => vm.Navigation.SwitchTo<LoginView>(),
+            "Yes", () => vm._navigation.SwitchTo<LoginView>(),
             "Cancel"
         );
         

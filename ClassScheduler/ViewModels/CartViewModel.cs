@@ -3,6 +3,7 @@ using System.Linq;
 using System.Windows.Input;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Controls.Primitives;
 using ClassScheduler.CoreUI;
 using ClassScheduler.Models;
 using ClassScheduler.Views;
@@ -30,6 +31,23 @@ public partial class CartViewModel : ViewModelBase
 
     private bool TryEnrollCourse(Course courseToEnroll)
     {
+        // Check if there are open seats
+        if (courseToEnroll.OpenSeats <= 0)
+        {
+            var noSeatsPopup = new PopupWindow(
+                "No Seats",
+                $"Cannot enroll in {courseToEnroll.Code} because there are no open seats.",
+                "OK"
+            );
+
+            var window1 = (Application.Current?.ApplicationLifetime as IClassicDesktopStyleApplicationLifetime)
+                ?.MainWindow;
+            if (window1 != null) noSeatsPopup.ShowDialog(window1);
+            
+            return false;
+        }
+        
+        // Check if student meets course prerequisites
         var pastCourseCodes = _student.PastCourses.Select(c => c.Code).ToHashSet();
         
         var missingPrereqs = courseToEnroll.Prerequisites
@@ -46,13 +64,14 @@ public partial class CartViewModel : ViewModelBase
                 "OK"
             );
             
-            var window = (Application.Current?.ApplicationLifetime as IClassicDesktopStyleApplicationLifetime)
+            var window2 = (Application.Current?.ApplicationLifetime as IClassicDesktopStyleApplicationLifetime)
                 ?.MainWindow;
-            if (window != null) prereqPopup.ShowDialog(window);
+            if (window2 != null) prereqPopup.ShowDialog(window2);
 
             return false;
         }
         
+        // Check time conflicts with enrolled courses
         var conflict = _student.EnrolledCourses.FirstOrDefault(enrolled =>
         {
             var conflictingDays = enrolled.Schedule.Days.Intersect(courseToEnroll.Schedule.Days);
@@ -70,9 +89,9 @@ public partial class CartViewModel : ViewModelBase
             "OK"
         );
 
-        var parentWindow = (Application.Current?.ApplicationLifetime as IClassicDesktopStyleApplicationLifetime)
+        var window3 = (Application.Current?.ApplicationLifetime as IClassicDesktopStyleApplicationLifetime)
             ?.MainWindow;
-        if (parentWindow != null) conflictPopup.ShowDialog(parentWindow);
+        if (window3 != null) conflictPopup.ShowDialog(window3);
         
         return false;
     }

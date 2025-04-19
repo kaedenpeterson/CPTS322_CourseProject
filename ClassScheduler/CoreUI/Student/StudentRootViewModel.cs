@@ -13,7 +13,7 @@ namespace ClassScheduler.CoreUI.Student;
 /// </summary>
 public partial class StudentRootViewModel : ViewModelBase
 {
-    public readonly INavigationService Navigation;
+    public readonly INavigationService _navigation;
 
     private readonly Models.Student _student;
     
@@ -22,14 +22,14 @@ public partial class StudentRootViewModel : ViewModelBase
     
     public StudentRootViewModel(INavigationService navigation, Models.Student student)
     {
-        Navigation = navigation;
+        _navigation = navigation;
         _student = student;
         
-        _currView = Navigation.CurrView;
+        _currView = _navigation.CurrView;
         
-        Navigation.PropertyChanged += (_, args) =>
+        _navigation.PropertyChanged += (_, args) =>
         {
-            if (args.PropertyName == nameof(NavigationService.CurrView)) CurrView = Navigation.CurrView;
+            if (args.PropertyName == nameof(NavigationService.CurrView)) CurrView = _navigation.CurrView;
         };
     }
     
@@ -38,24 +38,24 @@ public partial class StudentRootViewModel : ViewModelBase
     [RelayCommand]
     private void NavigateToHome()
     {
-        Navigation.SwitchTo<StudentView>(_student);
+        _navigation.SwitchTo<StudentView>(_student);
     }
 
     [RelayCommand]
     private void NavigateToCourses()
     {
-        Navigation.SwitchTo<StudentCoursesView>(_student);
+        _navigation.SwitchTo<StudentCoursesView>(_student);
     }
 
     [RelayCommand]
     private void NavigateToCart()
     {
-        Navigation.SwitchTo<CartView>(_student);
+        _navigation.SwitchTo<CartView>(_student);
     }
 
     [RelayCommand]
     private void NavigateToDropCourses()
     {
-        Navigation.SwitchTo<DropCoursesView>(_student);
+        _navigation.SwitchTo<DropCoursesView>(_student);
     }
 }
