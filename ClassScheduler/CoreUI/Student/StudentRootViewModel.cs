@@ -58,4 +58,10 @@ public partial class StudentRootViewModel : ViewModelBase
     {
         _navigation.SwitchTo<DropCoursesView>(_student);
     }
+
+    [RelayCommand]
+    private void NavigateToTimetable()
+    {
+        _navigation.SwitchTo<TimetableView>(_student);
+    }
 }

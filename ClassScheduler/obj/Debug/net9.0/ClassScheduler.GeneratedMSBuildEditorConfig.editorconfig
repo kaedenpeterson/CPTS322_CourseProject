@@ -15,47 +15,50 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ClassScheduler
-build_property.ProjectDir = /Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/
+build_property.ProjectDir = C:\Users\beebe\source\repos\CPTS322_CourseProject\ClassScheduler\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/App.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/CoreUI/Admin/AdminRootView.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/CoreUI/Admin/AdminRootView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/CoreUI/PopupWindow.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/CoreUI/PopupWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/CoreUI/Student/StudentRootView.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/CoreUI/Student/StudentRootView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/AdminCoursesView.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/Views/AdminCoursesView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/AdminView.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/Views/AdminView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/CartView.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/Views/CartView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/DropCoursesView.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/Views/DropCoursesView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/EditCourseView.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/Views/EditCourseView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/LoginView.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/Views/LoginView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/MainWindow.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/StudentCoursesView.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/Views/StudentCoursesView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/chowie/GitHub/CPTS322_CourseProject/ClassScheduler/Views/StudentView.axaml]
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/Views/StudentView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/beebe/source/repos/CPTS322_CourseProject/ClassScheduler/Views/TimetableView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

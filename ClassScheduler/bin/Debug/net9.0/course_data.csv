@@ -1,2 +1,2 @@
-CourseID,Title,Instructor,Description,Credits,Prerequisites,maxSeats,Location,isActive,StartDate,EndDate,Days,StartTime,EndTime,EnrolledStudents
-CPTS 101,Intro to Computer Science,Parteek Kumar,"Introduction to programs within the School of Electrical Engineering and Computer Science discussing resources and knowledge and skills necessary to succeed within EECS majors.",1,N/A,120,Cleveland Hall 30,False,03/23/2025,05/01/2025,Mon|Tue|Wed,10:10AM,11:00AM,N/A
+Code,Title,Instructor,Description,Credits,Prerequisites,Capacity,Location,IsActive,StartDate,EndDate,Days,StartTime,EndTime
+CPTS 101,Intro to Computer Science,Parteek Kumar,"Introduction to programs within the School of Electrical Engineering and Computer Science discussing resources and knowledge and skills necessary to succeed within EECS majors.",1,N/A,120,Cleveland Hall 30,False,03/23/2025,05/01/2025,Mon|Tue|Wed,10:10AM,11:00AM
