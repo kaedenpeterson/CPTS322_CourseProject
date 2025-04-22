@@ -46,7 +46,7 @@ public partial class AddCourseViewModel : ViewModelBase
              Description,
              Credits,
              new List<string>(), // Empty prereqs for now
-             30, // Default max seats
+             maxSeats, // Default max seats
              Location,
              Status == "Active",
              new Schedule(
@@ -57,9 +57,9 @@ public partial class AddCourseViewModel : ViewModelBase
                  DateTime.Today.AddMonths(3)                    // End date
              )
         );
-        if (string.IsNullOrEmpty(newCourse.Code) || string.IsNullOrEmpty(newCourse.Name) || string.IsNullOrEmpty(newCourse.Instructor) || string.IsNullOrEmpty(newCourse.Description) || newCourse.Credits == null || string.IsNullOrEmpty(newCourse.Location))
+        if (string.IsNullOrEmpty(newCourse.Code) || string.IsNullOrEmpty(newCourse.Name) || string.IsNullOrEmpty(newCourse.Instructor) || string.IsNullOrEmpty(newCourse.Description) || newCourse.Credits == 0 || string.IsNullOrEmpty(newCourse.Location) || newCourse.MaxSeats == 0 || string.IsNullOrEmpty(Status))
         {
-            ErrorMessage = "A field is missing credentials";
+            ErrorMessage = "A field is missing or incorrect credentials";
             return;
         }
 
