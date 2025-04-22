@@ -47,7 +47,7 @@
 				<TextBlock Text="Location" Foreground="DodgerBlue" FontSize="15"/>
 				<TextBox Text="{Binding Location}"/>
 				
-				<TextBlock Text="Max Seats" Forground="DodgerBlue" FontSize="15"/>
+				<TextBlock Text="Max Seats" Foreground="DodgerBlue" FontSize="15"/>
 				<TextBox Text="{Binding MaxSeats}"/>
 				
 				<TextBlock Text="Status" Foreground="DodgerBlue" FontSize="15"/>
@@ -72,6 +72,11 @@
 					        VerticalContentAlignment="Center"
 					        Height="40" FontSize="16"/>
 				</StackPanel>
+				<TextBlock Text="{Binding ErrorMessage}"
+						   Foreground="Red"
+						   FontSize="14"
+						   HorizontalAlignment="Right"/>
+
 			</StackPanel>
 		</ScrollViewer>
 	</Grid>

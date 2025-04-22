@@ -7,7 +7,6 @@ using CommunityToolkit.Mvvm.Input;
 using ClassScheduler.Data;
 using System;
 
-
 namespace ClassScheduler.ViewModels;
 
 public partial class AddCourseViewModel : ViewModelBase
@@ -21,6 +20,10 @@ public partial class AddCourseViewModel : ViewModelBase
     [ObservableProperty] private int credits;
     [ObservableProperty] private string location;
     [ObservableProperty] private string status;
+    [ObservableProperty] private string _errorMessage = string.Empty;
+    [ObservableProperty] private int maxSeats;
+
+
 
     public List<int> CreditOptions { get; } = [1, 2, 3, 4];
     public List<string> StatusOptions { get; } = ["Active", "Inactive"];
@@ -30,15 +33,6 @@ public partial class AddCourseViewModel : ViewModelBase
     public AddCourseViewModel(INavigationService navigation)
     {
         _navigation = navigation;
-
-        // Set default values
-        Credits = 3;
-        Status = "Active";
-        code = string.Empty;
-        name = string.Empty;
-        instructor = string.Empty;
-        description = string.Empty;
-        location = string.Empty;
     }
 
 
@@ -63,6 +57,11 @@ public partial class AddCourseViewModel : ViewModelBase
                  DateTime.Today.AddMonths(3)                    // End date
              )
         );
+        if (string.IsNullOrEmpty(newCourse.Code) || string.IsNullOrEmpty(newCourse.Name) || string.IsNullOrEmpty(newCourse.Instructor) || string.IsNullOrEmpty(newCourse.Description) || newCourse.Credits == null || string.IsNullOrEmpty(newCourse.Location))
+        {
+            ErrorMessage = "A field is missing credentials";
+            return;
+        }
 
 
         SystemManager.Courses.Add(newCourse);
