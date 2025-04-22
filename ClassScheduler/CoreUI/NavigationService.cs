@@ -111,6 +111,14 @@ public sealed class NavigationService : INavigationService
                 vm.CurrView = new EditCourseView(this, course);
             }
         }
+        else if (typeof(T) == typeof(AddCourseView))
+        {
+            if (MainView is AdminRootView { DataContext: AdminRootViewModel vm })
+            {
+                vm.CurrView = new AddCourseView(this); // remove Course parameter
+            }
+        }
+
         else if (typeof(T) == typeof(DropCoursesView) && parameter is Models.Student s5)
         {
             if (MainView is StudentRootView { DataContext: StudentRootViewModel vm })
