@@ -126,6 +126,13 @@ public sealed class NavigationService : INavigationService
                 vm.CurrView = new DropCoursesView(this, s5);
             }
         }
+        else if (typeof(T) == typeof(TimetableView) && parameter is Models.Student s6)
+        {
+            if (MainView is StudentRootView { DataContext: StudentRootViewModel vm })
+            {
+                vm.CurrView = new TimetableView(this, s6);
+            }
+        }
         else if (typeof(T) == typeof(LoginView))
         {
             SystemManager.PushData();

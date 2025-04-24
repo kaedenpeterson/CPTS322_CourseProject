@@ -1,0 +1,33 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:ClassScheduler.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="600"
+             x:Class="ClassScheduler.Views.TimetableView"
+             x:DataType="vm:TimetableViewModel"
+             Background="#2C2C2C">
+
+	<Design.DataContext>
+		<vm:TimetableViewModel />
+	</Design.DataContext>
+
+	<Grid Margin="20"
+          ColumnDefinitions="Auto,*,*,*,*,*,*"
+		  RowDefinitions="Auto,*">
+
+		<TextBlock Grid.Row="0" Grid.Column="1" Text="Time" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" />
+		<TextBlock Grid.Row="0" Grid.Column="2" Text="Monday" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" />
+		<TextBlock Grid.Row="0" Grid.Column="3" Text="Tuesday" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" />
+		<TextBlock Grid.Row="0" Grid.Column="4" Text="Wednesday" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" />
+		<TextBlock Grid.Row="0" Grid.Column="5" Text="Thursday" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" />
+		<TextBlock Grid.Row="0" Grid.Column="6" Text="Friday" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" />
+
+		<ScrollViewer Grid.Row="1" Grid.ColumnSpan="7">
+			<Grid Name="TimeTableGrid"
+                  ColumnDefinitions="Auto,*,*,*,*,*"
+                  Background="#1E1E1E">
+			</Grid>
+		</ScrollViewer>
+	</Grid>
+</UserControl>
