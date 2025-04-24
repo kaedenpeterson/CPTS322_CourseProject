@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj": {}
+    "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj": {
+    "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
+        "projectUniqueName": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
         "projectName": "ClassScheduler",
-        "projectPath": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
-        "packagesPath": "C:\\Users\\beebe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\beebe\\source\\repos\\CPTS322_CourseProject\\ClassScheduler\\obj\\",
+        "projectPath": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\ClassScheduler.csproj",
+        "packagesPath": "C:\\Users\\RyanJ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RyanJ\\source\\repos\\kaedenpeterson\\CPTS322_CourseProject\\ClassScheduler\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\beebe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RyanJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -52,7 +52,7 @@
           "dependencies": {
             "Avalonia": {
               "target": "Package",
-              "version": "[11.2.1, )"
+              "version": "[11.2.8, )"
             },
             "Avalonia.Desktop": {
               "target": "Package",

@@ -33,16 +33,31 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/CoreUI/Student/StudentRootView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/Views/AddCourseView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/Views/AdminCoursesView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/Views/AdminView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/Views/CoursesView.axaml]
+[C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/Views/CartView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/Views/DropCoursesView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/Views/EditCourseView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/Views/LoginView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/Views/StudentCoursesView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/RyanJ/source/repos/kaedenpeterson/CPTS322_CourseProject/ClassScheduler/Views/StudentView.axaml]
