@@ -20,14 +20,14 @@ public partial class AdminCoursesViewModel : ViewModelBase
     {
         _navigation = navigation;
         Courses = SystemManager.Courses;
-        
+
         foreach (var course in Courses)
         {
             course.EditCourseCommand = new RelayCommand(() => EditCourse(course));
             course.DeleteCourseCommand = new RelayCommand(() => DeleteCourse(course));
         }
     }
-    
+
     private void EditCourse(Course course)
     {
         _navigation.SwitchTo<EditCourseView>(course);
@@ -37,13 +37,13 @@ public partial class AdminCoursesViewModel : ViewModelBase
     {
         Courses.Remove(course);
         _navigation.SwitchTo<AdminCoursesView>();
-        
+
         OnPropertyChanged(nameof(Courses));
     }
 
     [RelayCommand]
     private void AddCourse()
     {
-        // _navigation.SwitchTo<AddCoursesView>();
+        _navigation.SwitchTo<AddCourseView>();
     }
 }
